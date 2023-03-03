@@ -27,6 +27,7 @@ import { AuthService } from './services/auth/auth.service';
 
 import { ToastrModule } from 'ngx-toastr';
 import { Angular4PaystackModule } from 'angular4-paystack';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { Angular4PaystackModule } from 'angular4-paystack';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    NgbModule,
     StoreModule.forRoot(Appreducers),
     EffectsModule.forRoot([
       AuthEffects,
