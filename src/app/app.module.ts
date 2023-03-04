@@ -28,11 +28,17 @@ import { AuthService } from './services/auth/auth.service';
 import { ToastrModule } from 'ngx-toastr';
 import { Angular4PaystackModule } from 'angular4-paystack';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AuthComponent } from './layout/auth/auth.component';
+import { LandingPageComponent } from './layout/landing-page/landing-page.component';
+import { DashboardComponent } from './layout/dashboard/dashboard.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AuthComponent,
+    LandingPageComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
