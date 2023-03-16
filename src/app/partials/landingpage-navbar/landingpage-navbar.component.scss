@@ -1,0 +1,53 @@
+.navbar {
+    background-color: #ffffff;
+    padding: 2rem 0;
+    width: -webkit-fill-available;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    padding-right: 3.13rem;
+    color: var(--text-blue);
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.navbar-nav {
+    margin-right: 5rem;
+}
+
+.navbar-toggler {
+    width: 3rem;
+    border: none;
+    text-decoration: none;
+    box-shadow: none;
+    outline: 0;
+}
+
+.btn {
+    border-radius: 62.5rem;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.7rem 2rem;
+    &-light {
+        background: #efefef;
+        color: var(--text-blue);
+    }
+    &-blue {
+        background: #2C67F5;
+        color: #FFFFFF;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        margin-top: 0.8rem;
+        .nav-link {
+            padding: 0.9rem 0;
+        }
+    }
+}

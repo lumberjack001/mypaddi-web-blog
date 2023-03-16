@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
@@ -31,17 +32,31 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthComponent } from './layout/auth/auth.component';
 import { LandingPageComponent } from './layout/landing-page/landing-page.component';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
-
+import { LandingpageheaderComponent } from './components/landing-page/landingpageheader/landingpageheader.component';
+import { LandingpageNavbarComponent } from './partials/landingpage-navbar/landingpage-navbar.component';
+import { LandingpageFooterComponent } from './partials/landingpage-footer/landingpage-footer.component';
+import { LandingpagePatnerComponent } from './partials/landingpage-patner/landingpage-patner.component';
+import { MainCarouselComponent } from './partials/carousels/main-carousel/main-carousel.component';
+import { LandingpagefeaturesComponent } from './components/landing-page/landingpage-features/landingpage-features.component';
+import { LandingpageCampaignComponent } from './components/landing-page/landingpage-campaign/landingpage-campaign.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthComponent,
     LandingPageComponent,
-    DashboardComponent
+    DashboardComponent,
+    LandingpageheaderComponent,
+    LandingpageNavbarComponent,
+    LandingpageFooterComponent,
+    LandingpagePatnerComponent,
+    MainCarouselComponent,
+    LandingpagefeaturesComponent,
+    LandingpageCampaignComponent
   ],
   imports: [
     BrowserModule,
+    NgbModule,
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
