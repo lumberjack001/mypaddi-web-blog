@@ -4,6 +4,7 @@ import { AuthComponent } from './layout/auth/auth.component'
 import { LandingPageComponent } from './layout/landing-page/landing-page.component';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
 
+
 const routes: Routes = [
   {
     path: "",
@@ -11,7 +12,7 @@ const routes: Routes = [
   },
   {
     path: "auth",
-    component: AuthComponent
+    component: AuthComponent, 
   },
   {
     path: "blog",

@@ -1,9 +1,9 @@
-.patner {
-    justify-items: center;
-    margin-right: -6rem;
+.container {
+    margin-top: 3rem;
 }
 
-.patner img {
-    max-width: 91%;
-    margin: 0 3rem 3rem;
+@media (max-width: 1199px) {
+    .container {
+        margin-top: 3rem;
+    }
 }
