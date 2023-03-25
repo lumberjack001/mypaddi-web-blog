@@ -5,51 +5,59 @@ section{
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
 
-    .login-form{
-        width: 40%;
-        justify-content: center;
-    }
-    .submit-btn{
-        width: 50%;
-        border: 0;
-        background-color: #2C67F5;
-        color: #FFF;
-        padding: 0.5rem;
-        border-radius: 1rem;
+.login-form{
+    width: 40%;
+    justify-content: center;
+}
+.submit-btn{
+    width: 50%;
+    border: 0;
+    background-color: #2C67F5;
+    color: #FFF;
+    padding: 0.5rem;
+    border-radius: 1rem;
 
-    }
-    .form-wrapper{
-        width: 70%;
-        // padding: 1rem;0
-    }
-    .login-form a{
-        text-decoration: none;
-        color: #3289FF;
+}
+.form-wrapper{
+    width: 70%;
+    // padding: 1rem;0
+}
+.login-form a{
+    text-decoration: none;
+    color: #3289FF;
 
-    }
-    .form-heading{
-        color: var(--text-blue);
-        font-weight: 700;
-    }
+}
+.form-heading{
+    color: var(--text-blue);
+    font-weight: 700;
+}
 
+.carousel{
+    width: 40%;
+    justify-content: center;
+}
+.carousel-wrapper{
+    width: 70%;
+}
+
+.form-input{
+    position: relative;
+}
+.form-input button{
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 25%;
+    right: 1%;
+
+}
+@media (max-width: 600px) {
     .carousel{
-        width: 40%;
-        justify-content: center;
+        display: none !important;
     }
-    .carousel-wrapper{
-        width: 70%;
-    }
-
-    .form-input{
-        position: relative;
-    }
-    .form-input button{
-        border: 0;
-        background-color: transparent;
-        position: absolute;
-        top: 25%;
-        right: 1%;
-
+    .login-form{
+        width: 100%;
     }
 }
