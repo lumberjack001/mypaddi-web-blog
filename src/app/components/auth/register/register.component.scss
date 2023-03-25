@@ -1,0 +1,104 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.control-btn{
+    width: 100%;
+    // display: flex;
+    // justify-content: space-around;
+
+    button{
+        width: 25%;
+        margin-right: 1rem;
+        background-color:  rgba(0, 0, 0, 0.06);;
+        border: 0;
+        padding: 0.2rem;
+        border-radius: 1rem;
+    }
+    
+}
+.active-bar{
+    background-color: #3289FF !important;
+}
+.second-bar[data-visible= true]{
+    background-color: #3289FF !important;
+}
+.login-form{
+    width: 40%;
+    justify-content: center;
+}
+.carousel{
+    width: 40%;
+    justify-content: center;
+}
+.carousel-wrapper{
+    width: 70%;
+}
+.submit-btn{
+    width: 50%;
+    border: 0;
+    background-color: #2C67F5 !important;
+    color: #FFF;
+    padding: 0.5rem;
+    border-radius: 1rem;
+
+}
+.form-input{
+    position: relative;
+}
+.form-input button{
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 25%;
+    right: 1%;
+}
+.form-heading{
+    color: var(--text-blue);
+    font-weight: 700;
+}
+
+#User-details{
+    display: flex;
+    justify-content: space-between;
+}
+.user-name{
+    width: 48%;
+}
+.gender{
+    width: 48%;
+}
+.sign-in-btn{
+    text-decoration: none;
+    color: #3289FF;
+}
+.form-control:focus {
+    border-color: #ced4da; /* Set border color to default */
+    box-shadow: none; /* Remove box-shadow */
+  }
+
+#contact-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+#country-code{
+    text-align: center;
+}
+.contact-location{
+    width: 27%;
+}
+.contact-phone{
+    width: 70%;
+}
+
+@media (max-width: 600px) {
+    .carousel{
+        display: none !important;
+    }
+    .login-form{
+        width: 100%;
+    }
+}
