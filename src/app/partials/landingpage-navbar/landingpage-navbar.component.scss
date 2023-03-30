@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #ffffff;
+    background-color: var(--bg-white);
     padding: 2rem 0;
     width: -webkit-fill-available;
 }
@@ -47,7 +47,28 @@
         margin-top: 0.8rem;
         .nav-link {
             padding: 0.9rem 0;
+            font-size: 1.5rem;
         }
+    }
+    .btn-light {
+        background: none;
+        padding: 0.9rem 0;
+        border: none;
+        color: var(--text-blue);
+        font-size: 1.5rem;
+    }
+    .btn-blue {
+        background: none;
+        padding: 0.9rem 0;
+        border: none;
+        color: var(--text-blue);
+        margin-left: -2rem;
+        font-size: 1.5rem;
+    }
+    .buttons {
+        flex-direction: column;
+        float: left;
+        font-size: 1.5rem;
     }
 }
 
@@ -60,5 +81,26 @@
     }
     .nav-link {
         margin-left: 1rem;
+    }
+    .btn-light {
+        background: none;
+        padding: 0.9rem 0;
+        border: none;
+        color: var(--text-blue);
+        font-size: 1.5rem;
+    }
+    .btn-blue {
+        background: none;
+        padding: 0.9rem 0;
+        border: none;
+        color: var(--text-blue);
+        margin-left: -2rem;
+        font-size: 1.5rem;
+    }
+    .buttons {
+        flex-direction: column;
+        float: left;
+        font-size: 1.5rem;
+        margin-left: 0.9rem;
     }
 }

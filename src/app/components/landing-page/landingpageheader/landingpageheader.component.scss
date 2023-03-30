@@ -1,5 +1,4 @@
 .header {
-    // margin-left: 1.5rem;
     margin-top: 4.5rem;
     margin-bottom: 3rem;
 }
@@ -19,10 +18,10 @@ h1 {
 
 p {
     width: 80%;
-    color: #7c8899;
-    font-weight: 500;
+    color: var( --text-grey-2);
+    font-weight: 550;
     letter-spacing: 0.05rem;
-    font-size: 1.55rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
 }
 
@@ -30,10 +29,22 @@ p {
     gap: 0.63rem;
 }
 
-@media (min-width: 769px) and (max-width: 991.98px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+    p {
+        width: 98%;
+    }
     h1 {
         width: 100%;
         font-size: 3rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991.98px) {
+    h1 {
+        width: 100%;
+    }
+    p {
+        font-size: 1.7rem;
     }
     .app-btn {
         margin-top: 3rem;
@@ -43,27 +54,35 @@ p {
     .carousel {
         margin-top: 3rem;
     }
+    .flex {
+        padding: 0 3.98rem;
+    }
 }
 
 @media (max-width: 768px) {
     h1 {
-        width: 87%;
-        font-size: 2.1rem;
+        width: 95%;
+        font-size: 3rem;
         line-height: normal;
-        margin-left: 1rem;
+        // margin-left: 1rem;
     }
     .app-btn {
         margin-bottom: 2rem;
     }
     p {
         width: 92.5%;
-        font-size: 1.02rem;
-        margin-left: 1rem;
+        font-size: 1.7rem;
+        // margin-left: 1rem;
     }
 }
 
-@media (max-width: 400px) {
+@media (min-width: 375px) and (max-width: 466px) {
     h1 {
-        width: 89%;
+        width: 98%;
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.52rem;
+        width: 98%;
     }
 }

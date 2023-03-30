@@ -35,7 +35,7 @@ import { DashboardComponent } from './layout/dashboard/dashboard.component';
 import { LandingpageheaderComponent } from './components/landing-page/landingpageheader/landingpageheader.component';
 import { LandingpageNavbarComponent } from './partials/landingpage-navbar/landingpage-navbar.component';
 import { LandingpageFooterComponent } from './partials/landingpage-footer/landingpage-footer.component';
-import { LandingpagePatnerComponent } from './partials/landingpage-patner/landingpage-patner.component';
+import { LandingpagePartnerComponent } from './partials/landingpage-partner/landingpage-partner.component';
 import { MainCarouselComponent } from './partials/carousels/main-carousel/main-carousel.component';
 import { LandingpagefeaturesComponent } from './components/landing-page/landingpage-features/landingpage-features.component';
 import { LandingpageCampaignComponent } from './components/landing-page/landingpage-campaign/landingpage-campaign.component';
@@ -49,7 +49,7 @@ import { LandingpageCampaignComponent } from './components/landing-page/landingp
     LandingpageheaderComponent,
     LandingpageNavbarComponent,
     LandingpageFooterComponent,
-    LandingpagePatnerComponent,
+    LandingpagePartnerComponent,
     MainCarouselComponent,
     LandingpagefeaturesComponent,
     LandingpageCampaignComponent

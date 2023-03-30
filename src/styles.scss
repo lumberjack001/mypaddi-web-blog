@@ -99,6 +99,7 @@ body {
     --bg-audio-featured: #F4F4F4; // #202020
     --bg-chat-modal: #F5F5F5; // #202020
     --bg-audio-modal: #FFFAFA; // #101010
+    --bg-radio-indicator: #595959; //#D8D8D8
 }
 
 body.dark-theme {
@@ -128,20 +129,21 @@ body.dark-theme {
     --bg-audio-featured: #202020;
     --bg-chat-modal: #202020;
     --bg-audio-modal: #101010;
+    --bg-radio-indicator: #D8D8D8;
 }
 
 .carousel-indicators [data-bs-target] {
     height: 0.5rem;
     width: 0.5rem;
     border-radius: 100%;
-    border: 1px solid #595959;
-    background-color: #595959;
+    border: 1px solid var(--bg-radio-indicator);
+    background-color: var(--bg-radio-indicator);
     &[class="active"] {
-        border: 1px solid blue;
+        border: 1px solid #2C67F5;
         border-radius: 40%;
-        background-color: blue;
-        width: 1.2rem;
-        height: 0.5rem;
+        background-color: #2C67F5;
+        width: 1.1rem;
+        height: 0.3rem;
     }
 }
 
@@ -151,6 +153,13 @@ body.dark-theme {
     z-index: 20;
 }
 
+app-landingpage-campaign {}
+
+// @media (max-width: 768px) {
+//     .carousel-indicators {
+//         margin-top: -0.6rem;
+//     }
+// }
 // .indicators .carousel-indicators {
 //     overflow: hidden;
 //     margin-top: -3rem;

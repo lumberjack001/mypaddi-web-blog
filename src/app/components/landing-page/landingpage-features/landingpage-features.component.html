@@ -1,51 +1,50 @@
-<div class="container">
+<div class="container pt-4">
     <h4>Top Featured</h4>
-    <div class="top-featured d-flex">
-        <div class="row">
-            <div class="box-light me-4">
-                <div class="col d-flex chat-doc justify-content-center ">
-                    <div class="chat-feature mt-4">
-                        <h5>Chat with a Doctor or Counselor <br>for free</h5>
+    <div class="flex-container">
+        <div class="row justify-content-center">
+            <div class="box-light chat-doc col-md-6 col-lg-4 col-sm-4">
+                <div class="chat-feature">
+                    <h5>Chat with a Doctor or Counselor <br>for free</h5>
+                    <a [routerLink]="['/chat']">
                         <span class="d-flex mt-4">
                             <p>GET STARTED</p>
                             <img src="/assets/images/arrow_right_light.svg" alt="arrow1" class="img-fluid arrow mb-3">
                         </span>
-                    </div>
-                    <div class="doc-img">
-                        <img src="/assets/images/chat_doc.svg" alt="chat-doc" class="img-fluid">
-                    </div>
+                    </a>
+                </div>
+                <div class="doc-img">
+                    <img src="/assets/images/chat_doc.svg" alt="chat-doc" class="img-fluid">
                 </div>
             </div>
 
-            <div class="box-yellow me-4">
-                <div class="col d-flex explore-blog justify-content-center">
-                    <div class="blog-feature mt-3 col-2">
-                        <h5>Explore <br> the health Blog</h5>
+            <div class="box-yellow explore-blog col-md-6 col-lg-4">
+                <div class="blog-feature mt-3 col-2">
+                    <h5>Explore <br> the health Blog</h5>
+                    <a [routerLink]="['/blog']">
                         <span class="d-flex mt-5">
                             <p>READ NOW</p>
                             <img src="/assets/images/arrow_right_yellow.svg" alt="arrow2" class="img-fluid arrow mb-3">
                         </span>
-                    </div>
-                    <div class="exploreblog-img">
-                        <img src="/assets/images/explore_blog.svg" alt="explore-blog" class="img-fluid">
-                    </div>
+                    </a>
+                </div>
+                <div class="exploreblog-img">
+                    <img src="/assets/images/explore_blog.svg" alt="explore-blog" class="img-fluid">
                 </div>
             </div>
 
-            <div class="box-purple">
-                <div class="col d-flex sex-products justify-content-center">
-                    <div class="sexproduct-feature mt-3 ms-2 col-2">
-                        <h5>Buy<br> Sexual Health Products</h5>
-                        <span class="d-flex mt-5">
-                            <p>SHOP HERE</p>
-                            <img src="/assets/images/arrow_right_purple.svg" alt="arrow3" class="img-fluid arrow mb-3">
-                        </span>
-                    </div>
-                    <div class="sexproduct-img">
-                        <img src="/assets/images/sex_products.svg" alt="sex-products" class="img-fluid">
-                    </div>
+            <div class="box-purple sex-products col-md-6 col-lg-4">
+                <div class="sexproduct-feature mt-3 col-2">
+                    <h5>Buy<br> Sexual Health Products</h5>
+                    <span class="d-flex mt-5">
+                        <a href="https://shop.mypaddiapp.com/" target="_blank" class="shop">SHOP HERE</a>
+                        <img src="/assets/images/arrow_right_purple.svg" alt="arrow3" class="img-fluid arrow mb-3">
+                    </span>
+                </div>
+                <div class="sexproduct-img">
+                    <img src="/assets/images/sex_products.svg" alt="sex-products" class="img-fluid">
                 </div>
             </div>
+
         </div>
     </div>
 </div>
