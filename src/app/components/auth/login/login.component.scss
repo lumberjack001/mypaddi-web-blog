@@ -17,7 +17,7 @@ section{
     background-color: #2C67F5;
     color: #FFF;
     padding: 0.5rem;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
 
 }
 .form-wrapper{
@@ -53,11 +53,38 @@ section{
     right: 1%;
 
 }
-@media (max-width: 600px) {
+.form-control{
+    color: #9A9A9A;
+}
+.form-control:focus {
+    border-color: #ced4da; /* Set border color to default */
+    box-shadow: none; /* Remove box-shadow */
+    color: black;
+}
+
+.form-label{
+    font-size: 1.2rem;
+    color: #7C8899;
+}
+
+
+@media (max-width: 750px){
     .carousel{
         display: none !important;
     }
     .login-form{
         width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    // .login-form{
+    //     width: 100%;
+    // }
+    .forgot-password{
+        text-align: center;
+    }
+    .submit-btn{
+        width: 80%;
+        margin: 0 auto;
     }
 }
