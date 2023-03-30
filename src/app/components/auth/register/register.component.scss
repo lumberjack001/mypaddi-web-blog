@@ -3,8 +3,9 @@ section{
     justify-content: center;
     align-items: center;
     height: 100vh;
+
 }
-.control-btn{
+.control-bars{
     width: 100%;
     // display: flex;
     // justify-content: space-around;
@@ -14,10 +15,13 @@ section{
         margin-right: 1rem;
         background-color:  rgba(0, 0, 0, 0.06);;
         border: 0;
-        padding: 0.2rem;
-        border-radius: 1rem;
+        padding: 0.25rem;
+        border-radius: 1.5rem;
     }
     
+}
+.form-wrapper{
+    width: 100%;
 }
 .active-bar{
     background-color: #3289FF !important;
@@ -42,7 +46,7 @@ section{
     background-color: #2C67F5 !important;
     color: #FFF;
     padding: 0.5rem;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
 
 }
 .form-input{
@@ -74,10 +78,19 @@ section{
     text-decoration: none;
     color: #3289FF;
 }
+.form-control{
+    color: #9A9A9A;
+}
 .form-control:focus {
     border-color: #ced4da; /* Set border color to default */
     box-shadow: none; /* Remove box-shadow */
-  }
+    color: black;
+}
+
+.form-label{
+    font-size: 1.2rem;
+    color: #7C8899;
+}
 
 #contact-info{
     display: flex;
@@ -88,17 +101,72 @@ section{
     text-align: center;
 }
 .contact-location{
-    width: 27%;
+    width: 30%;
 }
 .contact-phone{
-    width: 70%;
+    width: 65%;
 }
-
-@media (max-width: 600px) {
+.control-btn{
+    display: flex;
+    // justify-content: space-around;
+    gap: 1.1rem;
+}
+.prev-btn{
+    width: 30%;
+    background-color: #EFEFEF;
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+}
+@media (max-width: 1200px){
+    .contact-location{
+        width: 35%;
+    }
+    .contact-phone{
+        width: 60%;
+    }
+}
+@media (max-width: 992px){
+    .container{
+        max-width: 850px !important;
+        .contact-location{
+            width: 45%;
+        }
+        .contact-phone{
+            width: 50%;
+        }
+    }
+}
+@media (max-width: 750px){
+    .container{
+        max-width: 600px !important;
+    }
     .carousel{
         display: none !important;
     }
     .login-form{
         width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container{
+        max-width: 400px !important;
+    }
+    
+    .contact-location{
+        width: 35%;
+    }
+    .contact-phone{
+        width: 60%;
+    }
+}
+
+@media (max-width: 355px) {
+    .contact-location{
+        width: 45%;
+    }
+    .contact-phone{
+        width: 50%;
     }
 }
