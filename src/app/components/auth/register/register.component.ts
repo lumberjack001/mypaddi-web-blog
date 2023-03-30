@@ -7,15 +7,15 @@ import countrycodes from '../../../../assets/json/countrycodes.json';
   styleUrls: ['./register.component.scss'],
 })
 export class RegisterComponent {
-  hide: boolean = false;
+  hideForm: boolean = false;
   countries: { countryCode: string; value: number; country: string }[] =
     countrycodes;
 
-  isHidden() {
-    this.hide = false;
+  previousPage() {
+    this.hideForm = false;
   }
-  isShown() {
-    this.hide = true;
+  nextPage() {
+    this.hideForm = true;
   }
 }
 
