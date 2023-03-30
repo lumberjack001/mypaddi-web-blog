@@ -5,32 +5,36 @@ import { LandingPageComponent } from './layout/landing-page/landing-page.compone
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
+import { RequestResetComponent } from './components/auth/request-reset/request-reset.component';
+import { ResetPasswordComponent } from './components/auth/reset-password/reset-password.component';
 
 const routes: Routes = [
   {
-    path: "",
-    component: LandingPageComponent
+    path: '',
+    component: LandingPageComponent,
   },
   {
-    path: "auth",
+    path: 'auth',
     component: AuthComponent,
     children: [
-      {path: 'login', component: LoginComponent},
-      {path: 'register', component: RegisterComponent}
-    ]
+      { path: 'login', component: LoginComponent },
+      { path: 'register', component: RegisterComponent },
+      { path: 'request-reset', component: RequestResetComponent },
+      { path: 'reset-password', component: ResetPasswordComponent },
+    ],
   },
   {
-    path: "blog",
-    component: DashboardComponent
+    path: 'blog',
+    component: DashboardComponent,
   },
   {
-    path: "chat",
-    component: DashboardComponent
+    path: 'chat',
+    component: DashboardComponent,
   },
   {
-    path: "audio",
-    component: DashboardComponent
-  }
+    path: 'audio',
+    component: DashboardComponent,
+  },
 ];
 
 
