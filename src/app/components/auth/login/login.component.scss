@@ -3,13 +3,13 @@ section{
     // margin: 0 auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    // align-items: center;
+    // height: 100vh;
+    margin-top: 5rem;
 }
 
 .login-form{
     width: 40%;
-    justify-content: center;
 }
 .submit-btn{
     width: 50%;
@@ -21,7 +21,7 @@ section{
 
 }
 .form-wrapper{
-    width: 70%;
+    width: 80%;
     // padding: 1rem;0
 }
 .login-form a{
@@ -49,12 +49,16 @@ section{
     border: 0;
     background-color: transparent;
     position: absolute;
-    top: 25%;
+    top: 30%;
     right: 1%;
 
+    img{
+        width: 70%;
+    }
 }
 .form-control{
     color: #9A9A9A;
+    padding: 0.6rem 0.8rem;
 }
 .form-control:focus {
     border-color: #ced4da; /* Set border color to default */
@@ -74,6 +78,7 @@ section{
     }
     .login-form{
         width: 100%;
+        justify-content: center;
     }
 }
 @media (max-width: 600px) {
