@@ -6,19 +6,19 @@
                     <button (click)="previousPage()" class="active-bar" [attr.data-visible]="hideForm"></button>
                     <button (click)="nextPage()" class="second-bar" [attr.data-visible]="hideForm"></button>
                 </div>
-                <div class="create" *ngIf="hideForm === false">
+                <div class="create pages" *ngIf="hideForm === false">
                     <h1 class="form-heading">Create an Account</h1>
     
-                    <div class="mb-3 mt-3">
+                    <div class="">
                         <label for="User-email" class="form-label">Email Address</label>
                         <input type="text" class="form-control " id="User-email">
                     </div>
                     <div Id="User-details">
-                        <div class="mb-3 mt-3 User-name">
+                        <div class=" User-name">
                             <label for="Username" class="form-label">Username</label>
                             <input type="text" class="form-control " id="Username">
                         </div>
-                        <div class="mb-3 mt-3 gender">
+                        <div class=" gender">
                             <label for="User-gender" class="form-label">Gender</label>
                             <select class="form-select form-control" aria-label="Default select example" id="User-gender">
                                 <option selected></option>
@@ -29,7 +29,7 @@
                         </div>
     
                     </div>
-                    <div class="mb-3">
+                    <div class="">
                         <label for="User-password" class="form-label">Password</label>
                         <div class="d-flex form-input">
                             <input type="password" class="form-control" id="User-password">
@@ -43,24 +43,24 @@
     
                     <button (click)="nextPage()"  class="submit-btn">Next</button>
     
-                    <p class="mb-3 mt-4">Have an account? <a routerLink="../login" class="sign-in-btn">Sign In</a></p>
+                    <p class="">Have an account? <a routerLink="../login" class="sign-in-btn">Sign In</a></p>
                 </div>
     
-                <div class="personal" *ngIf="hideForm === true">
+                <div class="personal pages" *ngIf="hideForm === true">
                     <h1 class="form-heading">Personal Details</h1>
     
-                    <div class="mb-3 mt-3">
+                    <div class="">
                         <label for="User-fullname" class="form-label">Fullname</label>
                         <input type="text" class="form-control " id="User-fullname">
                     </div>
                     
-                    <div Id="date-of-birth" class="mb-3 mt-3">
+                    <div Id="date-of-birth" class="">
                         <label for="birth-date" class="form-label">Date of Birth</label>
                         <input type="date" class="form-control" id="birth-date">
                     </div>
                    
                     <div Id="contact-info">
-                        <div class="mb-3 mt-3 contact-location">
+                        <div class=" contact-location">
                             <label for="country-code" class="form-label">Country code</label>
                             <select class="form-select form-control w-100" aria-label="Default select example" id="country-code">
                                 <!-- <option selected></option> -->
@@ -68,19 +68,18 @@
                                 <!-- <option value="2">+49</option> -->
                             </select>
                         </div>
-                        <div class="mb-3 mt-3 contact-phone">
+                        <div class=" contact-phone">
                             <label for="phone-number" class="form-label">Phone Number</label>
                             <input type="text" class="form-control w-100 " id="phone-number">
                         </div>
     
                     </div>
     
-                    <div class="control-btn mb-3 mt-3 w-100">
+                    <div class="control-btn  w-100">
                         <button (click)="previousPage()" class="prev-btn" >Back</button>
                         <button   class="submit-btn">Finish</button>
                     </div>
                 </div>
-                
             </div>           
         </div>
         <div class="carousel d-flex">

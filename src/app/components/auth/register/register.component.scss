@@ -1,8 +1,9 @@
 section{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    margin-top: 5rem;
+    // align-items: center;
+    // height: 100vh;
 
 }
 .control-bars{
@@ -20,8 +21,14 @@ section{
     }
     
 }
+.pages{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
 .form-wrapper{
-    width: 100%;
+    width: 80%;
+    gap: 1rem;
 }
 .active-bar{
     background-color: #3289FF !important;
@@ -31,7 +38,6 @@ section{
 }
 .login-form{
     width: 40%;
-    justify-content: center;
 }
 .carousel{
     width: 40%;
@@ -56,8 +62,12 @@ section{
     border: 0;
     background-color: transparent;
     position: absolute;
-    top: 25%;
+    top: 30%;
     right: 1%;
+
+    img{
+        width: 70%;
+    }
 }
 .form-heading{
     color: var(--text-blue);
@@ -80,6 +90,8 @@ section{
 }
 .form-control{
     color: #9A9A9A;
+    padding: 0.6rem 0.8rem;
+
 }
 .form-control:focus {
     border-color: #ced4da; /* Set border color to default */
@@ -99,12 +111,13 @@ section{
 
 #country-code{
     text-align: center;
+    padding-right: 2rem;
 }
 .contact-location{
-    width: 30%;
+    width: 35%;
 }
 .contact-phone{
-    width: 65%;
+    width: 60%;
 }
 .control-btn{
     display: flex;
@@ -120,39 +133,40 @@ section{
 }
 @media (max-width: 1200px){
     .contact-location{
-        width: 35%;
+        width: 40%;
     }
     .contact-phone{
-        width: 60%;
+        width: 55%;
     }
 }
 @media (max-width: 992px){
     .container{
-        max-width: 850px !important;
-        .contact-location{
-            width: 45%;
-        }
-        .contact-phone{
-            width: 50%;
-        }
+        max-width: 850px !important;  
+    }
+    .contact-location{
+        width: 45%;
+    }
+    .contact-phone{
+        width: 50%;
     }
 }
 @media (max-width: 750px){
-    .container{
-        max-width: 600px !important;
-    }
+    // .container{
+    //     max-width: 600px !important;
+    // }
     .carousel{
         display: none !important;
     }
     .login-form{
         width: 100%;
+        justify-content: center;
     }
 }
 
 @media (max-width: 600px) {
-    .container{
-        max-width: 400px !important;
-    }
+    // .container{
+    //     max-width: 400px !important;
+    // }
     
     .contact-location{
         width: 35%;
