@@ -3,14 +3,18 @@
     margin-top: 3rem;
 }
 
-@media (max-width: 1199px) {
-    .container {
-        margin-top: 3rem;
+.partner {
+    padding: 0 12rem;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .partner {
+        padding: 0 10rem;
     }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .container {
-        padding: 0 3.5rem;
+@media (min-width: 280px) and (max-width: 991.98px) {
+    .partner {
+        padding: 0 0.5rem;
     }
 }
