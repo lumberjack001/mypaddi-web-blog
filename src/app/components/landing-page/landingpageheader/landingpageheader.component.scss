@@ -1,5 +1,5 @@
 .container {
-    padding: 3rem 0 0 8rem;
+    padding: 3rem 0 0 7rem;
 }
 
 .header {
@@ -15,12 +15,8 @@
     margin-top: 2rem;
 }
 
-.flex {
-    padding: 0 2rem 0 1rem;
-}
-
 h1 {
-    width: 90%;
+    width: 80%;
     font-weight: 700;
     color: var(--text-blue);
     margin-bottom: 2.3rem;
@@ -30,7 +26,7 @@ h1 {
 }
 
 p {
-    width: 80%;
+    width: 70%;
     color: var( --text-grey-2);
     font-weight: 550;
     letter-spacing: 0.05rem;
@@ -45,7 +41,7 @@ p {
 
 @media (min-width: 1200px) and (max-width: 1399px) {
     h1 {
-        width: 90%;
+        width: 80%;
         font-size: 3rem;
     }
     p {
@@ -53,10 +49,10 @@ p {
         font-size: 1.3rem;
     }
     .container {
-        padding: 3rem 0 0 2rem;
+        padding: 3rem 0 0 3rem;
     }
     .flex {
-        padding: 0 0 0 3rem;
+        padding: 0 0 0 2rem;
     }
     .app-btn {
         margin-right: 6rem;
