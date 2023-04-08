@@ -1,15 +1,15 @@
 .container {
     background: none repeat scroll 0 0 var(--bg-blue);
     padding: 0;
-    max-width: 30rem;
-    max-height: 30rem;
+    max-width: 32rem;
+    max-height: 32rem;
     border-radius: 3rem;
     position: relative;
 }
 
 .img-wrapper2 {
     width: 100%;
-    max-height: 29.3rem;
+    max-height: 31.22rem;
     padding: 10% 10% 0 10%;
     position: relative;
 }
@@ -34,6 +34,21 @@
     opacity: 1;
     visibility: visible;
     z-index: 10;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    // // ngb-carousel img {
+    // //     height: 27rem;
+    // // }
+    .img-wrapper2 {
+        width: 100%;
+        max-height: 30.01rem;
+        // margin-top: 2rem;
+        padding: 10% 10% 0 10%;
+    }
+    // .img-wrapper1 {
+    //     height: 100%;
+    // }
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
