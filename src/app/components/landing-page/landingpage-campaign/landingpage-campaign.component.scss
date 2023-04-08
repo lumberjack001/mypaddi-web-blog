@@ -1,13 +1,13 @@
 .container {
     height: auto;
     background-color: var(--bg-blue-2);
-    border-radius: 3.44rem;
+    border-radius: 2.8rem;
     padding: 2.2rem 2.2rem;
     h5 {
-        width: 95%;
+        width: 100%;
         font-weight: 700;
-        font-size: 2rem;
-        line-height: 3.5rem;
+        font-size: 2.2rem;
+        line-height: 3.2rem;
         color: var(--text-blue);
     }
     .carousel-indicators {
@@ -19,10 +19,11 @@
         font-size: 1.4rem;
         line-height: 2rem;
         color: var(--text-grey-2);
-        margin-top: 0.8rem;
+        margin-top: 1rem;
     }
     .text {
-        padding-left: 2.5rem;
+        padding-left: 3.5rem;
+        align-self: center;
     }
     .btn {
         background: #2c67f5;
@@ -35,11 +36,11 @@
         width: max-content;
         text-transform: capitalize;
         border: none;
+        margin-left: 3rem;
     }
     .d-flex {
         flex-direction: column;
         align-self: center;
-        padding: 0 1rem;
     }
 }
 
@@ -67,6 +68,9 @@
             order: -1;
             padding: 0 1rem;
         }
+        .btn {
+            margin-left: 0;
+        }
         .containers {
             background-color: var(--bg-white);
             padding: 0;
@@ -77,8 +81,8 @@
                 display: flex;
             }
             .carousel-indicators [data-bs-target] {
-                height: 0.8rem;
-                width: 0.8rem;
+                height: 0.4rem;
+                width: 0.4rem;
                 border-radius: 100%;
                 margin: 0 0.4rem;
                 border: 1px solid var(--bg-carousel-indicator);
@@ -89,8 +93,8 @@
                 border: 1px solid #2C67F5;
                 border-radius: 1rem;
                 background-color: #2C67F5;
-                width: 2rem;
-                height: 0.8rem;
+                width: 1.4rem;
+                height: 0.5rem;
                 cursor: pointer;
             }
         }
@@ -99,12 +103,14 @@
 
 @media (min-width: 1200px) and (max-width: 1399px) {
     .container {
+        max-width: 69rem;
         h5 {
-            width: 90%;
+            width: 100%;
             font-size: 1.9rem;
+            line-height: 3rem;
         }
         p {
-            width: 90%;
+            width: 100%;
         }
     }
 }
@@ -122,7 +128,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
     .container {
         .text {
-            padding: 0 4rem;
+            padding: 0 1rem;
         }
         .d-flex {
             padding: 1rem 1rem;
@@ -145,6 +151,7 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .container {
+        max-width: 58rem;
         h5 {
             width: 100%;
             font-size: 1.69rem;

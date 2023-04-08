@@ -1,7 +1,11 @@
 .navbar {
     background-color: var(--bg-white);
-    padding: 4rem 0;
+    padding: 1rem 2rem;
     width: -webkit-fill-available;
+}
+
+.navbar-brand {
+    padding-left: 2rem;
 }
 
 .navbar-nav .nav-link {
@@ -48,9 +52,27 @@
     }
 }
 
+@media (min-width: 1400px) and (max-width: 2000px) {
+    .navbar {
+        padding: 0 6.5rem;
+    }
+    .buttons {
+        margin-right: 0;
+    }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
     .navbar-nav {
         padding-left: 3rem;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .navbar-brand {
+        padding-left: 0;
+    }
+    .buttons {
+        margin-right: 0;
     }
 }
 
@@ -86,6 +108,12 @@
     #navbarCollapse {
         margin-left: 1rem;
     }
+    .navbar-brand {
+        padding-left: 0;
+    }
+    .navbar {
+        padding: 0;
+    }
 }
 
 @media (min-width: 280px) and (max-width: 767.98px) {
@@ -111,5 +139,8 @@
         flex-direction: column;
         float: left;
         font-size: 1.5rem;
+    }
+    .navbar {
+        padding: 0;
     }
 }

@@ -134,8 +134,8 @@ body.dark-theme {
 
 .main-carousel {
     .carousel-indicators [data-bs-target] {
-        height: 0.7rem;
-        width: 0.7rem;
+        height: 0.4rem;
+        width: 0.4rem;
         border-radius: 100%;
         margin: 0 0.4rem;
         border: 1px solid var(--bg-carousel-indicator);
@@ -144,8 +144,8 @@ body.dark-theme {
             border: 1px solid #2C67F5;
             border-radius: 1rem;
             background-color: #2C67F5;
-            width: 1.2rem;
-            height: 0.4rem;
+            width: 1.4rem;
+            height: 0.5rem;
         }
     }
 }
@@ -154,24 +154,4 @@ body.dark-theme {
     overflow: hidden;
     margin-bottom: -3rem;
     z-index: 20;
-}
-
-@media (min-width: 280px) and (max-width: 991px) {
-    .main-carousel {
-        .carousel-indicators [data-bs-target] {
-            height: 0.8rem;
-            width: 0.8rem;
-            border-radius: 100%;
-            margin: 0 0.4rem;
-            border: 1px solid var(--bg-carousel-indicator);
-            background-color: var(--bg-carousel-indicator);
-            &[class="active"] {
-                border: 1px solid #2C67F5;
-                border-radius: 1rem;
-                background-color: #2C67F5;
-                width: 2rem;
-                height: 0.8rem;
-            }
-        }
-    }
 }

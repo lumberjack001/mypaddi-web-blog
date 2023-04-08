@@ -1,15 +1,21 @@
 .container {
     background: none repeat scroll 0 0 var(--bg-blue);
-    padding: 2% 0 0 0;
-    max-width: 37.5rem;
+    padding: 0;
+    max-width: 30rem;
+    max-height: 30rem;
     border-radius: 3rem;
     position: relative;
 }
 
-ngb-carousel img {
+.img-wrapper2 {
     width: 100%;
-    height: 32rem;
-    margin-top: 2rem;
+    max-height: 29.3rem;
+    padding: 10% 10% 0 10%;
+    position: relative;
+}
+
+.img-wrapper1 {
+    height: 100%;
 }
 
 .carousel-inner {
@@ -30,44 +36,13 @@ ngb-carousel img {
     z-index: 10;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-    ngb-carousel img {
-        height: 27rem;
-    }
-}
-
-@media (min-width: 767px) and (max-width: 991px) {
-    ngb-carousel img {
-        height: 38rem;
-    }
+@media (min-width: 769px) and (max-width: 991px) {
     .container {
-        max-width: 45rem;
+        max-width: inherit;
+        max-height: inherit;
     }
-}
-
-@media (max-width: 768px) {
-    ngb-carousel img {
-        height: 25rem;
-    }
-    .container {
-        max-width: 37.5rem;
-    }
-}
-
-@media (min-width: 365px) and (max-width: 496px) {
-    ngb-carousel img {
-        height: 19rem;
-    }
-}
-
-@media (min-width: 300px) and (max-width: 364px) {
-    ngb-carousel img {
-        height: 14.5rem;
-    }
-}
-
-@media (max-width: 299px) {
-    ngb-carousel img {
-        height: 13rem;
+    .img-wrapper2 {
+        width: 100%;
+        max-height: inherit;
     }
 }

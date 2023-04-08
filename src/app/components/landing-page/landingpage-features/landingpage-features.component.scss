@@ -19,7 +19,7 @@ h4 {
 }
 
 .chat-doc {
-    width: 22.5rem;
+    width: 22rem;
     height: 18rem;
     background-color: #ecf9f3;
     border: 1px #ecf9f3;
@@ -28,7 +28,7 @@ h4 {
     position: relative;
     padding: 2.5rem 0 0 2rem;
     border-radius: 1.5rem;
-    margin-left: -0.5rem;
+    // margin-left: -0.5rem;
 }
 
 .chat-doc h5 {
@@ -50,7 +50,7 @@ h4 {
 }
 
 .explore-blog {
-    width: 22.5rem;
+    width: 22rem;
     height: 18rem;
     background-color: #FFF6DD;
     border: 1px #ecf9f3;
@@ -75,7 +75,7 @@ h4 {
 }
 
 .sex-products {
-    width: 22.5rem;
+    width: 22rem;
     height: 18rem;
     background-color: #EAE8FF;
     border: 1px #ecf9f3;
@@ -84,7 +84,7 @@ h4 {
     position: relative;
     padding: 2rem 0 0 2rem;
     border-radius: 1.5rem;
-    margin-left: 0.5rem;
+    // margin-left: 0.5rem;
 }
 
 .sex-products h5 {
@@ -110,7 +110,7 @@ h4 {
 
 .doc-img img {
     width: 10rem;
-    margin-top: 0.7rem;
+    margin-top: 0.85rem;
     border-radius: 1.6rem;
     position: absolute;
     right: 0%;
@@ -193,7 +193,7 @@ a:active {
 
 @media (min-width: 992px) and (max-width: 1198px) {
     .chat-doc {
-        width: 19rem;
+        width: 18.5rem;
     }
     .doc-img img {
         width: 10.3rem;
@@ -210,7 +210,7 @@ a:active {
         margin-top: 3rem;
     }
     .explore-blog {
-        width: 19rem;
+        width: 18.5rem;
     }
     .exploreblog-img img {
         width: 15rem;
@@ -223,8 +223,7 @@ a:active {
         font-size: 0.8rem;
     }
     .sex-products {
-        width: 19rem;
-        margin-left: 0.5rem;
+        width: 18.5rem;
     }
     .sexproduct-img img {
         width: 10rem;
