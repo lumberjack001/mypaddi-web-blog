@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
@@ -31,17 +32,35 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthComponent } from './layout/auth/auth.component';
 import { LandingPageComponent } from './layout/landing-page/landing-page.component';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
-
+import { LandingpageheaderComponent } from './components/landing-page/landingpageheader/landingpageheader.component';
+import { LandingpageNavbarComponent } from './partials/landingpage-navbar/landingpage-navbar.component';
+import { LandingpageFooterComponent } from './partials/landingpage-footer/landingpage-footer.component';
+import { LandingpagePartnerComponent } from './partials/landingpage-partner/landingpage-partner.component';
+import { MainCarouselComponent } from './partials/carousels/main-carousel/main-carousel.component';
+import { LandingpagefeaturesComponent } from './components/landing-page/landingpage-features/landingpage-features.component';
+import { LandingpageCampaignComponent } from './components/landing-page/landingpage-campaign/landingpage-campaign.component';
+import { RadioBtnComponent } from './partials/radio-btn/radio-btn.component';
+import { ModalComponent } from './partials/modal/modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthComponent,
     LandingPageComponent,
-    DashboardComponent
+    DashboardComponent,
+    LandingpageheaderComponent,
+    LandingpageNavbarComponent,
+    LandingpageFooterComponent,
+    LandingpagePartnerComponent,
+    MainCarouselComponent,
+    LandingpagefeaturesComponent,
+    LandingpageCampaignComponent,
+    RadioBtnComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
+    NgbModule,
     AppRoutingModule,
     HttpClientModule,
     NgbModule,

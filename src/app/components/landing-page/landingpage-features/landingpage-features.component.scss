@@ -1,0 +1,1028 @@
+h4 {
+    text-align: center;
+    color: var(--text-grey-2);
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.flex-container {
+    width: 100%;
+    height: auto;
+    margin: 50px auto 0;
+    background-color: var(--bg-white);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chat-doc {
+    width: 22rem;
+    height: 18rem;
+    background-color: #ecf9f3;
+    border: 1px #ecf9f3;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    padding: 2.5rem 0 0 2rem;
+    border-radius: 1.5rem;
+    // margin-left: -0.5rem;
+}
+
+.chat-doc h5 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    width: 60%;
+    color: #004765;
+}
+
+.chat-doc p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #009EE1;
+    ;
+}
+
+.chat-doc .d-flex {
+    margin-top: 2.5rem;
+}
+
+.explore-blog {
+    width: 22rem;
+    height: 18rem;
+    background-color: #FFF6DD;
+    border: 1px #ecf9f3;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    padding: 2rem 0 0 2rem;
+    border-radius: 1.5rem;
+}
+
+.explore-blog h5 {
+    font-size: 1.6rem;
+    width: 70%;
+    font-weight: bold;
+    color: #655B00
+}
+
+.explore-blog p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #E1B000;
+}
+
+.sex-products {
+    width: 22rem;
+    height: 18rem;
+    background-color: #EAE8FF;
+    border: 1px #ecf9f3;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    padding: 2rem 0 0 2rem;
+    border-radius: 1.5rem;
+    // margin-left: 0.5rem;
+}
+
+.sex-products h5 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #370C62;
+}
+
+.sex-products a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #756AED;
+    white-space: nowrap;
+}
+
+.exploreblog-img img {
+    width: 18rem;
+    margin-top: 2rem;
+    border-radius: 1.6rem;
+    position: absolute;
+    right: 0%;
+}
+
+.doc-img img {
+    width: 10rem;
+    margin-top: 0.85rem;
+    border-radius: 1.6rem;
+    position: absolute;
+    right: 0%;
+}
+
+.sexproduct-img img {
+    width: 11.1rem;
+    padding-right: 1.5rem;
+}
+
+a:link,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+.d-flex {
+    margin-top: 3.5rem;
+}
+
+.arrow {
+    width: 2rem;
+    margin-top: -0.3rem;
+}
+
+@media (min-width: 1400px) and (max-width: 2500px) {
+    .chat-doc {
+        width: 26rem;
+    }
+    .doc-img img {
+        width: 10.4rem;
+        margin-top: 0.2rem;
+    }
+    .chat-doc h5 {
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+    .chat-doc p {
+        font-size: 1.2rem;
+    }
+    .chat-doc .d-flex {
+        margin-top: 1.6rem;
+    }
+    .explore-blog {
+        width: 26rem;
+    }
+    .exploreblog-img img {
+        width: 19rem;
+        margin-top: 1.2rem;
+    }
+    .explore-blog h5 {
+        font-size: 2rem;
+    }
+    .explore-blog p {
+        font-size: 1.2rem;
+    }
+    .sex-products {
+        width: 26rem;
+    }
+    .sexproduct-img img {
+        width: 13rem;
+        position: absolute;
+        right: 0.5%;
+        margin-top: -1rem;
+    }
+    .sex-products h5 {
+        font-size: 2rem;
+    }
+    .sex-products a {
+        font-size: 1.2rem;
+    }
+    .arrow {
+        width: 2rem;
+    }
+    .d-flex {
+        margin-top: 2.5rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1198px) {
+    .chat-doc {
+        width: 18.5rem;
+    }
+    .doc-img img {
+        width: 10.3rem;
+        margin-top: 0.4rem;
+    }
+    .chat-doc h5 {
+        font-size: 1.5rem;
+        width: 50%;
+    }
+    .chat-doc p {
+        font-size: 0.8rem;
+    }
+    .chat-doc .d-flex {
+        margin-top: 3rem;
+    }
+    .explore-blog {
+        width: 18.5rem;
+    }
+    .exploreblog-img img {
+        width: 15rem;
+        margin-top: 4.3rem;
+    }
+    .explore-blog h5 {
+        font-size: 1.5rem;
+    }
+    .explore-blog p {
+        font-size: 0.8rem;
+    }
+    .sex-products {
+        width: 18.5rem;
+    }
+    .sexproduct-img img {
+        width: 10rem;
+        position: absolute;
+        right: 0%;
+        margin-top: -1.5rem;
+    }
+    .sex-products h5 {
+        font-size: 1.5rem;
+    }
+    .sex-products a {
+        font-size: 0.8rem;
+    }
+    .arrow {
+        width: 1.7rem;
+        margin-top: -0.2rem;
+    }
+    .d-flex {
+        margin-top: 4rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .chat-doc {
+        width: 45rem;
+        height: 25rem;
+        margin-left: 0;
+    }
+    .doc-img img {
+        width: 15.3rem;
+        margin-top: 0.2rem;
+    }
+    .chat-feature {
+        margin: 1rem 0 0 3rem;
+    }
+    .chat-doc h5 {
+        font-size: 3rem;
+        width: 50%;
+        letter-spacing: 0.13rem;
+        line-height: 3.2rem;
+    }
+    .chat-doc p {
+        font-size: 1.5rem;
+        letter-spacing: 0.13rem;
+    }
+    .explore-blog {
+        width: 45rem;
+        height: 25rem;
+        margin-top: 2rem;
+    }
+    .blog-feature {
+        margin: 1rem 0 0 3rem;
+    }
+    .exploreblog-img img {
+        width: 28rem;
+        margin-top: 1.2rem;
+    }
+    .explore-blog h5 {
+        font-size: 3rem;
+    }
+    .explore-blog p {
+        font-size: 1.5rem;
+        letter-spacing: 0.14rem;
+    }
+    .sex-products {
+        width: 45rem;
+        height: 25rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .sexproduct-feature {
+        margin: 1rem 0 0 3rem;
+    }
+    .sexproduct-img img {
+        width: 15rem;
+        position: absolute;
+        right: 3%;
+        margin-top: -1rem;
+    }
+    .sex-products h5 {
+        font-size: 3rem;
+        letter-spacing: 0.14rem;
+    }
+    .sex-products a {
+        font-size: 1.5rem;
+        letter-spacing: 0.14rem;
+    }
+    .arrow {
+        width: 2.5rem;
+        margin-top: -0.2rem;
+    }
+    .d-flex {
+        margin-top: 4rem;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 767.98px) {
+    .chat-doc {
+        width: 33.75rem;
+        height: 20rem;
+        margin-left: 0;
+    }
+    .doc-img img {
+        width: 11.8rem;
+        margin-top: 0.2rem;
+    }
+    .chat-feature {
+        margin: 0 0 0 1rem;
+    }
+    .chat-doc h5 {
+        font-size: 2.2rem;
+        width: 50%;
+        letter-spacing: 0.1rem;
+        line-height: 2.3rem;
+    }
+    .chat-doc p {
+        font-size: 1.2rem;
+        letter-spacing: 0.13rem;
+    }
+    .chat-doc .d-flex {
+        margin-top: 3rem;
+    }
+    .explore-blog {
+        width: 33.75rem;
+        height: 20rem;
+        margin-top: 2rem;
+    }
+    .blog-feature {
+        margin: 0.5rem 0 0 1rem;
+    }
+    .exploreblog-img img {
+        width: 22rem;
+        margin-top: 1rem;
+    }
+    .explore-blog h5 {
+        font-size: 2.2rem;
+    }
+    .explore-blog p {
+        font-size: 1.2rem;
+        letter-spacing: 0.14rem;
+    }
+    .sex-products {
+        width: 33.75rem;
+        height: 20rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .sexproduct-feature {
+        margin: 0.5rem 0 0 1rem;
+    }
+    .sexproduct-img img {
+        width: 13rem;
+        position: absolute;
+        right: 2%;
+        margin-top: -1rem;
+    }
+    .sex-products h5 {
+        font-size: 2.2rem;
+        letter-spacing: 0.14rem;
+    }
+    .sex-products a {
+        font-size: 1.2rem;
+        margin-top: -0.2rem;
+        letter-spacing: 0.14rem;
+    }
+    .arrow {
+        width: 2rem;
+    }
+}
+
+@media (min-width: 519px) and (max-width: 549px) {
+    .chat-doc {
+        width: 31rem;
+        height: 19rem;
+        margin-left: 0;
+    }
+    .doc-img img {
+        width: 10.8rem;
+        margin-top: 0.7rem;
+    }
+    .chat-feature {
+        margin: 0.5rem 0 0 1rem;
+    }
+    .chat-doc h5 {
+        font-size: 2.2rem;
+        width: 50%;
+        line-height: 2.5rem;
+    }
+    .chat-doc p {
+        font-size: 1.2rem;
+    }
+    .explore-blog {
+        width: 31rem;
+        height: 19rem;
+        margin-top: 2rem;
+    }
+    .blog-feature {
+        margin: 0.5rem 0 0 1rem;
+    }
+    .exploreblog-img img {
+        width: 19.2rem;
+    }
+    .explore-blog h5 {
+        font-size: 2.2rem;
+    }
+    .explore-blog p {
+        font-size: 1.2rem;
+    }
+    .sex-products {
+        width: 31rem;
+        height: 19rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .sexproduct-feature {
+        margin: 0.5rem 0 0 1rem;
+    }
+    .sexproduct-img img {
+        width: 13rem;
+        position: absolute;
+        right: 1%;
+        margin-top: -1rem;
+    }
+    .sex-products h5 {
+        font-size: 2.2rem;
+    }
+    .sex-products a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 496px) and (max-width: 520px) {
+    .chat-doc {
+        width: 29rem;
+        height: 19rem;
+        margin-left: 0;
+    }
+    .doc-img img {
+        width: 10.8rem;
+        margin-top: 0.7rem;
+    }
+    .chat-feature {
+        margin: 0.5rem 0 0 1rem;
+    }
+    .chat-doc h5 {
+        font-size: 2.2rem;
+        width: 50%;
+        line-height: 2.5rem;
+    }
+    .chat-doc p {
+        font-size: 1.2rem;
+    }
+    .explore-blog {
+        width: 29rem;
+        height: 19rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .blog-feature {
+        margin: 0.5rem 0 0 1rem;
+    }
+    .exploreblog-img img {
+        width: 19.2rem;
+    }
+    .explore-blog h5 {
+        font-size: 2.2rem;
+    }
+    .explore-blog p {
+        font-size: 1.2rem;
+    }
+    .sex-products {
+        width: 29rem;
+        height: 19rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .sexproduct-img img {
+        width: 13rem;
+        position: absolute;
+        right: 1%;
+        margin-top: -1rem;
+    }
+    .sex-products h5 {
+        font-size: 2.2rem;
+    }
+    .sex-products a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 495px) {
+    .chat-doc {
+        width: 27.5rem;
+        margin-left: 0;
+    }
+    .doc-img img {
+        width: 10.1rem;
+        margin-top: 0.7rem;
+    }
+    .chat-feature {
+        margin: 0 0 0 1rem;
+    }
+    .chat-doc h5 {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+    .chat-doc p {
+        font-size: 1.2rem;
+    }
+    .explore-blog {
+        width: 27.5rem;
+        margin-top: 2rem;
+    }
+    .blog-feature {
+        margin: 0 0 0 1rem;
+    }
+    .exploreblog-img img {
+        width: 18rem;
+    }
+    .explore-blog h5 {
+        font-size: 2rem;
+    }
+    .explore-blog p {
+        font-size: 1.2rem;
+    }
+    .sex-products {
+        width: 27.5rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .sexproduct-img img {
+        width: 13rem;
+        position: absolute;
+        right: 1%;
+        margin-top: -1rem;
+    }
+    .sex-products h5 {
+        font-size: 2rem;
+    }
+    .sex-products a {
+        font-size: 1.2rem;
+    }
+    .sexproduct-feature {
+        margin: 0 0 0 1rem;
+    }
+    .d-flex {
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 457px) and (max-width: 480px) {
+    .chat-doc {
+        width: 26.5rem;
+        margin-left: 0;
+    }
+    .chat-doc h5 {
+        font-size: 1.9rem;
+        width: 50%;
+        letter-spacing: 0.1rem;
+        line-height: 2rem;
+    }
+    .explore-blog {
+        width: 26.5rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .explore-blog h5 {
+        font-size: 1.9rem;
+    }
+    .sex-products {
+        width: 26.5rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .sexproduct-img img {
+        width: 11rem;
+        position: absolute;
+        right: 1%;
+        margin-top: -1rem;
+    }
+    .sex-products h5 {
+        font-size: 1.9rem;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 456px) {
+    .chat-doc {
+        width: 25rem;
+        margin-left: 0;
+    }
+    .chat-doc h5 {
+        font-size: 1.9rem;
+        line-height: 2.1rem;
+    }
+    .explore-blog {
+        width: 25rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .explore-blog h5 {
+        font-size: 1.9rem;
+    }
+    .sex-products {
+        width: 25rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .sexproduct-img img {
+        width: 11rem;
+    }
+    .sex-products h5 {
+        font-size: 1.9rem;
+    }
+}
+
+@media (min-width: 395px) and (max-width: 430px) {
+    .chat-doc {
+        width: 23.5rem;
+        margin-left: 0;
+    }
+    .doc-img img {
+        width: 10.4rem;
+        margin-top: 0.2rem;
+    }
+    .chat-doc h5 {
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+    }
+    .chat-doc p {
+        font-size: 1rem;
+    }
+    .explore-blog {
+        width: 23.5rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .explore-blog h5 {
+        font-size: 1.6rem;
+    }
+    .explore-blog p {
+        font-size: 1.2rem;
+    }
+    .sex-products {
+        width: 23.5rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .sexproduct-img img {
+        width: 11rem;
+        margin-top: -1rem;
+    }
+    .sex-products h5 {
+        font-size: 1.6rem;
+    }
+    .sex-products a {
+        font-size: 1rem;
+    }
+    .d-flex {
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 374px) and (max-width: 395px) {
+    .chat-doc {
+        width: 21.5rem;
+        margin-left: 0;
+    }
+    .doc-img img {
+        width: 10.4rem;
+        margin-top: 0.2rem;
+    }
+    .chat-doc h5 {
+        font-size: 1.7rem;
+        line-height: 1.9rem;
+    }
+    .explore-blog {
+        width: 21.5rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .exploreblog-img img {
+        width: 16rem;
+        margin-top: 3.6rem;
+    }
+    .explore-blog h5 {
+        font-size: 1.7rem;
+    }
+    .sex-products {
+        width: 21.5rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .sexproduct-img img {
+        width: 9rem;
+    }
+    .sex-products h5 {
+        font-size: 1.61rem;
+    }
+}
+
+@media (max-width: 373px) {
+    .chat-doc {
+        width: 20rem;
+        padding-left: 1.5rem;
+        margin-left: 0;
+    }
+    .chat-doc .d-flex {
+        margin-top: 3rem;
+    }
+    .chat-doc p {
+        font-size: 1rem;
+    }
+    .explore-blog {
+        width: 20rem;
+        margin-top: 2rem;
+        padding-left: 1.5rem;
+        margin-left: 0;
+    }
+    .exploreblog-img img {
+        width: 15.5rem;
+        margin-top: 4rem;
+    }
+    .sex-products {
+        width: 20rem;
+        margin-top: 2rem;
+        padding-left: 1.5rem;
+        margin-left: 0;
+    }
+    .sex-products h5 {
+        font-size: 1.6rem;
+    }
+    .sexproduct-img img {
+        width: 9rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 349px) {
+    .chat-doc {
+        width: 18rem;
+        height: 16rem;
+        padding-left: 1rem;
+        margin-left: 0;
+    }
+    .chat-doc h5 {
+        font-size: 1.4rem;
+    }
+    .chat-doc .d-flex {
+        margin-top: 3rem;
+    }
+    .doc-img img {
+        width: 8.7rem;
+    }
+    .explore-blog {
+        width: 18rem;
+        height: 16rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .exploreblog-img img {
+        width: 12.8rem;
+    }
+    .sex-products {
+        width: 18rem;
+        height: 16rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .sex-products h5 {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        line-height: 1.6rem;
+    }
+    .sexproduct-img img {
+        width: 8rem;
+        padding-right: 1rem;
+    }
+    .d-flex {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 337px) {
+    .chat-doc {
+        width: 17.5rem;
+        padding-left: 1.2rem;
+        margin-left: 0;
+    }
+    .chat-doc h5 {
+        font-size: 1.4rem;
+    }
+    .chat-doc .d-flex {
+        margin-top: 2.5rem;
+    }
+    .explore-blog {
+        width: 17.5rem;
+        padding-left: 1.2rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .explore-blog h5 {
+        font-size: 1.5rem;
+    }
+    .exploreblog-img img {
+        width: 13rem;
+    }
+    .sex-products {
+        width: 17.5rem;
+        margin-top: 2rem;
+        padding-left: 1.2rem;
+        margin-left: 0;
+    }
+    .sex-products h5 {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        line-height: 1.6rem;
+    }
+    .sexproduct-img img {
+        width: 8rem;
+        padding-right: 1rem;
+    }
+    .d-flex {
+        margin-top: 2.5rem;
+    }
+}
+
+@media (max-width: 318px) {
+    .chat-doc {
+        width: 17rem;
+        height: 15rem;
+        padding-top: 3rem;
+        margin-left: 0;
+    }
+    .chat-doc h5 {
+        font-size: 1.4rem;
+        padding-left: 0.5rem;
+    }
+    .chat-doc p {
+        font-size: 0.85rem;
+        padding-left: 0.5rem;
+    }
+    .doc-img img {
+        margin-top: -0.8rem;
+    }
+    .chat-doc .d-flex {
+        margin-top: 2rem;
+    }
+    .explore-blog {
+        width: 17rem;
+        height: 15rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .explore-blog h5 {
+        font-size: 1.4rem;
+        padding-left: 0.5rem;
+        line-height: 1.8rem;
+    }
+    .explore-blog p {
+        font-size: 0.85rem;
+        padding-left: 0.5rem;
+    }
+    .exploreblog-img img {
+        width: 13rem;
+        margin-top: 2.8rem;
+    }
+    .sex-products {
+        width: 17rem;
+        height: 15rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .sex-products h5 {
+        font-size: 1.4rem;
+        padding-left: 0.5rem;
+        line-height: 1.5rem;
+    }
+    .sex-products a {
+        font-size: 0.85rem;
+        padding-left: 0.5rem;
+    }
+    .sexproduct-img img {
+        width: 7rem;
+    }
+    .d-flex {
+        margin-top: 2.5rem;
+    }
+    .arrow {
+        width: 1.8rem;
+    }
+}
+
+@media (max-width: 309px) {
+    .chat-doc {
+        width: 16rem;
+        margin-left: 0;
+    }
+    .chat-doc h5 {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+    .chat-doc p {
+        font-size: 0.75rem;
+        margin-top: 0.2rem;
+    }
+    .explore-blog {
+        width: 16rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .explore-blog h5 {
+        font-size: 1.3rem;
+        padding-left: 0.5rem;
+    }
+    .explore-blog p {
+        font-size: 0.85rem;
+    }
+    .exploreblog-img img {
+        width: 12rem;
+        margin-top: 3.6rem;
+    }
+    .sex-products {
+        width: 16rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .sex-products h5 {
+        font-size: 1.3rem;
+        padding-left: 0.5rem;
+    }
+    .sex-products a {
+        font-size: 0.85rem;
+    }
+    .sexproduct-img img {
+        width: 6.5rem;
+    }
+    .d-flex {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 293px) {
+    .chat-doc {
+        width: 15rem;
+        height: 14rem;
+        margin-left: 0;
+    }
+    .chat-doc h5 {
+        font-size: 1.2rem;
+        padding-left: -0.5rem;
+    }
+    .chat-doc p {
+        font-size: 0.7rem;
+        margin-top: -0.1rem;
+    }
+    .doc-img img {
+        width: 7rem;
+        margin-top: 0.7rem;
+    }
+    .chat-doc .d-flex {
+        margin-top: 2rem;
+    }
+    .explore-blog {
+        width: 15rem;
+        height: 14rem;
+        margin-top: 2rem;
+    }
+    .explore-blog h5 {
+        font-size: 1.2rem;
+        padding-left: 0.5rem;
+    }
+    .explore-blog p {
+        font-size: 0.7rem;
+        padding-left: 0.2rem;
+    }
+    .exploreblog-img img {
+        width: 11rem;
+        margin-top: 3.3rem;
+    }
+    .sex-products {
+        width: 15rem;
+        height: 14rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .sex-products h5 {
+        font-size: 1.2rem;
+        padding-left: 0.5rem;
+    }
+    .sex-products a {
+        font-size: 0.7rem;
+    }
+    .sexproduct-img img {
+        width: 6rem;
+    }
+    .d-flex {
+        margin-top: 1.5rem;
+    }
+    .arrow {
+        width: 1.5rem;
+    }
+}
