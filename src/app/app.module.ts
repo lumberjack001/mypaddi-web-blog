@@ -32,6 +32,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthComponent } from './layout/auth/auth.component';
 import { LandingPageComponent } from './layout/landing-page/landing-page.component';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
+import { LoginComponent } from './components/auth/login/login.component';
+import { RegisterComponent } from './components/auth/register/register.component';
+import { RequestResetComponent } from './components/auth/request-reset/request-reset.component';
+import { ResetPasswordComponent } from './components/auth/reset-password/reset-password.component';
+
 import { LandingpageheaderComponent } from './components/landing-page/landingpageheader/landingpageheader.component';
 import { LandingpageNavbarComponent } from './partials/landingpage-navbar/landingpage-navbar.component';
 import { LandingpageFooterComponent } from './partials/landingpage-footer/landingpage-footer.component';
@@ -48,6 +53,10 @@ import { ModalComponent } from './partials/modal/modal.component';
     AuthComponent,
     LandingPageComponent,
     DashboardComponent,
+    LoginComponent,
+    RegisterComponent,
+    RequestResetComponent,
+    ResetPasswordComponent,
     LandingpageheaderComponent,
     LandingpageNavbarComponent,
     LandingpageFooterComponent,
