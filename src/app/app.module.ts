@@ -56,7 +56,7 @@ import { ModalComponent } from './partials/modal/modal.component';
     LoginComponent,
     RegisterComponent,
     RequestResetComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
     LandingpageheaderComponent,
     LandingpageNavbarComponent,
     LandingpageFooterComponent,
