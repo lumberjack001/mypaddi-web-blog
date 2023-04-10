@@ -54,16 +54,16 @@
             margin-top: 5rem;
             padding: 0 1rem;
         }
-        h5 {
-            width: 100%;
-            font-size: 2.3rem;
-            line-height: 2.8rem;
-        }
-        p {
-            width: 100%;
-            font-size: 1.7rem;
-            margin-bottom: 2rem;
-        }
+        // h5 {
+        //     width: 100%;
+        //     font-size: 2.3rem;
+        //     line-height: 2.8rem;
+        // }
+        // p {
+        //     width: 100%;
+        //     font-size: 1.7rem;
+        //     margin-bottom: 2rem;
+        // }
         .btn-blue {
             order: -1;
             padding: 0 1rem;
@@ -154,12 +154,26 @@
         max-width: 58rem;
         h5 {
             width: 100%;
-            font-size: 1.69rem;
-            line-height: 3rem;
+            font-size: 1.62rem;
+            line-height: 2.5rem;
         }
         p {
             width: 100%;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
+        }
+        .text {
+            padding-left: 3rem;
+        }
+        .btn {
+            margin-left: 1rem;
+        }
+    }
+}
+
+@media (min-width: 280px) and (max-width: 374px) {
+    .container {
+        h5 {
+            font-size: 2rem;
         }
     }
 }
