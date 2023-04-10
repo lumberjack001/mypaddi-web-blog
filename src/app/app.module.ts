@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
@@ -36,6 +37,15 @@ import { RegisterComponent } from './components/auth/register/register.component
 import { RequestResetComponent } from './components/auth/request-reset/request-reset.component';
 import { ResetPasswordComponent } from './components/auth/reset-password/reset-password.component';
 
+import { LandingpageheaderComponent } from './components/landing-page/landingpageheader/landingpageheader.component';
+import { LandingpageNavbarComponent } from './partials/landingpage-navbar/landingpage-navbar.component';
+import { LandingpageFooterComponent } from './partials/landingpage-footer/landingpage-footer.component';
+import { LandingpagePartnerComponent } from './partials/landingpage-partner/landingpage-partner.component';
+import { MainCarouselComponent } from './partials/carousels/main-carousel/main-carousel.component';
+import { LandingpagefeaturesComponent } from './components/landing-page/landingpage-features/landingpage-features.component';
+import { LandingpageCampaignComponent } from './components/landing-page/landingpage-campaign/landingpage-campaign.component';
+import { RadioBtnComponent } from './partials/radio-btn/radio-btn.component';
+import { ModalComponent } from './partials/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -46,10 +56,20 @@ import { ResetPasswordComponent } from './components/auth/reset-password/reset-p
     LoginComponent,
     RegisterComponent,
     RequestResetComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+    LandingpageheaderComponent,
+    LandingpageNavbarComponent,
+    LandingpageFooterComponent,
+    LandingpagePartnerComponent,
+    MainCarouselComponent,
+    LandingpagefeaturesComponent,
+    LandingpageCampaignComponent,
+    RadioBtnComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
+    NgbModule,
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
