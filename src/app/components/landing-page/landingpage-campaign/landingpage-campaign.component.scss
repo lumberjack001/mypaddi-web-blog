@@ -1,0 +1,179 @@
+.container {
+    height: auto;
+    background-color: var(--bg-blue-2);
+    border-radius: 2.8rem;
+    padding: 2.2rem 2.2rem;
+    h5 {
+        width: 100%;
+        font-weight: 700;
+        font-size: 2.2rem;
+        line-height: 3.2rem;
+        color: var(--text-blue);
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    p {
+        width: 80%;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: var(--text-grey-2);
+        margin-top: 1rem;
+    }
+    .text {
+        padding-left: 3.5rem;
+        align-self: center;
+    }
+    .btn {
+        background: #2c67f5;
+        border-radius: 62.5rem;
+        font-weight: 900;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        color: #ffffff;
+        padding: 0.94rem 3.7rem;
+        width: max-content;
+        text-transform: capitalize;
+        border: none;
+        margin-left: 3rem;
+    }
+    .d-flex {
+        flex-direction: column;
+        align-self: center;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 991px) {
+    .container {
+        margin-top: 3rem;
+        background-color: var(--bg-white);
+        padding: 0;
+        .text {
+            order: -1;
+            margin-top: 5rem;
+            padding: 0 1rem;
+        }
+        // h5 {
+        //     width: 100%;
+        //     font-size: 2.3rem;
+        //     line-height: 2.8rem;
+        // }
+        // p {
+        //     width: 100%;
+        //     font-size: 1.7rem;
+        //     margin-bottom: 2rem;
+        // }
+        .btn-blue {
+            order: -1;
+            padding: 0 1rem;
+        }
+        .btn {
+            margin-left: 0;
+        }
+        .containers {
+            background-color: var(--bg-white);
+            padding: 0;
+            margin-top: 2rem;
+        }
+        .Advocacy-carousel {
+            .carousel-indicators {
+                display: flex;
+            }
+            .carousel-indicators [data-bs-target] {
+                height: 0.4rem;
+                width: 0.4rem;
+                border-radius: 100%;
+                margin: 0 0.4rem;
+                border: 1px solid var(--bg-carousel-indicator);
+                background-color: var(--bg-carousel-indicator);
+                cursor: pointer;
+            }
+            .carousel-indicators .active {
+                border: 1px solid #2C67F5;
+                border-radius: 1rem;
+                background-color: #2C67F5;
+                width: 1.4rem;
+                height: 0.5rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .container {
+        max-width: 69rem;
+        h5 {
+            width: 100%;
+            font-size: 1.9rem;
+            line-height: 3rem;
+        }
+        p {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+    .container {
+        h5 {
+            width: 100%;
+            font-size: 2.5rem;
+            line-height: 3.8rem;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        .text {
+            padding: 0 1rem;
+        }
+        .d-flex {
+            padding: 1rem 1rem;
+        }
+        h5 {
+            width: 80%;
+            font-size: 2.7rem;
+            line-height: 3.5rem;
+        }
+        p {
+            font-size: 2rem;
+            width: 90%;
+            line-height: 3rem;
+        }
+    }
+    .row {
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 58rem;
+        h5 {
+            width: 100%;
+            font-size: 1.62rem;
+            line-height: 2.5rem;
+        }
+        p {
+            width: 100%;
+            font-size: 1.1rem;
+        }
+        .text {
+            padding-left: 3rem;
+        }
+        .btn {
+            margin-left: 1rem;
+        }
+    }
+}
+
+@media (min-width: 280px) and (max-width: 374px) {
+    .container {
+        h5 {
+            font-size: 2rem;
+        }
+    }
+}

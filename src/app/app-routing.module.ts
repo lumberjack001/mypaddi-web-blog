@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AuthComponent } from './layout/auth/auth.component'
+import { AuthComponent } from './layout/auth/auth.component';
 import { LandingPageComponent } from './layout/landing-page/landing-page.component';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
 import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import { RequestResetComponent } from './components/auth/request-reset/request-reset.component';
 import { ResetPasswordComponent } from './components/auth/reset-password/reset-password.component';
+
+
 
 const routes: Routes = [
   {

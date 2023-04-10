@@ -1,138 +1,157 @@
 /* You can add global styles to this file, and also import other style files */
+
 @font-face {
-  font-family: "Product Sans Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Product Sans Regular"),
-    url("assets/fonts/google/ProductSans-Regular.ttf") format("truetype");
-  font-display: swap;
+    font-family: "Product Sans Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Product Sans Regular"), url("assets/fonts/google/ProductSans-Regular.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Product Sans Thin Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Product Sans Thin Regular"),
-    url("assets/fonts/google/ProductSans-Thin.ttf") format("truetype");
-  font-display: swap;
+    font-family: "Product Sans Thin Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Product Sans Thin Regular"), url("assets/fonts/google/ProductSans-Thin.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Product Sans Light Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Product Sans Light Regular"),
-    url("assets/fonts/google/ProductSans-Light.ttf") format("truetype");
-  font-display: swap;
+    font-family: "Product Sans Light Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Product Sans Light Regular"), url("assets/fonts/google/ProductSans-Light.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Product Sans Medium Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Product Sans Medium Regular"),
-    url("assets/fonts/google/ProductSans-Medium.ttf") format("truetype");
-  font-display: swap;
+    font-family: "Product Sans Medium Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Product Sans Medium Regular"), url("assets/fonts/google/ProductSans-Medium.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Product Sans Black Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Product Sans Black Regular"),
-    url("assets/fonts/google/ProductSans-Black.ttf") format("truetype");
-  font-display: swap;
+    font-family: "Product Sans Black Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Product Sans Black Regular"), url("assets/fonts/google/ProductSans-Black.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Product Sans Thin Italic";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Product Sans Thin Italic"),
-    url("assets/fonts/google/ProductSans-ThinItalic.ttf") format("truetype");
-  font-display: swap;
+    font-family: "Product Sans Thin Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Product Sans Thin Italic"), url("assets/fonts/google/ProductSans-ThinItalic.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Product Sans Medium Italic";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Product Sans Medium Italic"),
-    url("assets/fonts/google/ProductSans-MediumItalic.ttf") format("truetype");
-  font-display: swap;
+    font-family: "Product Sans Medium Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Product Sans Medium Italic"), url("assets/fonts/google/ProductSans-MediumItalic.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Product Sans Black Italic";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Product Sans Black Italic"),
-    url("assets/fonts/google/ProductSans-BlackItalic.ttf") format("truetype");
-  font-display: swap;
+    font-family: "Product Sans Black Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Product Sans Black Italic"), url("assets/fonts/google/ProductSans-BlackItalic.ttf") format("truetype");
+    font-display: swap;
 }
 
 * {
-  font-family: "Product Sans Regular";
+    font-family: "Product Sans Regular";
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 body {
-  --text-blue: #002455; // #FFFFFF
-  --text-blue-2: #3289FF; // #E2EEFF
-  --text-black: #000000; // #FFFFFF
-  --text-green: #004765; // #FFFFFF
-  --text-grey: #706E6E; // #BBBBBB
-  --text-grey-2: #9A9A9A; // #7C8899
-  --text-dark-grey: #202124; // #FFFFFF
-  --subtext-green: #004765; // #7C8899
-  --text-continue: #009EE1; // #8D9A9F
-  --bg-white: #FFFFFF; // #0D0D0D
-  --bg-grey: #F0F0F0; //#202020
-  --bg-blue: #C2D4FF; // #202228
-  --bg-blue-2: #EBF3FF; // #1F2228
-  --bg-blue-3: #D4E5FF; // #31353A
-  --bg-nav-active: #EBF3FF; // #2C67F5
-  --nav-active: #3289FF; // #FFFFFF
-  --bg-light-orange: #F9F1EC; // #202020
-  --bg-light-orange2: #F9F1EC; // #101010
-  --bg-search: #F5F5F5; // #2F3236
-  --bg-share: #3289FF; // #25282D
-  --bg-subscription: #EBF3FF; // #353535
-  --bg-select-category: #EBF3FF; // #2F3236
-  --bg-audio: #E4F2FB; // #202020
-  --bg-audio-featured: #F4F4F4; // #202020
-  --bg-chat-modal: #F5F5F5; // #202020
-  --bg-audio-modal: #FFFAFA; // #101010
+    --text-blue: #002455; // #FFFFFF
+    --text-blue-2: #3289FF; // #E2EEFF
+    --text-black: #000000; // #FFFFFF
+    --text-green: #004765; // #FFFFFF
+    --text-grey: #706E6E; // #BBBBBB
+    --text-grey-2: #9A9A9A; // #7C8899
+    --text-dark-grey: #202124; // #FFFFFF
+    --subtext-green: #004765; // #7C8899
+    --text-continue: #009EE1; // #8D9A9F
+    --bg-white: #FFFFFF; // #0D0D0D
+    --bg-grey: #F0F0F0; //#202020
+    --bg-blue: #C2D4FF; // #202228
+    --bg-blue-2: #EBF3FF; // #1F2228
+    --bg-blue-3: #D4E5FF; // #31353A
+    --bg-nav-active: #EBF3FF; // #2C67F5
+    --nav-active: #3289FF; // #FFFFFF
+    --bg-light-orange: #F9F1EC; // #202020
+    --bg-light-orange2: #F9F1EC; // #101010
+    --bg-search: #F5F5F5; // #2F3236
+    --bg-share: #3289FF; // #25282D
+    --bg-subscription: #EBF3FF; // #353535
+    --bg-select-category: #EBF3FF; // #2F3236
+    --bg-audio: #E4F2FB; // #202020
+    --bg-audio-featured: #F4F4F4; // #202020
+    --bg-chat-modal: #F5F5F5; // #202020
+    --bg-audio-modal: #FFFAFA; // #101010
+    --bg-carousel-indicator: #D8D8D8; //#404040
 }
 
 body.dark-theme {
-  --text-blue: #FFFFFF;
-  --text-blue-2: #E2EEFF;
-  --text-black: #FFFFFF;
-  --text-green: #FFFFFF;
-  --text-grey: #BBBBBB;
-  --text-grey-2: #7C8899;
-  --text-dark-grey: #FFFFFF;
-  --subtext-green: #7C8899;
-  --text-continue: #8D9A9F;
-  --bg-white: #0D0D0D;
-  --bg-grey: #202020;
-  --bg-blue: #202228;
-  --bg-blue-2: #1F2228;
-  --bg-blue-3: #31353A;
-  --bg-nav-active: #2C67F5;
-  --nav-active: #FFFFFF;
-  --bg-light-orange: #202020;
-  --bg-light-orange2: #101010;
-  --bg-search: #2F3236;
-  --bg-share: #25282D;
-  --bg-subscription: #353535;
-  --bg-select-category: #2F3236;
-  --bg-audio: #202020;
-  --bg-audio-featured: #202020;
-  --bg-chat-modal: #202020;
-  --bg-audio-modal: #101010;
+    --text-blue: #FFFFFF;
+    --text-blue-2: #E2EEFF;
+    --text-black: #FFFFFF;
+    --text-green: #FFFFFF;
+    --text-grey: #BBBBBB;
+    --text-grey-2: #7C8899;
+    --text-dark-grey: #FFFFFF;
+    --subtext-green: #7C8899;
+    --text-continue: #8D9A9F;
+    --bg-white: #0D0D0D;
+    --bg-grey: #202020;
+    --bg-blue: #202228;
+    --bg-blue-2: #1F2228;
+    --bg-blue-3: #31353A;
+    --bg-nav-active: #2C67F5;
+    --nav-active: #FFFFFF;
+    --bg-light-orange: #202020;
+    --bg-light-orange2: #101010;
+    --bg-search: #2F3236;
+    --bg-share: #25282D;
+    --bg-subscription: #353535;
+    --bg-select-category: #2F3236;
+    --bg-audio: #202020;
+    --bg-audio-featured: #202020;
+    --bg-chat-modal: #202020;
+    --bg-audio-modal: #101010;
+    --bg-carousel-indicator: #404040;
+}
+
+.main-carousel {
+    .carousel-indicators [data-bs-target] {
+        height: 0.4rem;
+        width: 0.4rem;
+        border-radius: 100%;
+        margin: 0 0.4rem;
+        border: 1px solid var(--bg-carousel-indicator);
+        background-color: var(--bg-carousel-indicator);
+        &[class="active"] {
+            border: 1px solid #2C67F5;
+            border-radius: 1rem;
+            background-color: #2C67F5;
+            width: 1.4rem;
+            height: 0.5rem;
+        }
+    }
+}
+
+.carousel-indicators {
+    overflow: hidden;
+    margin-bottom: -3rem;
+    z-index: 20;
 }
