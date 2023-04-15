@@ -1,0 +1,40 @@
+.wrapper{
+    padding-inline: 3rem;
+}
+.left-sidebar{
+    width: 15%;
+    padding: 0;
+}
+.right-sidebar{
+    width: 23%;
+    padding: 0;
+}
+
+@media (max-width:1200px) {
+    .right-sidebar{
+        display: none;
+    }
+    .left-sidebar{
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-icons{
+        display: block !important;
+        position: absolute;
+        bottom: 0;
+        width: 85%;
+        padding-block: 1.5rem;
+
+    }
+}
+
+@media (max-width: 380px) {
+    .wrapper{
+        padding-inline: 1rem;
+    }
+    .nav-icons{
+        width: 92%;
+    }
+}
