@@ -1,16 +1,22 @@
 <div class="d-flex wrapper justify-content-between align-items-center ">
-    <div class="logo">
-        <img src="assets/images/logo_light.svg" alt="myPaddi">
+    <div class="d-flex">
+        <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#settingsCollapse">
+            <img src="/assets/images/hamburger_menu.svg" alt="nav-hamburger" class="img-fluid w-100">
+        </button>
+        <div class="collapse testing" id="settingsCollapse">
+            <app-left-sidebar class="testing1"></app-left-sidebar>
+        </div>
+        
+        <a routerLink="/" class="logo">
+            <img src="assets/images/logo_light.svg" alt="myPaddi">
+        </a>
     </div>
+    
 
-    <div class="nav-icons d-flex justify-content-between w-25">
-        <a href=""><img src="assets/images/blog_icon_inactive.svg" alt="blog link"></a>
-        <a href=""><img src="assets/images/chat_icon_inactive.svg" alt="chat link"></a>
-        <a href=""><img src="assets/images/audio_icon_inactive.svg" alt="audio link"></a>
-    </div>
+    <app-nav-icons class="w-25 nav-icons"></app-nav-icons>
 
     <div class="notifications d-flex align-items-center justify-content-between">
-        <form class="search" action="" >
+        <form class="search d-flex justify-content-between" action="" >
             <input type="text" placeholder="Enter Keyword">
             <button><img src="assets/images/search_icon_light.svg" alt=""></button>
         </form>

@@ -1,9 +1,14 @@
 .wrapper{
-    padding-inline: 4rem;
     padding-block: 2rem;
 }
-.notifications{
-    width: 33%;
+// .notifications{
+//     width: 33%;
+// }
+
+.logo{
+    margin-left: 1rem;
+    z-index: 99999;
+
 }
 
 .search{
@@ -12,11 +17,14 @@
     padding-inline: 1rem;
     border-radius: 1.5rem;
     margin: 0;
+    width: 55%;
+    position: relative;
 }
 .search input{
     border: 0;
     outline: 0;
     background-color: transparent;
+    width: 80%;
 }
 
 .search button{
@@ -24,9 +32,67 @@
     border: 0;
     outline: 0;
 }
-.nav-icons img{
-    width: 80%;
-}
+
 .user-icon img{
     border-radius: 50%;
+}
+@media (max-width:1200px){
+    .navbar-toggler{
+        display: block !important;
+        z-index: 99999;
+    }
+    .testing{
+        position: relative;
+    }
+    .testing1{
+        position: fixed;
+        inset: 12% 73% 10% 4%;
+        padding: min(20vh, 1rem) 1rem;
+        z-index: 999;
+        // background: hsl(0 0% 100% / 0.3);
+        background-color: white;
+        border:0.1px solid rgba(0,0,0,.15);
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .nav-icons{
+        display: none;
+    }
+    
+}
+@media (max-width:876px) {
+    .testing1{
+        inset: 12% 60% 10% 4%;
+    }
+}
+@media (max-width:592px) {
+    
+    .notifications{
+        width: 40%;
+    }
+    .search{
+        background-color: transparent;
+        width: 0;
+        justify-content: space-around !important;
+    }
+    .search input{
+        position: absolute;
+        width: 80%;
+        display: none;
+    }
+    .testing1{
+        inset: 12% 50% 10% 4%;
+    }
+}
+@media (max-width: 420px) {
+    .testing1{
+        inset: 12% 25% 10% 4%;
+    }
+}
+@media (max-width: 285px) {
+    .testing1{
+        inset: 12% 10% 10% 4%;
+    }
 }
