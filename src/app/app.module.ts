@@ -49,6 +49,7 @@ import { ModalComponent } from './partials/modal/modal.component';
 import { HeaderComponent } from './partials/header/header.component';
 import { LeftSidebarComponent } from './partials/left-sidebar/left-sidebar.component';
 import { RightSidebarComponent } from './partials/right-sidebar/right-sidebar.component';
+import { NavIconsComponent } from './partials/nav-icons/nav-icons.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { RightSidebarComponent } from './partials/right-sidebar/right-sidebar.co
     ModalComponent,
     HeaderComponent,
     LeftSidebarComponent,
-    RightSidebarComponent
+    RightSidebarComponent,
+    NavIconsComponent
   ],
   imports: [
     BrowserModule,
