@@ -1,8 +1,7 @@
 .wrapper{
-    padding-inline: 1rem;
     padding-top: 2rem;
-    width: 80%;
-    margin: 0 auto;
+    // width: 80%;
+    // margin: 0 auto;
 }
 button{
     border: 0;
@@ -33,4 +32,12 @@ button{
 
 .discount-img img{
     border-radius: 1rem;
+}
+@media (max-width:1263px) {
+    .subscription-card{
+        padding: 0.8rem;
+    }
+    .sub-btn{
+        padding: 0.3rem 0.7rem;
+    }
 }
