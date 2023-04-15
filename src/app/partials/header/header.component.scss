@@ -37,19 +37,14 @@
     border-radius: 50%;
 }
 @media (max-width:1200px){
-    .navbar-toggler{
-        display: block !important;
-        z-index: 99999;
-    }
     .testing{
         position: relative;
     }
     .testing1{
         position: fixed;
-        inset: 12% 73% 10% 4%;
+        inset: 10% 73% 10% 4%;
         padding: min(20vh, 1rem) 1rem;
         z-index: 999;
-        // background: hsl(0 0% 100% / 0.3);
         background-color: white;
         border:0.1px solid rgba(0,0,0,.15);
     }
@@ -60,13 +55,11 @@
     .nav-icons{
         display: none;
     }
-    
-}
-@media (max-width:876px) {
     .testing1{
-        inset: 12% 60% 10% 4%;
+        inset: 10% 60% 10% 4%;
     }
 }
+
 @media (max-width:592px) {
     
     .notifications{
@@ -83,16 +76,16 @@
         display: none;
     }
     .testing1{
-        inset: 12% 50% 10% 4%;
+        inset: 10% 50% 10% 4%;
     }
 }
 @media (max-width: 420px) {
     .testing1{
-        inset: 12% 25% 10% 4%;
+        inset: 11% 25% 10% 4%;
     }
 }
 @media (max-width: 285px) {
     .testing1{
-        inset: 12% 10% 10% 4%;
+        inset: 11% 10% 10% 4%;
     }
 }
