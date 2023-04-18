@@ -45,7 +45,8 @@ import { MainCarouselComponent } from './partials/carousels/main-carousel/main-c
 import { LandingpagefeaturesComponent } from './components/landing-page/landingpage-features/landingpage-features.component';
 import { LandingpageCampaignComponent } from './components/landing-page/landingpage-campaign/landingpage-campaign.component';
 import { RadioBtnComponent } from './partials/radio-btn/radio-btn.component';
-import { ModalComponent } from './partials/modal/modal.component';
+import { SubscriptionComponent } from './partials/modals/subscription/subscription.component';
+
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { ModalComponent } from './partials/modal/modal.component';
     LandingpagefeaturesComponent,
     LandingpageCampaignComponent,
     RadioBtnComponent,
-    ModalComponent
+    SubscriptionComponent,
+  
   ],
   imports: [
     BrowserModule,
