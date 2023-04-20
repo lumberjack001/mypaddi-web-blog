@@ -37,10 +37,10 @@
     border-radius: 50%;
 }
 @media (max-width:1200px){
-    .testing{
+    .collapse{
         position: relative;
     }
-    .testing1{
+    .side-menu{
         position: fixed;
         inset: 10% 73% 10% 4%;
         padding: min(20vh, 1rem) 1rem;
@@ -55,7 +55,7 @@
     .nav-icons{
         display: none;
     }
-    .testing1{
+    .side-menu{
         inset: 10% 60% 10% 4%;
     }
 }
@@ -75,17 +75,17 @@
         width: 80%;
         display: none;
     }
-    .testing1{
+    .side-menu{
         inset: 10% 50% 10% 4%;
     }
 }
 @media (max-width: 420px) {
-    .testing1{
+    .side-menu{
         inset: 11% 25% 10% 4%;
     }
 }
 @media (max-width: 285px) {
-    .testing1{
+    .side-menu{
         inset: 11% 10% 10% 4%;
     }
 }
