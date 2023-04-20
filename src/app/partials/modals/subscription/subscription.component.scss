@@ -1,15 +1,14 @@
 .modal-content {
     background: var(--bg-white);
     width: 90%;
-    max-height: 37.5rem;
+    max-height: 38rem;
     left: 5%;
-    margin: -1rem 0;
     border-radius: 2rem;
 }
 
 .chat-box {
     width: 20rem;
-    height: 13rem;
+    max-height: 13rem;
     background: var(--bg-chat-modal);
     border-radius: 2rem;
     margin-top: 3rem;
@@ -17,14 +16,14 @@
 
 .audio-box {
     width: 20rem;
-    height: 14.5rem;
+    max-height: 14.5rem;
     background: var(--bg-audio-modal);
     border-radius: 2rem;
     margin-top: 3rem;
 }
 
 .img-1 {
-    width: 8.2rem;
+    width: 8.3rem;
     margin-left: 5rem;
     padding-top: 3rem;
 }
@@ -87,7 +86,6 @@
 .modal-list-title {
     text-align: center;
     color: #3f6fff;
-    // padding-bottom: 0.5rem;
     margin-top: 2.5rem;
     font-weight: 700;
 }
@@ -107,7 +105,6 @@
 
 .time {
     margin-right: 3rem;
-    // margin-left: -5.5rem;
 }
 
 .time p {
@@ -159,12 +156,10 @@
 .footer2 {
     margin-top: 0.5rem;
     margin-bottom: 5rem;
-    // margin-left: 3.6rem;
 }
 
 .radio-btn {
     margin-top: -1.3rem;
-    // margin-left: -3.5rem;
     position: absolute;
     right: 16%;
 }
@@ -174,10 +169,20 @@
     margin-left: 5rem;
 }
 
+@media (max-width: 2500px) {
+    #secondModal {
+        top: 24%;
+    }
+}
+
 @media (max-width: 577px) {
     .modal-content {
         width: 85%;
         left: 7.5%;
+        margin-top: 2rem;
+    }
+    .modal-list-title {
+        margin-top: 3.5rem;
     }
     .list {
         padding: 0.5rem 9rem 0.5rem 1.2rem;
@@ -198,6 +203,7 @@
     .modal-content {
         width: 100%;
         left: 0;
+        margin-top: 2rem;
     }
     .planbtn1 {
         width: 15.5rem;
@@ -207,7 +213,7 @@
         margin-top: 0.1rem;
     }
     .list {
-        padding: 0.5rem 10rem 0.5rem 1.2rem;
+        padding: 0.5rem 7rem 0.5rem 1.2rem;
     }
     .time p {
         font-size: 0.6rem;
@@ -217,17 +223,17 @@
     }
     .chatplanbtn {
         font-size: 0.6rem;
-        right: 28%;
+        right: 29%;
     }
     .chatplanbtn1 {
         font-size: 0.6rem;
-        right: 28%;
+        right: 29%;
     }
     .time {
         // margin-right: -1rem;
     }
     .radio-btn {
-        right: 16%;
+        right: 17%;
     }
 }
 
@@ -236,7 +242,7 @@
         right: 15%;
     }
     .list {
-        padding: 0.5rem 9rem 0.5rem 1.2rem;
+        padding: 0.5rem 7rem 0.5rem 1.2rem;
     }
     .chatplanbtn {
         right: 28%;
@@ -246,17 +252,81 @@
     }
 }
 
-@media (max-width: 350px) {
-    // .radio-btn {
-    //     right: 15%;
-    // }
+@media (min-width: 291px) and (max-width: 350px) {
+    .radio-btn {
+        right: 10%;
+    }
     .list {
-        padding: 0.5rem 6rem 0.5rem 1.2rem;
+        padding: 0.5rem 4.5rem 0.5rem 1.2rem;
     }
     .chatplanbtn {
-        right: 28%;
+        padding: 0.2rem 0.8rem;
+        right: 27%;
     }
     .chatplanbtn1 {
-        right: 28%;
+        padding: 0.2rem 0.8rem;
+        right: 27%;
+    }
+    .time {
+        margin-right: 4rem;
+    }
+    .planbtn1 {
+        width: 17rem;
+    }
+    .img-1 {
+        width: 7rem;
+    }
+}
+
+@media (max-width: 325px) {
+    .img-1 {
+        width: 6.9rem;
+        // margin-left: 4rem;
+    }
+    .img-2 {
+        width: 16rem;
+    }
+    .audio-box {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 290px) {
+    .list {
+        padding: 0.5rem 4.2rem 0.5rem 1.2rem;
+    }
+    .chatplanbtn {
+        padding: 0.2rem 0.7rem;
+        right: 22%;
+    }
+    .chatplanbtn1 {
+        padding: 0.2rem 0.7rem;
+        right: 22%;
+    }
+    .radio-btn {
+        right: 7%;
+    }
+    .time {
+        margin-left: -0.5rem;
+    }
+    .planbtn1 {
+        width: 14.5rem;
+    }
+    .chat-box {
+        width: 100%;
+    }
+    .img-1 {
+        width: 6.35rem;
+        margin-left: 4rem;
+    }
+    .img-2 {
+        width: 15rem;
+        margin-left: -1rem;
+    }
+    .audio-box {
+        width: 100%;
+    }
+    .caption p {
+        font-size: 0.85rem;
     }
 }
