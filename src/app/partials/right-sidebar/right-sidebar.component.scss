@@ -11,22 +11,6 @@ button{
         width: 20%;
     }
 }
-.subscription-card{
-    background-color: var(--bg-blue-2);
-    padding: 1rem;
-    border-radius: 1rem;
-}
-.sub-btn{
-    color: #FFf;
-    background-color: #2C67F5;
-    padding: 0.3rem 1rem;
-    border-radius: 1.5rem;
-}
-.sub-time{
-    margin-bottom: 0;
-    margin-left: 0.6rem;
-    font-weight: 600;
-}
 
 .discount-img img{
     border-radius: 1rem;
@@ -102,12 +86,4 @@ button{
 }
 .feature-link3{
     color: #756AED;
-}
-@media (max-width:1263px) {
-    .subscription-card{
-        padding: 0.8rem;
-    }
-    .sub-btn{
-        padding: 0.3rem 0.7rem;
-    }
 }
