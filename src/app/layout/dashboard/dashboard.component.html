@@ -2,8 +2,8 @@
     <app-header></app-header>
     <div class="d-flex flex-row justify-content-between">
         <app-left-sidebar class="left-sidebar"></app-left-sidebar>
-        <div class="col-lg col-xl-7">
-            testing
+        <div class="main-content col-lg-12 col-xl-7 d-flex flex-column">
+            <app-subscription class="subscription"></app-subscription>
             <router-outlet></router-outlet>
         </div>
         <app-right-sidebar class="right-sidebar"></app-right-sidebar>

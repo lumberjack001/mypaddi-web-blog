@@ -9,13 +9,18 @@
     width: 23%;
     padding: 0;
 }
-
+.subscription{
+    display: none;
+}
 @media (max-width:1200px) {
     .right-sidebar{
         display: none;
     }
     .left-sidebar{
         display: none;
+    }
+    .subscription{
+        display: block;
     }
 }
 
@@ -27,6 +32,9 @@
         width: 85%;
         padding-block: 1.5rem;
 
+    }
+    .main-content{
+        width: 100%;
     }
 }
 
