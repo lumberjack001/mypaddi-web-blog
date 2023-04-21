@@ -21,6 +21,7 @@
     }
     .subscription{
         display: block;
+        width: 40%;
     }
 }
 
@@ -34,6 +35,22 @@
 
     }
     .main-content{
+        width: 100%;
+    }
+}
+
+@media (max-width:750px) {
+    .subscription{
+        width: 50%;
+    }
+}
+@media (max-width:625px) {
+    .subscription{
+        width: 65%;
+    }
+}
+@media (max-width:480px) {
+    .subscription{
         width: 100%;
     }
 }
