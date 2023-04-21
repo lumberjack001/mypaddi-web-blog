@@ -169,12 +169,6 @@
     margin-left: 5rem;
 }
 
-@media (max-width: 2500px) {
-    #secondModal {
-        top: 24%;
-    }
-}
-
 @media (max-width: 577px) {
     .modal-content {
         width: 85%;
@@ -229,9 +223,6 @@
         font-size: 0.6rem;
         right: 29%;
     }
-    .time {
-        // margin-right: -1rem;
-    }
     .radio-btn {
         right: 17%;
     }
@@ -281,7 +272,6 @@
 @media (max-width: 325px) {
     .img-1 {
         width: 6.9rem;
-        // margin-left: 4rem;
     }
     .img-2 {
         width: 16rem;
