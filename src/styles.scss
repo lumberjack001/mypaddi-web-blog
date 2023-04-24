@@ -155,27 +155,33 @@ body.dark-theme {
     }
 }
 
-
-.dashboard-carousel{
+.modal {
     .carousel-indicators [data-bs-target] {
-        height: 0.4rem;
+        height: 0.35rem;
         width: 0.4rem;
         border-radius: 100%;
         margin: 0 0.4rem;
         border: 1px solid var(--bg-carousel-indicator);
         background-color: var(--bg-carousel-indicator);
         &[class="active"] {
-            border: 1px solid #3289FF;
+            border: 1px solid #2C67F5;
             border-radius: 1rem;
-            background-color: #3289FF;
-            // width: 1.4rem;
-            // height: 0.5rem;7
+            background-color: #2C67F5;
+            width: 1rem;
+            height: 0.35rem;
         }
     }
-
     .carousel-indicators {
-        overflow: hidden;
-        margin-bottom: -1.5rem;
+        overflow: visible;
+        margin-bottom: -1.2rem;
         z-index: 20;
+    }
+    .carousel-inner {
+        overflow-y: visible;
+        overflow-x: hidden;
+    }
+    .caption {
+        top: 100%;
+        margin-top: 2rem;
     }
 }
