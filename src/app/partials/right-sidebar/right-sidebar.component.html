@@ -1,0 +1,57 @@
+<div class="wrapper d-flex flex-column gap-5">
+    <app-subscription class=""></app-subscription>
+
+    <div class="dashboard-carousel">
+        <ngb-carousel>
+            <ng-template ngbSlide>
+                <div class="chat-doc carousel-card d-flex">
+                    <div class="card-text">
+                        <h5 class="card-text1">Chat with a <br> Doctor or <br>Counselor <br>for free</h5>
+                        <span class="d-flex align-items-center mt-4">
+                            <a  [routerLink]="['/chat']" class="feature-link  feature-link1">GET STARTED</a> 
+                            <img src="/assets/images/arrow_right_light.svg" alt="arrow1" class="img-fluid arrow">
+                        </span>
+                    </div>
+                    <div class="card-img card-img1">
+                        <img src="/assets/images/chat_doc.svg" alt="chat-doc" class="img-fluid img-responsive">
+                    </div>
+                    <div class="card-img card-img1-cross">
+                        <img src="/assets/images/doctor_cross.svg" alt="cross" class="img-fluid">
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="explore-blog carousel-card d-flex">
+                    <div class="card-text">
+                        <h5 class="card-text2">Explore<br> the  health <br> Blog</h5>
+                        <span class="d-flex align-items-center mt-4">
+                            <a [routerLink]="['/blog']" class="feature-link feature-link2">READ NOW</a>
+                            <img src="/assets/images/arrow_right_yellow.svg" alt="arrow2" class="img-fluid arrow ">
+                        </span>
+                    </div>
+                    <div class="card-img card-img2">
+                        <img src="/assets/images/explore_blog.svg" alt="explore-blog" class="img-fluid img-responsive">
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="sex-products carousel-card d-flex">
+                    <div class="card-text ">
+                        <h5 class="card-text3">Buy <br> Sexual Health<br> Products</h5>
+                        <span class="d-flex align-items-center mt-4">
+                            <a href="https://shop.mypaddiapp.com/" target="_blank" class="feature-link feature-link3">SHOP HERE</a>
+                            <img src="/assets/images/arrow_right_purple.svg" alt="arrow3" class="img-fluid arrow ">
+                        </span>
+                    </div>
+                    <div class="card-img card-img3">
+                        <img src="/assets/images/sex_products.svg" alt="sex-products" class="img-fluid img-responsive h-100">
+                    </div>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+
+    <div class="discount-img w-100">
+        <img src="assets/images/banner.svg" class="img-fluid" alt="">
+    </div>
+</div>
