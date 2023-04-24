@@ -1,0 +1,354 @@
+.modal-content {
+    background: var(--bg-white);
+    width: 90%;
+    max-height: 38rem;
+    left: 5%;
+    border-radius: 2rem;
+}
+
+.chat-box {
+    width: 20rem;
+    max-height: 13rem;
+    background: var(--bg-chat-modal);
+    border-radius: 2rem;
+    margin-top: 3rem;
+}
+
+.audio-box {
+    width: 20rem;
+    max-height: 14.5rem;
+    background: var(--bg-audio-modal);
+    border-radius: 2rem;
+    margin-top: 3rem;
+}
+
+.img-1 {
+    width: 8.3rem;
+    margin-left: 5rem;
+    padding-top: 3rem;
+}
+
+.img-2 {
+    margin-top: 0.5rem;
+}
+
+ngb-carousel {
+    background: var(--bg-white);
+    width: 20rem;
+    margin-top: 2rem;
+}
+
+.caption h3 {
+    color: var(--text-dark-grey);
+    font-weight: 700;
+}
+
+.caption p {
+    color: #888888;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.plan-price {
+    color: #9f9f9f;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.planbtn {
+    width: 16rem;
+    height: 2.5rem;
+    border: 1px solid #2c67f5;
+    background-color: #2c67f5;
+    border-radius: 2rem;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.subscriber {
+    margin-bottom: 3rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #3289ff;
+    text-decoration: none;
+}
+
+.footer {
+    display: contents;
+}
+
+.planbtn1 {
+    width: 20rem;
+    height: 3rem;
+    border: 1px solid #c5c5c5;
+    background-color: #c5c5c5;
+    border-radius: 2rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+}
+
+.modal-list-title {
+    text-align: center;
+    color: #3f6fff;
+    margin-top: 2.5rem;
+    font-weight: 700;
+}
+
+.flexbtn {
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    border: 1.5px solid #e9e9e9;
+    border-radius: 0.5rem;
+    margin: 0.7rem;
+    padding: 0.5rem 9rem 0.5rem 1.5rem;
+}
+
+.time {
+    margin-right: 3rem;
+}
+
+.time p {
+    margin-bottom: 0.3rem;
+    color: #a4a4a4;
+    font-weight: 600;
+    font-size: 0.7rem;
+    letter-spacing: 0.08rem;
+    white-space: nowrap;
+}
+
+.amount {
+    color: var(--text-blue);
+    font-weight: bold;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.chatplanbtn {
+    border: 0;
+    padding: 0.2rem 1.2rem;
+    color: #3289ff;
+    background-color: #ebf3ff;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08rem;
+    white-space: nowrap;
+    position: absolute;
+    right: 28%;
+}
+
+.chatplanbtn1 {
+    border: 0;
+    padding: 0.2rem 1rem;
+    color: #ff3257;
+    background-color: #ffebee;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08rem;
+    white-space: nowrap;
+    position: absolute;
+    right: 28%;
+}
+
+.footer2 {
+    margin-top: 0.5rem;
+    margin-bottom: 5rem;
+}
+
+.radio-btn {
+    margin-top: -1.3rem;
+    position: absolute;
+    right: 16%;
+}
+
+.btn {
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+
+@media (max-width: 577px) {
+    .modal-content {
+        width: 85%;
+        left: 7.5%;
+        margin-top: 2rem;
+    }
+    .modal-list-title {
+        margin-top: 3.5rem;
+    }
+    .list {
+        padding: 0.5rem 9rem 0.5rem 1.2rem;
+    }
+    .time {
+        margin-right: 3rem;
+    }
+    .chat-box {
+        width: 100%;
+    }
+    .audio-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .modal-content {
+        width: 100%;
+        left: 0;
+        margin-top: 2rem;
+    }
+    .planbtn1 {
+        width: 15.5rem;
+        height: 2.5rem;
+    }
+    .footer2 {
+        margin-top: 0.1rem;
+    }
+    .list {
+        padding: 0.5rem 7rem 0.5rem 1.2rem;
+    }
+    .time p {
+        font-size: 0.6rem;
+    }
+    .amount {
+        font-size: 0.8rem;
+    }
+    .chatplanbtn {
+        font-size: 0.6rem;
+        right: 29%;
+    }
+    .chatplanbtn1 {
+        font-size: 0.6rem;
+        right: 29%;
+    }
+    .radio-btn {
+        right: 17%;
+    }
+}
+
+@media (max-width: 400px) {
+    .radio-btn {
+        right: 15%;
+    }
+    .list {
+        padding: 0.5rem 7rem 0.5rem 1.2rem;
+    }
+    .chatplanbtn {
+        right: 28%;
+    }
+    .chatplanbtn1 {
+        right: 28%;
+    }
+}
+
+@media (min-width: 291px) and (max-width: 350px) {
+    .radio-btn {
+        right: 10%;
+    }
+    .list {
+        padding: 0.5rem 4.5rem 0.5rem 1.2rem;
+    }
+    .chatplanbtn {
+        padding: 0.2rem 0.8rem;
+        right: 27%;
+    }
+    .chatplanbtn1 {
+        padding: 0.2rem 0.8rem;
+        right: 27%;
+    }
+    .time {
+        margin-right: 4rem;
+    }
+    .planbtn1 {
+        width: 17rem;
+    }
+    .img-1 {
+        width: 6.4rem;
+        margin-left: 3.5rem;
+    }
+    ngb-carousel {
+        width: 15rem;
+        margin-top: 2rem;
+    }
+    .audio-box {
+        margin-top: 1rem;
+    }
+    .chat-box {
+        margin-top: 1rem;
+    }
+    .caption p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 325px) {
+    .img-1 {
+        width: 7.05rem;
+        margin-left: 3.5rem;
+    }
+    .img-2 {
+        width: 16rem;
+    }
+    .audio-box {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .chat-box {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 290px) {
+    .list {
+        padding: 0.5rem 4.2rem 0.5rem 1.2rem;
+    }
+    .chatplanbtn {
+        padding: 0.2rem 0.7rem;
+        right: 22%;
+    }
+    .chatplanbtn1 {
+        padding: 0.2rem 0.7rem;
+        right: 22%;
+    }
+    .radio-btn {
+        right: 7%;
+    }
+    .time {
+        margin-left: -0.5rem;
+    }
+    .planbtn1 {
+        width: 14.5rem;
+    }
+    .chat-box {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .img-1 {
+        width: 6.4rem;
+        margin-left: 4rem;
+    }
+    .img-2 {
+        width: 15rem;
+    }
+    .audio-box {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .caption p {
+        font-size: 0.85rem;
+    }
+    ngb-carousel {
+        width: 15rem;
+        margin-top: 2rem;
+    }
+    .planbtn {
+        width: 14.5rem;
+    }
+}
