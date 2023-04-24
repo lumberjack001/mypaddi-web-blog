@@ -32,6 +32,12 @@
     margin-top: 0.5rem;
 }
 
+ngb-carousel {
+    background: var(--bg-white);
+    width: 20rem;
+    margin-top: 2rem;
+}
+
 .caption h3 {
     color: var(--text-dark-grey);
     font-weight: 700;
@@ -188,8 +194,7 @@
         width: 100%;
     }
     .audio-box {
-        width: 80%;
-        margin-left: 2.2rem;
+        width: 100%;
     }
 }
 
@@ -265,19 +270,38 @@
         width: 17rem;
     }
     .img-1 {
-        width: 7rem;
+        width: 6.4rem;
+        margin-left: 3.5rem;
+    }
+    ngb-carousel {
+        width: 15rem;
+        margin-top: 2rem;
+    }
+    .audio-box {
+        margin-top: 1rem;
+    }
+    .chat-box {
+        margin-top: 1rem;
+    }
+    .caption p {
+        font-size: 0.85rem;
     }
 }
 
 @media (max-width: 325px) {
     .img-1 {
-        width: 6.9rem;
+        width: 7.05rem;
+        margin-left: 3.5rem;
     }
     .img-2 {
         width: 16rem;
     }
     .audio-box {
         margin-left: 0;
+        margin-top: 1rem;
+    }
+    .chat-box {
+        margin-top: 1rem;
     }
 }
 
@@ -304,19 +328,27 @@
     }
     .chat-box {
         width: 100%;
+        margin-top: 1rem;
     }
     .img-1 {
-        width: 6.35rem;
+        width: 6.4rem;
         margin-left: 4rem;
     }
     .img-2 {
         width: 15rem;
-        margin-left: -1rem;
     }
     .audio-box {
         width: 100%;
+        margin-top: 1rem;
     }
     .caption p {
         font-size: 0.85rem;
+    }
+    ngb-carousel {
+        width: 15rem;
+        margin-top: 2rem;
+    }
+    .planbtn {
+        width: 14.5rem;
     }
 }

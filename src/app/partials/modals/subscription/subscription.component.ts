@@ -9,7 +9,7 @@ import { NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
 export class SubscriptionComponent {
 
   constructor(config: NgbCarouselConfig) {
-		config.interval = 5000;
+		config.interval = 2000;
 		config.wrap = true;
 		config.keyboard = false;
 		config.pauseOnHover = true;
