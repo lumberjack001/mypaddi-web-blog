@@ -8,7 +8,7 @@ section{
 }
 
 .reset-form{
-    width: 40%;
+    width: 50%;
 }
 .submit-btn{
     width: 100%;
@@ -20,7 +20,7 @@ section{
 
 }
 .form-wrapper{
-    width: 70%;
+    width: 80%;
     // padding: 1rem;0
     gap: 2rem;
 }
@@ -35,15 +35,13 @@ section{
 }
 
 .carousel{
-    width: 40%;
+    width: 50%;
     justify-content: center;
 }
-.carousel-wrapper{
-    width: 70%;
-}
-
 .form-control{
     color: #9A9A9A;
+    padding: 0.6rem 0.8rem;
+
 }
 .form-control:focus {
     border-color: #ced4da; /* Set border color to default */

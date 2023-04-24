@@ -1,0 +1,36 @@
+<div class="d-flex wrapper justify-content-between align-items-center ">
+    <div class="d-flex">
+        <div class="d-xl-none">
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#sideMenuCollapse">
+                <img src="/assets/images/hamburger_menu.svg" alt="nav-hamburger" class="img-fluid w-100">
+            </button>
+            <div class="collapse" id="sideMenuCollapse">
+                <app-left-sidebar class="side-menu"></app-left-sidebar>
+            </div>
+        </div>
+        
+        
+        <a routerLink="/" class="logo">
+            <img src="assets/images/logo_light.svg" alt="myPaddi">
+        </a>
+    </div>
+    
+
+    <app-nav-icons class="w-25 nav-icons"></app-nav-icons>
+
+    <div class="notifications d-flex align-items-center justify-content-between">
+        <form class="search d-flex justify-content-between" action="" >
+            <input type="text" placeholder="Enter Keyword">
+            <button><img src="assets/images/search_icon_light.svg" alt=""></button>
+        </form>
+
+        <div class="notification-icon">
+            <img src="assets/images/unread_notifications_light.svg" alt="">
+        </div>
+        
+        <div class="user-icon">
+            <img class="img-fluid" src="assets/images/profile_pic_placeholder.svg" alt="">
+        </div>
+
+    </div>
+</div>
