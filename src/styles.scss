@@ -185,3 +185,24 @@ body.dark-theme {
         margin-top: 2rem;
     }
 }
+
+.dashboard-carousel{
+    .carousel-indicators [data-bs-target] {
+        height: 0.3rem;
+        width: 0.3rem;
+        border-radius: 100%;
+        margin: 0 0.2rem;
+        border: 1px solid var(--bg-carousel-indicator);
+        background-color: var(--bg-carousel-indicator);
+        &[class="active"] {
+            border: 1px solid #3289FF;
+            background-color: #3289FF;
+        }
+    }
+
+    .carousel-indicators {
+        overflow: hidden;
+        margin-bottom: -1.5rem;
+        z-index: 20;
+    }
+}
