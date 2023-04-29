@@ -7,8 +7,7 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import { RequestResetComponent } from './components/auth/request-reset/request-reset.component';
 import { ResetPasswordComponent } from './components/auth/reset-password/reset-password.component';
-
-
+import { BlogComponent } from './components/dashboard/blog/blog.component';
 
 const routes: Routes = [
   {
@@ -28,6 +27,7 @@ const routes: Routes = [
   {
     path: 'blog',
     component: DashboardComponent,
+    children: [{ path: '', component: BlogComponent }],
   },
   {
     path: 'chat',
