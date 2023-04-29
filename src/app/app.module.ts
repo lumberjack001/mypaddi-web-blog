@@ -46,6 +46,8 @@ import { LandingpagefeaturesComponent } from './components/landing-page/landingp
 import { LandingpageCampaignComponent } from './components/landing-page/landingpage-campaign/landingpage-campaign.component';
 import { RadioBtnComponent } from './partials/radio-btn/radio-btn.component';
 import { SubscriptionComponent } from './partials/modals/subscription/subscription.component';
+import { ChatComponent } from './partials/chat/chat.component';
+
 import { HeaderComponent } from './partials/header/header.component';
 import { LeftSidebarComponent } from './partials/left-sidebar/left-sidebar.component';
 import { RightSidebarComponent } from './partials/right-sidebar/right-sidebar.component';
@@ -71,6 +73,8 @@ import { SubscriptionCardComponent } from './partials/subscription-card/subscrip
     LandingpageCampaignComponent,
     RadioBtnComponent,
     SubscriptionComponent,
+    ChatComponent,
+  
     HeaderComponent,
     LeftSidebarComponent,
     RightSidebarComponent,
