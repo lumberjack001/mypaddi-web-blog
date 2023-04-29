@@ -48,6 +48,11 @@ import { RadioBtnComponent } from './partials/radio-btn/radio-btn.component';
 import { SubscriptionComponent } from './partials/modals/subscription/subscription.component';
 import { ChatComponent } from './partials/chat/chat.component';
 
+import { HeaderComponent } from './partials/header/header.component';
+import { LeftSidebarComponent } from './partials/left-sidebar/left-sidebar.component';
+import { RightSidebarComponent } from './partials/right-sidebar/right-sidebar.component';
+import { NavIconsComponent } from './partials/nav-icons/nav-icons.component';
+import { SubscriptionCardComponent } from './partials/subscription-card/subscription-card.component';
 
 @NgModule({
   declarations: [
@@ -70,6 +75,11 @@ import { ChatComponent } from './partials/chat/chat.component';
     SubscriptionComponent,
     ChatComponent,
   
+    HeaderComponent,
+    LeftSidebarComponent,
+    RightSidebarComponent,
+    NavIconsComponent,
+    SubscriptionCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -86,14 +96,18 @@ import { ChatComponent } from './partials/chat/chat.component';
       BlogEffects,
       UnauthBlogEffects,
       UserEffects,
-      ChatEffects
+      ChatEffects,
     ]),
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states
       autoPause: true, // Pauses recording actions and state changes when the extension window is not open
     }),
     ToastrModule.forRoot(),
-    Angular4PaystackModule.forRoot(environment.production ? environment.PAYSTACK_LIVE_PUBLIC_KEY : environment.PAYSTACK_TEST_PUBLIC_KEY),
+    Angular4PaystackModule.forRoot(
+      environment.production
+        ? environment.PAYSTACK_LIVE_PUBLIC_KEY
+        : environment.PAYSTACK_TEST_PUBLIC_KEY
+    ),
   ],
   providers: [
     {
@@ -103,6 +117,6 @@ import { ChatComponent } from './partials/chat/chat.component';
     },
     AuthService,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
