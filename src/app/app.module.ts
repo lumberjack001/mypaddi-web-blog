@@ -53,6 +53,7 @@ import { RightSidebarComponent } from './partials/right-sidebar/right-sidebar.co
 import { NavIconsComponent } from './partials/nav-icons/nav-icons.component';
 import { SubscriptionCardComponent } from './partials/subscription-card/subscription-card.component';
 import { BlogComponent } from './components/dashboard/blog/blog.component';
+import { BlogFeaturedComponent } from './components/blog/blog-featured/blog-featured.component';
 
 @NgModule({
   declarations: [
@@ -79,6 +80,7 @@ import { BlogComponent } from './components/dashboard/blog/blog.component';
     NavIconsComponent,
     SubscriptionCardComponent,
     BlogComponent,
+    BlogFeaturedComponent,
   ],
   imports: [
     BrowserModule,
