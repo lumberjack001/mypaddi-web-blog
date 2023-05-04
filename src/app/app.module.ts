@@ -54,6 +54,8 @@ import { NavIconsComponent } from './partials/nav-icons/nav-icons.component';
 import { SubscriptionCardComponent } from './partials/subscription-card/subscription-card.component';
 import { BlogComponent } from './components/dashboard/blog/blog.component';
 import { BlogFeaturedComponent } from './components/blog/blog-featured/blog-featured.component';
+import { BlogMainComponent } from './components/blog/blog-main/blog-main.component';
+import { SinglePostComponent } from './components/blog/single-post/single-post.component';
 
 @NgModule({
   declarations: [
@@ -81,6 +83,8 @@ import { BlogFeaturedComponent } from './components/blog/blog-featured/blog-feat
     SubscriptionCardComponent,
     BlogComponent,
     BlogFeaturedComponent,
+    BlogMainComponent,
+    SinglePostComponent,
   ],
   imports: [
     BrowserModule,
