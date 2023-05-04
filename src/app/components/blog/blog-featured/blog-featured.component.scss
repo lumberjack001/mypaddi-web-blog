@@ -12,12 +12,13 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
     padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 .wrapper::-webkit-scrollbar{
     display: none;
 }
 .featured-card{
-    width: 45%;
+    width: 48.7%;
     padding: 1.5rem;
     background-color: var(--bg-light-orange);
     border-radius: 1.2rem;
@@ -25,7 +26,7 @@
     align-items: center;
     flex-wrap: nowrap;
     flex-shrink: 0;
-    height: 11rem;
+    min-height: 11rem;
 }
 .post-category{
     color: var(--subtext-green);
@@ -51,7 +52,7 @@
 
     img{
         width: 100%;
-        border-radius: 1.2rem;
+        border-radius: 1rem;
     }
 }
 @media (max-width: 1200px) {
@@ -99,13 +100,13 @@
     }
 }
 
-@media (max-width: 385px) {
+@media (max-width: 395px) {
     .featured-card{
         width: 85%;
     }
 }
 @media (max-width: 350px) {
     .featured-card{
-        width: 115%;
+        width: 100%;
     }
 }
