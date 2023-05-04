@@ -7,7 +7,7 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import { RequestResetComponent } from './components/auth/request-reset/request-reset.component';
 import { ResetPasswordComponent } from './components/auth/reset-password/reset-password.component';
-
+import { ChatComponent } from './components/dashboard/chat/chat.component';
 
 
 const routes: Routes = [
@@ -32,6 +32,9 @@ const routes: Routes = [
   {
     path: 'chat',
     component: DashboardComponent,
+    children: [
+      { path: '', component: ChatComponent},
+    ]
   },
   {
     path: 'audio',
