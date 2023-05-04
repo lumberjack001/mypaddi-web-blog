@@ -101,6 +101,7 @@ body {
     --bg-chat-modal: #F5F5F5; // #202020
     --bg-audio-modal: #FFFAFA; // #101010
     --bg-carousel-indicator: #D8D8D8; //#404040
+    --list-border-bottom: #EBEBEB;//#1C1C1C
 }
 
 body.dark-theme {
@@ -132,6 +133,7 @@ body.dark-theme {
     --bg-chat-modal: #202020;
     --bg-audio-modal: #101010;
     --bg-carousel-indicator: #404040;
+    --list-border-bottom: #1C1C1C;
 }
 
 .main-carousel {
