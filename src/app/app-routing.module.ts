@@ -8,7 +8,7 @@ import { RegisterComponent } from './components/auth/register/register.component
 import { RequestResetComponent } from './components/auth/request-reset/request-reset.component';
 import { ResetPasswordComponent } from './components/auth/reset-password/reset-password.component';
 import { ChatComponent } from './components/dashboard/chat/chat.component';
-
+import { SubscriptionComponent } from './partials/modals/subscription/subscription.component'; 
 
 const routes: Routes = [
   {
@@ -28,7 +28,9 @@ const routes: Routes = [
   {
     path: 'blog',
     component: DashboardComponent,
-  },
+    },
+  
+  
   {
     path: 'chat',
     component: DashboardComponent,

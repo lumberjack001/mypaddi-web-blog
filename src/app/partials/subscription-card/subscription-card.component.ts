@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./subscription-card.component.scss']
 })
 export class SubscriptionCardComponent {
-
+ 
 }
+
+
+
+

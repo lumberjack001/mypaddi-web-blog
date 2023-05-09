@@ -54,6 +54,8 @@ import { LeftSidebarComponent } from './partials/left-sidebar/left-sidebar.compo
 import { RightSidebarComponent } from './partials/right-sidebar/right-sidebar.component';
 import { NavIconsComponent } from './partials/nav-icons/nav-icons.component';
 import { SubscriptionCardComponent } from './partials/subscription-card/subscription-card.component';
+import { ChatBannerComponent } from './partials/chat-banner/chat-banner.component';
+import { ChatBodyComponent } from './partials/chat-body/chat-body.component';
 
 @NgModule({
   declarations: [
@@ -80,6 +82,8 @@ import { SubscriptionCardComponent } from './partials/subscription-card/subscrip
     RightSidebarComponent,
     NavIconsComponent,
     SubscriptionCardComponent,
+    ChatBannerComponent,
+    ChatBodyComponent,
   ],
   imports: [
     BrowserModule,
