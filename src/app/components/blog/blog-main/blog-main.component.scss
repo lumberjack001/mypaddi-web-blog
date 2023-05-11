@@ -70,6 +70,9 @@
 .footer-icons{
     margin-right: 0.3rem;
 }
+.footer-text{
+    margin-left: 0.3rem;
+}
 .post-heading-sm{
     display: none;
 
@@ -79,7 +82,7 @@
         background-color: transparent;
     }
 }
-@media (max-width:1200px) {
+@media (max-width:1201px) {
     .post-img-lg{
         width: 15%;
     }
@@ -115,5 +118,10 @@
 @media (max-width:500px){
     .post-img-sm{
         width: 15%;
+    }
+}
+@media (max-width: 310px) {
+    .footer-text{
+        display: none;
     }
 }
