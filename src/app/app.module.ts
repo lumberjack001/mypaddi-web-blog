@@ -46,13 +46,16 @@ import { LandingpagefeaturesComponent } from './components/landing-page/landingp
 import { LandingpageCampaignComponent } from './components/landing-page/landingpage-campaign/landingpage-campaign.component';
 import { RadioBtnComponent } from './partials/radio-btn/radio-btn.component';
 import { SubscriptionComponent } from './partials/modals/subscription/subscription.component';
-import { ChatComponent } from './partials/chat/chat.component';
+import { ChatComponent } from './components/dashboard/chat/chat.component';
+
 
 import { HeaderComponent } from './partials/header/header.component';
 import { LeftSidebarComponent } from './partials/left-sidebar/left-sidebar.component';
 import { RightSidebarComponent } from './partials/right-sidebar/right-sidebar.component';
 import { NavIconsComponent } from './partials/nav-icons/nav-icons.component';
 import { SubscriptionCardComponent } from './partials/subscription-card/subscription-card.component';
+import { ChatBannerComponent } from './partials/chat-banner/chat-banner.component';
+import { ChatBodyComponent } from './partials/chat-body/chat-body.component';
 
 @NgModule({
   declarations: [
@@ -74,12 +77,13 @@ import { SubscriptionCardComponent } from './partials/subscription-card/subscrip
     RadioBtnComponent,
     SubscriptionComponent,
     ChatComponent,
-  
     HeaderComponent,
     LeftSidebarComponent,
     RightSidebarComponent,
     NavIconsComponent,
     SubscriptionCardComponent,
+    ChatBannerComponent,
+    ChatBodyComponent,
   ],
   imports: [
     BrowserModule,
