@@ -54,6 +54,10 @@ import { LeftSidebarComponent } from './partials/left-sidebar/left-sidebar.compo
 import { RightSidebarComponent } from './partials/right-sidebar/right-sidebar.component';
 import { NavIconsComponent } from './partials/nav-icons/nav-icons.component';
 import { SubscriptionCardComponent } from './partials/subscription-card/subscription-card.component';
+import { BlogComponent } from './components/dashboard/blog/blog.component';
+import { BlogFeaturedComponent } from './components/blog/blog-featured/blog-featured.component';
+import { BlogMainComponent } from './components/blog/blog-main/blog-main.component';
+import { SinglePostComponent } from './components/blog/single-post/single-post.component';
 import { ChatBannerComponent } from './partials/chat-banner/chat-banner.component';
 import { ChatBodyComponent } from './partials/chat-body/chat-body.component';
 
@@ -82,6 +86,10 @@ import { ChatBodyComponent } from './partials/chat-body/chat-body.component';
     RightSidebarComponent,
     NavIconsComponent,
     SubscriptionCardComponent,
+    BlogComponent,
+    BlogFeaturedComponent,
+    BlogMainComponent,
+    SinglePostComponent,
     ChatBannerComponent,
     ChatBodyComponent,
   ],

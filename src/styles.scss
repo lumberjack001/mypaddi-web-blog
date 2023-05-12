@@ -92,6 +92,7 @@ body {
     --bg-light-orange: #F9F1EC; // #202020
     --bg-light-orange2: #F9F1EC; // #101010
     --bg-search: #F5F5F5; // #2F3236
+    --bg-search-border: #E9E9E9; //#41454A
     --bg-share: #3289FF; // #25282D
     --bg-subscription: #EBF3FF; // #353535
     --bg-select-category: #EBF3FF; // #2F3236
@@ -100,6 +101,7 @@ body {
     --bg-chat-modal: #F5F5F5; // #202020
     --bg-audio-modal: #FFFAFA; // #101010
     --bg-carousel-indicator: #D8D8D8; //#404040
+    --list-border-bottom: #EBEBEB;//#1C1C1C
 }
 
 body.dark-theme {
@@ -122,6 +124,7 @@ body.dark-theme {
     --bg-light-orange: #202020;
     --bg-light-orange2: #101010;
     --bg-search: #2F3236;
+    --bg-search-border: #41454A;
     --bg-share: #25282D;
     --bg-subscription: #353535;
     --bg-select-category: #2F3236;
@@ -130,6 +133,7 @@ body.dark-theme {
     --bg-chat-modal: #202020;
     --bg-audio-modal: #101010;
     --bg-carousel-indicator: #404040;
+    --list-border-bottom: #1C1C1C;
 }
 
 .main-carousel {
