@@ -12,7 +12,8 @@
 .subscription{
     display: none;
 }
-@media (max-width:1200px) {
+
+@media (max-width:1201px) {
     .right-sidebar{
         display: none;
     }
@@ -23,16 +24,18 @@
         display: block;
         width: 40%;
     }
+    .main-content{
+        width: 100% !important;
+    }
 }
 
 @media (max-width: 992px) {
     .nav-icons{
         display: block !important;
-        position: absolute;
+        position: sticky;
         bottom: 0;
-        width: 85%;
-        padding-block: 1.5rem;
-
+        padding-block: 1.3rem;
+        background-color: white;
     }
     .main-content{
         width: 100%;
@@ -55,11 +58,11 @@
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 395px) {
     .wrapper{
-        padding-inline: 1rem;
+        padding-inline: 1.5rem;
     }
     .nav-icons{
-        width: 92%;
+        width: 100%;
     }
 }

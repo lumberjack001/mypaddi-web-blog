@@ -1,5 +1,9 @@
 .wrapper{
     padding-block: 2rem;
+    // position: sticky;
+    // top: 0;
+    // background-color: white;
+    // z-index: 50;
 }
 // .notifications{
 //     width: 33%;
@@ -16,6 +20,7 @@
     padding: 0.5rem;
     padding-inline: 1rem;
     border-radius: 1.5rem;
+    border: 1px solid var(--bg-search-border);
     margin: 0;
     width: 65%;
     position: relative;
@@ -69,6 +74,7 @@
         background-color: transparent;
         width: 0;
         justify-content: space-around !important;
+        border: 0;
     }
     .search input{
         position: absolute;

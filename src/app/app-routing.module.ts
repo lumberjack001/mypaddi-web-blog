@@ -7,6 +7,8 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import { RequestResetComponent } from './components/auth/request-reset/request-reset.component';
 import { ResetPasswordComponent } from './components/auth/reset-password/reset-password.component';
+import { BlogComponent } from './components/dashboard/blog/blog.component';
+import { SinglePostComponent } from './components/blog/single-post/single-post.component';
 import { ChatComponent } from './components/dashboard/chat/chat.component';
 import { SubscriptionComponent } from './partials/modals/subscription/subscription.component'; 
 
@@ -28,8 +30,11 @@ const routes: Routes = [
   {
     path: 'blog',
     component: DashboardComponent,
-    },
-  
+    children: [
+      { path: '', component: BlogComponent },
+      { path: 'single-post', component: SinglePostComponent },
+    ],
+  },
   
   {
     path: 'chat',
