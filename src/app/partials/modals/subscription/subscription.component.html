@@ -1,82 +1,68 @@
-<div class="container">
-    <!-- <button class="btn btn-primary" type="button" data-bs-target="#myModal" data-bs-toggle="modal">
+<!-- <div class="container"> -->
+<!-- <button class="btn btn-primary" type="button" data-bs-target="#myModal" data-bs-toggle="modal">
     manage subscription
   </button> -->
-
-    <div class="modal" id="myModal">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content align-items-center">
-                <ngb-carousel>
-                    <ng-template ngbSlide>
-                        <div class="img-wrapper">
-                            <div class="chat-box">
-                                <div class="img-1">
-                                    <img src="assets/images/chat_modal_img.svg" alt="first slide" class="img-fluid img-responsive" />
-                                </div>
-                            </div>
-                            <div class="caption text-center">
-                                <h3>Chat subscription</h3>
-                                <p>
-                                    Unlimited Chat Session with Doctors and <br />Counsellors for free
-                                </p>
+<div class="modal" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content align-items-center">
+            <ngb-carousel>
+                <ng-template ngbSlide>
+                    <div class="img-wrapper">
+                        <div class="chat-box">
+                            <div class="img-1">
+                                <img src="assets/images/chat_modal_img.svg" alt="first slide" class="img-fluid img-responsive" />
                             </div>
                         </div>
-                    </ng-template>
-                    <ng-template ngbSlide>
-                        <div class="img-wrapper">
-                            <div class="audio-box">
-                                <div class="img-2">
-                                    <img src="assets/images/audio_modal_img.svg" alt="second slide" class="img-fluid img-responsive" />
-                                </div>
-                            </div>
-                            <div class="caption text-center">
-                                <h3>Audio Subscription</h3>
-                                <p>Unlimited Access to all Audio Episodes</p>
+                        <div class="caption text-center">
+                            <h3>Chat subscription</h3>
+                            <p>
+                                Unlimited Chat Session with Doctors and <br />Counsellors for free
+                            </p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <div class="img-wrapper">
+                        <div class="audio-box">
+                            <div class="img-2">
+                                <img src="assets/images/audio_modal_img.svg" alt="second slide" class="img-fluid img-responsive" />
                             </div>
                         </div>
-                    </ng-template>
-                </ngb-carousel>
-                <div class="plan-price">
-                    <span>Starting at N2000/month</span>
-                </div>
-                <div class="footer">
-                    <button class="planbtn" type="button" data-bs-toggle="modal" data-bs-target="#secondModal">
+                        <div class="caption text-center">
+                            <h3>Audio Subscription</h3>
+                            <p>Unlimited Access to all Audio Episodes</p>
+                        </div>
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+            <div class="plan-price">
+                <span>Starting at N2000/month</span>
+            </div>
+            <div class="footer">
+                <button class="planbtn" type="button" data-bs-toggle="modal" data-bs-target="#secondModal">
             Choose Your Plan
           </button>
-                    <a [routerLink]="['/chat']" class="subscriber">Subscribed already?</a>
-                </div>
+                <a [routerLink]="['/chat']" class="subscriber">Subscribed already?</a>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="modal" id="secondModal">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class=" modal-content align-items-center ">
-                <div class="modal-planlist ">
-                    <h5 class="modal-list-title ">Choose your plan</h5>
-                </div>
-                <div class="modal-body2 align-items-center">
-                    <span class="list ">
+<div class="modal" id="secondModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class=" modal-content align-items-center ">
+            <div class="modal-planlist ">
+                <h5 class="modal-list-title ">Choose your plan</h5>
+            </div>
+            <div class="modal-body2 align-items-center">
+                <span class="list ">
                 <div class="time col-sm-5 ">
                     <p class="plan-time ">1 MONTH</p>
                     <span class="amount ">N2,000 ($4.41)</span>
-                </div>
-                <div class="flexbtn">
-                    <button class="chatplanbtn" type="button ">Chat Plan</button>
-                    <div class="radio-btn">
-                        <app-radio-btn></app-radio-btn>
-                    </div>
-                    <!-- <input class="form-check-input " type="radio " name="flexRadioDefault " id="flexRadioDefault1 "> -->
-                </div>
-                </span>
-                <span class="list ">
-                <div class="time col-sm-5 ">
-                    <p class="plan-time ">3 MONTHS</p>
-                    <span class="amount ">N5,000 ($11.04)</span>
             </div>
-            <div class="flexbtn ">
+            <div class="flexbtn">
                 <button class="chatplanbtn" type="button ">Chat Plan</button>
-                <div class="radio-btn ">
+                <div class="radio-btn">
                     <app-radio-btn></app-radio-btn>
                 </div>
                 <!-- <input class="form-check-input " type="radio " name="flexRadioDefault " id="flexRadioDefault1 "> -->
@@ -84,11 +70,11 @@
             </span>
             <span class="list ">
                 <div class="time col-sm-5 ">
-                    <p class="plan-time ">1 YEAR</p>
-                    <span class="amount ">N18,000 ($39.73)</span>
+                    <p class="plan-time ">3 MONTHS</p>
+                    <span class="amount ">N5,000 ($11.04)</span>
         </div>
         <div class="flexbtn ">
-            <button class="chatplanbtn " type="button ">Chat Plan</button>
+            <button class="chatplanbtn" type="button ">Chat Plan</button>
             <div class="radio-btn ">
                 <app-radio-btn></app-radio-btn>
             </div>
@@ -96,9 +82,9 @@
         </div>
         </span>
         <span class="list ">
-            <div class="time col-sm-5 ">
-              <p class="plan-time ">7 DAYS</p>
-              <span class="amount ">N1,000 ($2.21)</span>
+                <div class="time col-sm-5 ">
+                    <p class="plan-time ">1 YEAR</p>
+                    <span class="amount ">N18,000 ($39.73)</span>
     </div>
     <div class="flexbtn ">
         <button class="chatplanbtn " type="button ">Chat Plan</button>
@@ -109,6 +95,19 @@
     </div>
     </span>
     <span class="list ">
+            <div class="time col-sm-5 ">
+              <p class="plan-time ">7 DAYS</p>
+              <span class="amount ">N1,000 ($2.21)</span>
+</div>
+<div class="flexbtn ">
+    <button class="chatplanbtn " type="button ">Chat Plan</button>
+    <div class="radio-btn ">
+        <app-radio-btn></app-radio-btn>
+    </div>
+    <!-- <input class="form-check-input " type="radio " name="flexRadioDefault " id="flexRadioDefault1 "> -->
+</div>
+</span>
+<span class="list ">
             <div class="time col-sm-5 ">
                 <p class="plan-time ">1 MONTH</p>
                 <span class="amount ">N5,999 ($13.24)</span>
@@ -141,4 +140,4 @@
 </div>
 </div>
 </div>
-</div>
+<!-- </div> -->
