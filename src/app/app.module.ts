@@ -46,6 +46,8 @@ import { LandingpagefeaturesComponent } from './components/landing-page/landingp
 import { LandingpageCampaignComponent } from './components/landing-page/landingpage-campaign/landingpage-campaign.component';
 import { RadioBtnComponent } from './partials/radio-btn/radio-btn.component';
 import { SubscriptionComponent } from './partials/modals/subscription/subscription.component';
+import { ChatComponent } from './components/dashboard/chat/chat.component';
+
 
 import { HeaderComponent } from './partials/header/header.component';
 import { LeftSidebarComponent } from './partials/left-sidebar/left-sidebar.component';
@@ -56,6 +58,8 @@ import { BlogComponent } from './components/dashboard/blog/blog.component';
 import { BlogFeaturedComponent } from './components/blog/blog-featured/blog-featured.component';
 import { BlogMainComponent } from './components/blog/blog-main/blog-main.component';
 import { SinglePostComponent } from './components/blog/single-post/single-post.component';
+import { ChatBannerComponent } from './partials/chat-banner/chat-banner.component';
+import { ChatBodyComponent } from './partials/chat-body/chat-body.component';
 
 @NgModule({
   declarations: [
@@ -76,6 +80,7 @@ import { SinglePostComponent } from './components/blog/single-post/single-post.c
     LandingpageCampaignComponent,
     RadioBtnComponent,
     SubscriptionComponent,
+    ChatComponent,
     HeaderComponent,
     LeftSidebarComponent,
     RightSidebarComponent,
@@ -85,6 +90,8 @@ import { SinglePostComponent } from './components/blog/single-post/single-post.c
     BlogFeaturedComponent,
     BlogMainComponent,
     SinglePostComponent,
+    ChatBannerComponent,
+    ChatBodyComponent,
   ],
   imports: [
     BrowserModule,

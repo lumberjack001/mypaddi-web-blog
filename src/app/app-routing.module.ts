@@ -9,6 +9,8 @@ import { RequestResetComponent } from './components/auth/request-reset/request-r
 import { ResetPasswordComponent } from './components/auth/reset-password/reset-password.component';
 import { BlogComponent } from './components/dashboard/blog/blog.component';
 import { SinglePostComponent } from './components/blog/single-post/single-post.component';
+import { ChatComponent } from './components/dashboard/chat/chat.component';
+import { SubscriptionComponent } from './partials/modals/subscription/subscription.component'; 
 
 const routes: Routes = [
   {
@@ -33,9 +35,13 @@ const routes: Routes = [
       { path: 'single-post', component: SinglePostComponent },
     ],
   },
+  
   {
     path: 'chat',
     component: DashboardComponent,
+    children: [
+      { path: '', component: ChatComponent},
+    ]
   },
   {
     path: 'audio',
