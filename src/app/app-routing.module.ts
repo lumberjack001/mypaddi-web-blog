@@ -8,7 +8,7 @@ import { RegisterComponent } from './components/auth/register/register.component
 import { RequestResetComponent } from './components/auth/request-reset/request-reset.component';
 import { ResetPasswordComponent } from './components/auth/reset-password/reset-password.component';
 import { BlogComponent } from './components/dashboard/blog/blog.component';
-import { SinglePostComponent } from './components/blog/single-post/single-post.component';
+import { SinglePostComponent } from './components/dashboard/single-post/single-post.component';
 import { ChatComponent } from './components/dashboard/chat/chat.component';
 import { SubscriptionComponent } from './partials/modals/subscription/subscription.component'; 
 
