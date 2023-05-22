@@ -1,0 +1,225 @@
+section {
+    margin-top: 2.5rem;
+}
+.album-img img {
+    border-radius: 1rem;
+}
+
+.album-title-div {
+    width: 100%;
+}
+.album-title {
+    color: var(--text-green);
+    font-weight: bolder;
+    font-size: 1.5rem;
+    width: 70%;
+}
+.album-category {
+    color: var(--subtext-green);
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+.action-btn {
+    background-color: #F6A004;
+    color: #ffffff;
+    border-radius: 2rem;
+    width: 8rem;
+    height: 2rem;
+    font-size: 0.9rem;
+    button {
+        background-color: transparent;
+        color: inherit;
+        border: 0;
+        outline: 0;
+    }
+}
+
+.album-text-content{
+    color: #7C8899;
+}
+
+.album-trailer-img {
+    border-radius: 1rem;
+    background-color: #E4F2FB;
+    width: 4rem;
+    height: 4rem;
+}
+
+.album-trailer-content {
+    width: 78%;
+}
+
+.album-trailer-title {
+    color: var(--text-blue);
+    font-weight: bolder;
+}
+.hr {
+    background-color: var(--list-border-bottom);
+    height: 0.05rem;
+    width: 100%;
+    margin: 2.5rem 0;
+}
+
+.trailer-action-btn {
+    background-color: #2C67F5;
+    color: #ffffff;
+    border-radius: 1.5rem;
+    padding: 0.15rem;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    width: 5rem;
+    button {
+        outline: 0;
+        border: 0;
+        background-color: transparent;
+        color: inherit;
+    }
+}
+
+.trailer-time-div {
+    width: 100%;
+}
+
+.trailer-timer-img {
+    margin-top: -1rem;
+}
+
+.trailer-time {
+    color: var(--subtext-green);
+    font-size: 0.9rem;
+}
+@media (max-width: 992px) {
+    .main-div {
+        min-height: 70vh;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .album-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .mobile-flex {
+        display: flex;
+    }
+
+    .album-title-div {
+        width: 60%;
+    }
+    .album-title {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+    .album-category {
+        font-size: 0.8rem;
+    }
+    .action-btn-div {
+        margin-top: 2rem;
+    }
+    .action-btn {
+        font-size: 0.8rem;
+    }
+
+    .album-trailer-content {
+        width: 50%;
+    }
+}
+
+@media (max-width: 320px) {
+    .album-title {
+        font-size: 1rem;
+    }
+    .album-category {
+        font-size: 0.7rem;
+    }
+    .album-text-content {
+        font-size: 0.9rem;
+    }
+    .album-trailer-img {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 0.7rem;
+    }
+    .album-trailer-title {
+        font-size: 0.9rem;
+    }
+    .trailer-action-btn {
+        width: 4rem;
+        font-size: 0.7rem;
+    }
+    .trailer-timer-img {
+        width: 0.7rem;
+    }
+}
+
+@media (max-width: 290px) {
+    .album-title {
+        font-size: 0.9rem;
+    }
+    .album-category {
+        font-size: 0.6rem;
+    } 
+}
+
+@media (min-width: 576px) {
+    .album-img img {
+        width: 12rem;
+        height: 12rem;
+    }
+    .album-title-div {
+        padding: 0 2.5rem;
+    }
+    .album-title {
+        font-size: 1.7rem;
+        width: 100%;
+    }
+    
+    .action-btn-div {
+        padding: 0 2.5rem; 
+    }
+    
+    .action-btn {
+        font-size: 1rem;
+        width: 10rem;
+        height: 2.5rem;
+    }
+
+    
+}
+
+@media (min-width: 1200px) {
+    .album-img {
+        width: auto;
+        img {
+            width: 9rem;
+            height: 9rem;
+        }
+    }
+    .album-title-div {
+        width: 50%;
+        padding: 0 1.5rem;
+    }
+    .album-title {
+        width: 90%;
+    }
+    .action-btn-div {
+        padding: 0; 
+    }
+    
+}
+
+@media (min-width: 1202px) {
+    .main-div {
+        padding: 0 1rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .album-title-div {
+        padding: 0 2.5rem;
+        width: 55%;
+    }
+    
+}
