@@ -1,0 +1,137 @@
+.album-list {
+    overflow: scroll;
+}
+.album-card {
+    background-color: var(--bg-audio-featured);
+    border-radius: 1rem;
+    width: 65%;
+    flex-shrink: 0;
+}
+
+.album-category {
+   color: var(--subtext-green);
+   font-weight: light;
+   font-size: 0.7rem;
+}
+
+.album-title {
+    color: var(--text-green);
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.play-album-div {
+    background-color: #F6A004;
+    color: white;
+    border-radius: 2rem;
+    font-size: 0.7rem;
+    padding: 0.2rem;
+    width: 80%;
+}
+
+.play-album-btn {
+    background-color: transparent;
+    color: inherit;
+    outline: 0;
+    border: none;
+}
+
+.album-img {
+    width: 7.5rem;
+    height: 7.5rem;
+}
+@media (max-width: 575px) {
+    .album-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 450px) {
+    .album-card, .play-album-div  {
+        width: 95%;
+    }
+    .album-category {
+        font-size: 0.6rem;
+    }
+    .album-title {
+        font-size: 1rem;
+    }
+    .play-album-div {
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .album-card {
+        width: 100%;
+    }
+
+    .album-category {
+        font-size: 0.5rem;
+    }
+    .album-title {
+        font-size: 0.8rem;
+    }
+
+    .play-album-div {
+        font-size: 0.6rem;
+    }
+
+    .album-img {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+@media (min-width: 768px) {
+    .album-card {
+        width: 45%;
+    }
+    .play-album-div {
+        width: 83%;
+    }
+}
+
+@media (min-width: 992px) {
+    .album-card {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1250px) {
+    .album-card {
+        width: 47%;
+    }
+}
+
+@media(min-width: 1200px) and (max-width: 1250px) {
+    .album-card {
+        width: 50%;
+    }
+}
+
+@media(min-width: 1200px) and (max-width: 1201px) {
+    .album-card {
+        width: 35%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .album-card {
+        width: 45%;
+    }
+}
+
+@media(min-width: 1900px) {
+    .album-card {
+        width: 35%;
+    }
+    .play-album-div {
+        width: 70%;
+    }
+}
+
+@media(min-width: 2500px) {
+    .album-card {
+        width: 30%;
+    }
+}
