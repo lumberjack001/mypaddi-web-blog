@@ -57,8 +57,9 @@ import { SubscriptionCardComponent } from './partials/subscription-card/subscrip
 import { BlogComponent } from './components/dashboard/blog/blog.component';
 import { BlogFeaturedComponent } from './components/blog/blog-featured/blog-featured.component';
 import { BlogMainComponent } from './components/blog/blog-main/blog-main.component';
-import { SinglePostComponent } from './components/dashboard/single-post/single-post.component';
+import { SinglePostComponent } from './components/blog/single-post/single-post.component';
 import { ChatBannerComponent } from './partials/chat-banner/chat-banner.component';
+import { PersonalDetailsComponent } from './partials/personal-details/personal-details.component';
 
 
 @NgModule({
@@ -91,6 +92,7 @@ import { ChatBannerComponent } from './partials/chat-banner/chat-banner.componen
     BlogMainComponent,
     SinglePostComponent,
     ChatBannerComponent,
+    PersonalDetailsComponent,
   ],
   imports: [
     BrowserModule,

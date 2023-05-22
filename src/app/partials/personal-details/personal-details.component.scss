@@ -1,0 +1,46 @@
+.modal-content {
+    background: var(--bg-white);
+    width: 70%;
+    height: 36rem;
+    left: 15%;
+    border-radius: 2rem;
+    padding: 0 1.5rem;
+
+    h4{
+        color: var(--personal-details);
+        font-weight: 900;
+        font-size: 1.2rem;
+    }
+    img{
+       width: 4rem;
+       height: 4rem; 
+       border-radius: 3rem;
+       margin-top: 2.5rem;
+    }
+    .user-details{
+        margin-top: 2.5rem;
+        .user-name{
+            .form-label{
+                color: var(--text-grey-1);
+            }
+            input{
+                width: 80%;
+                color: var(--text-input);
+            }
+        }
+        .gender{
+            .form-label{
+                color: var(--text-grey-1);
+            }
+            select{
+                color: var(--text-input);
+                // background-image: url("assets/images/arrow_dropdown_light.svg") no-repeat;
+            }
+        }
+    }
+}
+
+
+
+
+

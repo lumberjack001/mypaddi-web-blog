@@ -103,6 +103,9 @@ body {
     --bg-carousel-indicator: #D8D8D8; //#404040
     --list-border-bottom: #EBEBEB;//#1C1C1C
     --comment-input-border: #E9E9E9; //#242424
+    --personal-details: #3F6FFF; //#FFFFFF
+    --text-grey-1: #706E6E; //#FFFFFF
+    --text-input: #000000; //#7C8899
 }
 
 body.dark-theme {
@@ -136,6 +139,9 @@ body.dark-theme {
     --bg-carousel-indicator: #404040;
     --list-border-bottom: #1C1C1C;
     --comment-input-border: #242424;
+    --personal-details: #FFFFFF;
+    --text-grey-1: #FFFFFF;
+    --text-input: #7C8899;
 }
 
 .main-carousel {
