@@ -11,7 +11,7 @@
                 </div>
                 <div class=" gender">
                     <label for="User-gender" class="form-label">Gender</label>
-                    <select class="form-select form-control" aria-label="Default select example" id="User-gender">
+                    <select style="background-image: url(assets/images/arrow_dropdown_light.svg);" class="form-select form-control" aria-label="Default select example" id="User-gender">
                         <option selected></option>
                         <option value="1">Male</option>
                         <option value="2">Female</option>
@@ -28,13 +28,14 @@
             <div class="contact-info d-flex">
                 <div class=" contact-location">
                     <label for="country-code" class="form-label">Country code</label>
-                    <select class="form-select form-control w-100" aria-label="Default select example" id="country-code">
+                    <select style="background-image: url(assets/images/arrow_dropdown_light.svg);" class="form-select" aria-label="Default select example" id="country-code">
                         <option value={{country.value}} *ngFor="let country of countries">{{country.value}}</option>
                     </select>
+                   
                 </div>
                 <div class=" contact-phone">
                     <label for="phone-number" class="form-label">Phone Number</label>
-                    <input type="text" class="form-control w-100 " id="phone-number">
+                    <input type="text" class="form-control" id="phone-number">
                 </div>
             </div>
 

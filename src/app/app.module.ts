@@ -60,6 +60,7 @@ import { BlogMainComponent } from './components/blog/blog-main/blog-main.compone
 import { SinglePostComponent } from './components/blog/single-post/single-post.component';
 import { ChatBannerComponent } from './partials/chat-banner/chat-banner.component';
 import { PersonalDetailsComponent } from './partials/personal-details/personal-details.component';
+import { TrackOrderComponent } from './partials/track-order/track-order.component';
 
 
 @NgModule({
@@ -93,6 +94,7 @@ import { PersonalDetailsComponent } from './partials/personal-details/personal-d
     SinglePostComponent,
     ChatBannerComponent,
     PersonalDetailsComponent,
+    TrackOrderComponent,
   ],
   imports: [
     BrowserModule,

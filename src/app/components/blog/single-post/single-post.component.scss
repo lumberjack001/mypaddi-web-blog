@@ -1,5 +1,6 @@
 .single-post{
     background-color: var(--bg-white);
+    padding: 0 1.5rem;
 }
 .post-topic{
     color: var(--text-green);
@@ -83,7 +84,7 @@
 }
 .post-engage{
     width: 60%;
-    margin-top: 0.6rem;
+    margin-top: 1.2rem;
     justify-content: space-between;
     .reads, .comments{
         font-size: 0.8rem;
@@ -144,7 +145,7 @@
     p{
         color: #7c8899;
         font-size: 1rem;
-        font-weight: 500;
+        font-weight: 600;
     }
 }
 .main-comments{
@@ -176,7 +177,7 @@
         height: 1.5rem;
         background-color: var(--bg-share);
         color: #3285ff;
-        font-size: 0.7rem;
+        font-size: 0.85rem;
         font-weight: 700;
         border-radius: 4rem;
         border: none;
@@ -208,23 +209,100 @@ hr{
     border-top: 2px solid var( --list-border-bottom);
 }
 
+@media(min-width: 700px) and (max-width: 1199px){
+    .single-post{
+        padding: 0;
+    }
+    .related-post{
+        p{
+            display: none;
+        }
+    }
+}
+
 @media(min-width: 1500px) and (max-width: 2000px){
     .single-post{
         width: 95%;
     }
 }
 
-@media(min-width: 280px) and (max-width: 699px){
+@media(min-width: 500px) and (max-width: 700px){
     .post-engage{
-        width: 100%;
+        width: 80%;
+    }
+    .related-post{
+        p{
+            display: none;
+        }
+    }
+}
+
+@media(min-width: 351px) and (max-width: 499px){
+    .single-post{
+        padding: 0;
+    }
+    .post-engage{
+        width: 95%;
     }
     .comment-section{
         input[type='text']{
             width: 73%;
         }
     }
+    .related-post{
+        p{
+            display: none;
+        }
+    }
 }
-@media(min-width: 280px) and (max-width: 350px){
+
+@media(min-width: 301px) and (max-width: 350px){
+    .single-post{
+        padding: 0;
+    }
+    .related-post{
+        p{
+            display: none;
+        }
+    }
+    .comment-section{
+        input[type='text']{
+            width: 73%;
+        }
+    }
+    .post-engage{
+        width: 100%;
+        .reads, .comments{
+            font-size: 0.7rem;
+        }
+        img{
+            width: 0.7rem;
+            height: 0.7rem;
+        }
+        span{
+            font-size: 0.7rem;
+        }
+        button {
+            font-size: 0.7rem;
+            padding: 0 0.7rem;
+            margin-top: -0.3rem;
+        }
+    }
+}
+@media(min-width: 280px) and (max-width: 300px){
+    .single-post{
+        padding: 0;
+    }
+    .related-post{
+        p{
+            display: none;
+        }
+    }
+    .comment-section{
+        input[type='text']{
+            width: 73%;
+        }
+    }
     .post-details{
         .post-category{
             margin-right: 0.5rem;
@@ -234,6 +312,7 @@ hr{
         }
     }
     .post-engage{
+        width: 100%;
         .reads, .comments{
             font-size: 0.6rem;
         }
