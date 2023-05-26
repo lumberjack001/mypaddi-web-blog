@@ -61,6 +61,7 @@ import { SinglePostComponent } from './components/blog/single-post/single-post.c
 import { ChatBannerComponent } from './partials/chat-banner/chat-banner.component';
 import { PersonalDetailsComponent } from './partials/personal-details/personal-details.component';
 import { TrackOrderComponent } from './partials/track-order/track-order.component';
+import { PeriodCheckerComponent } from './partials/period-checker/period-checker.component';
 
 
 @NgModule({
@@ -95,6 +96,7 @@ import { TrackOrderComponent } from './partials/track-order/track-order.componen
     ChatBannerComponent,
     PersonalDetailsComponent,
     TrackOrderComponent,
+    PeriodCheckerComponent,
   ],
   imports: [
     BrowserModule,
