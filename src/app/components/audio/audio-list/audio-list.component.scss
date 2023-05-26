@@ -1,0 +1,152 @@
+.audio-image{
+    border-radius: 1rem;
+    background-color: #E4F2FB;
+    width: 6.5rem;
+    height: 6.5rem;
+}
+
+.audio-content {
+    width: 75%;
+    // border: 1px solid red;
+}
+
+.audio-title {
+    color: var(--text-blue);
+    font-weight: bolder;
+}
+
+.audio-subtext {
+    font-size: 0.9rem;
+    color: #7C8899;
+}
+
+.audio-time {
+    color: var(--subtext-green);
+    font-size: 0.9rem;
+}
+
+.action-btn-mobile {
+    display: none;
+}
+
+.audio-action-btn {
+    background-color: #2C67F5;
+    color: #ffffff;
+    border-radius: 1.5rem;
+    padding: 0.15rem;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    button {
+        outline: 0;
+        border: 0;
+        background-color: transparent;
+        color: inherit;
+    }
+}
+
+.unlock-btn {
+    width: 7rem;
+}
+.play-btn {
+    width: 5rem;
+}
+
+.audio-timer-img {
+    height: 100%;
+    width: 100%;
+    margin-top: 0.1rem;
+}
+
+@media(max-width: 1440px) {
+    .audio-time {
+        margin-top: 0.1rem;
+    }
+}
+
+// @media(max-width: 675px) {
+//     .action-btn-mobile {
+//         display: block;
+//         padding-right: 1rem;
+//     }
+//     .action-btn {
+//         display: none;
+//     }
+// }
+@media(max-width: 675px) {
+    .action-btn-mobile {
+        display: block;
+        padding-right: 1rem;
+    }
+    .action-btn {
+        display: none;
+    }
+    .audio-title {
+        font-size: 0.9rem;
+    }
+    .audio-subtext {
+        font-size: 0.7rem;
+    }
+
+    .audio-action-btn {
+        padding: 0.1rem;
+        font-size: 0.7rem;
+    }
+    .play-btn {
+        width: 4rem;
+    }
+
+    .unlock-btn {
+        width: 6rem;
+    }
+
+    // .audio-time-div {
+    //     margin-top: 0.2rem;
+    // }
+    .audio-time {
+        font-size: 0.7rem;
+        margin-top: 0.2rem;
+    }
+    .audio-timer-img {
+        width: 30%;
+        height: 30%;
+    }
+}
+
+@media(max-width: 375px) {
+    .audio-image {
+        width: 6rem;
+        height: 6rem;
+    }
+    .action-btn-mobile {
+        padding-right: 0.5rem;
+    }
+
+    .audio-title {
+        font-size: 0.8rem;
+    }
+    .audio-subtext {
+        font-size: 0.6rem;
+    }
+
+    .audio-action-btn {
+        font-size: 0.6rem;
+    }
+    .play-btn {
+        width: 3.5rem;
+    }
+
+    .unlock-btn {
+        width: 5rem;
+    }
+
+    // .audio-time-div {
+    //     margin-top: 0.1rem;
+    // }
+
+}
+
+@media(max-width: 300px) {
+    .audio-time {
+        margin-top: 0;
+    }
+}

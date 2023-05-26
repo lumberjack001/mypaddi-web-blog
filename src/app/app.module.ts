@@ -60,6 +60,10 @@ import { BlogMainComponent } from './components/blog/blog-main/blog-main.compone
 import { SinglePostComponent } from './components/blog/single-post/single-post.component';
 import { ChatBannerComponent } from './partials/chat-banner/chat-banner.component';
 import { ChatBodyComponent } from './partials/chat-body/chat-body.component';
+import { AlbumListComponent } from './components/audio/album-list/album-list.component';
+import { AudioComponent } from './components/dashboard/audio/audio.component';
+import { AlbumDetailsComponent } from './components/dashboard/album-details/album-details.component';
+import { AudioListComponent } from './components/audio/audio-list/audio-list.component';
 
 @NgModule({
   declarations: [
@@ -92,6 +96,10 @@ import { ChatBodyComponent } from './partials/chat-body/chat-body.component';
     SinglePostComponent,
     ChatBannerComponent,
     ChatBodyComponent,
+    AlbumListComponent,
+    AudioComponent,
+    AlbumDetailsComponent,
+    AudioListComponent,
   ],
   imports: [
     BrowserModule,
