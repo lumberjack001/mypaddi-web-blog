@@ -1,0 +1,133 @@
+.audio-banner {
+    height: 10.5rem;
+    border-radius: 1rem;
+    background: var(--bg-light-orange2) url("../../../../assets/images/audio_banner_img.svg") no-repeat right;
+    background-size: 75% 100%;
+    & > div {
+        padding: 1.5rem;
+    }
+}
+
+.banner-heading {
+    color: var(--text-green);
+    width: 70%;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.banner-text {
+    font-weight: 100;
+    font-size: 0.6rem;
+    color: var(--subtext-green-2);
+}
+
+.audio-sub-div {
+    background-color: #2C67F5;
+    color: #FFFFFF;
+    border-radius: 1.5rem;
+    width: 8rem;
+    font-size: 0.65rem;
+}
+
+.audio-sub-btn {
+    background-color: transparent;
+    color: inherit;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+}
+
+.new_updates {
+    font-size: 0.9rem;
+    margin: 1.8rem auto;
+}
+.new_updates_text {
+    color: #7C8899;
+    font-weight: light;
+}
+
+.category_select {
+    background-color: var(--bg-select-category);
+    color: var(--nav-active);
+    border-radius: 1rem;
+    button {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        color: inherit;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .main-div {
+        min-height: 70vh;
+    }
+}
+
+@media (max-width: 320px) {
+    .audio-banner {
+        height: 9.7rem;
+    }
+    .banner-heading {
+        font-size: 1rem;
+    }
+
+    .new_updates_text {
+        margin-right: 0.5rem;
+    }
+    
+}
+
+@media (min-width: 575px) {
+    .audio-banner {
+        height: 11.5rem;
+        background-size: auto 100%;
+        & > div {
+            padding: 2.3rem;
+        }
+    }
+
+    .banner-heading {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
+    .banner-text {
+        font-size: 0.8rem;
+    }
+
+    .banner-content {
+        display: flex;
+        & > div {
+            width: 50%;
+        }
+    }
+    .audio-sub-div {
+        width: 10rem;
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .audio-banner {
+        & > div {
+            padding: 2.7rem;
+        }
+    }
+    .banner-heading {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1202px) {
+    .main-div {
+        padding: 0 0.3rem;
+    }
+}
+
+@media(min-width: 1600px) {
+    .banner-heading {
+        font-size: 2rem;
+    }
+}

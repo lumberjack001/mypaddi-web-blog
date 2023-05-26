@@ -63,6 +63,10 @@ import { PersonalDetailsComponent } from './partials/personal-details/personal-d
 import { TrackOrderComponent } from './partials/track-order/track-order.component';
 import { PeriodCheckerComponent } from './partials/period-checker/period-checker.component';
 
+import { AlbumListComponent } from './components/audio/album-list/album-list.component';
+import { AudioComponent } from './components/dashboard/audio/audio.component';
+import { AlbumDetailsComponent } from './components/dashboard/album-details/album-details.component';
+import { AudioListComponent } from './components/audio/audio-list/audio-list.component';
 
 @NgModule({
   declarations: [
@@ -97,6 +101,10 @@ import { PeriodCheckerComponent } from './partials/period-checker/period-checker
     PersonalDetailsComponent,
     TrackOrderComponent,
     PeriodCheckerComponent,
+    AlbumListComponent,
+    AudioComponent,
+    AlbumDetailsComponent,
+    AudioListComponent,
   ],
   imports: [
     BrowserModule,
