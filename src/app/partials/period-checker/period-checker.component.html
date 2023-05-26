@@ -1,0 +1,69 @@
+<div class="modal" id="myModal3">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content pt-3">
+           <div class="header">
+                <h4>Track your period, <br> ovulation, and safe days.</h4>
+                <p>select an option to get started</p>
+           </div>
+
+            <div class="check-list mt-3">
+                <div class="period-checker d-flex justify-content-between align-items-center">
+                    <p>Fertile Ovulation Days</p>
+                    <app-radio-btn class="radio"></app-radio-btn>
+                </div>
+                <div class="period-checker d-flex justify-content-between align-items-center mt-3">
+                    <p>Safe Days Calculator</p>
+                    <app-radio-btn class="radio"></app-radio-btn>
+                </div>
+                <div class="period-checker d-flex justify-content-between align-items-center mt-3">
+                    <p>Your Next Period</p>
+                    <app-radio-btn class="radio"></app-radio-btn>
+                </div>
+
+                <button class="viewbtn" type="button"  data-bs-toggle="modal" data-bs-target="#secondModal2">Continue</button>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<div class="modal" id="secondModal2">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class=" modal-content second-content">
+            <div class="control-bars mb-3">
+                <button (click)="previousPage()" class="active-bar" [attr.data-visible]="hideForm"></button>
+                <button (click)="nextPage()" class="second-bar" [attr.data-visible]="hideForm"></button>
+                <button (click)="nextPage()" class="third-bar" [attr.data-visible]="hideForm"></button>
+            </div>
+            <div class="create pages" *ngIf="hideForm === false">
+                <h4 class="checker-question">What's the first day of your last menstrual period</h4>
+
+              
+
+                <button (click)="nextPage()"  class="submit-btn">Continue</button>
+            </div>
+
+            <div class="personal pages" *ngIf="hideForm === true">
+                <h4 class="checker-question">How many days is your Cycle?</h4>
+
+               
+            
+
+                <div class="control-btn  w-100">
+                    <button (click)="previousPage()" class="prev-btn" >Back</button>
+                    <button   class="submit-btn">Continue</button>
+                </div>
+            </div>
+
+            <div class="create pages" *ngIf="hideForm === false">
+                <h4 class="checker-question">Is your menstruation cycle regular?</h4>
+
+              
+
+                <div class="control-btn  w-100">
+                    <button (click)="previousPage()" class="prev-btn" >Back</button>
+                    <button   class="submit-btn">Calculate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
