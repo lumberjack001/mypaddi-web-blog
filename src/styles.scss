@@ -94,7 +94,7 @@ body {
     --bg-light-orange2: #F9F1EC; // #101010
     --bg-search: #F5F5F5; // #2F3236
     --bg-search-border: #E9E9E9; //#41454A
-    --bg-share: #3289FF; // #25282D
+    --bg-share: #EBF3FF; // #25282D
     --bg-subscription: #EBF3FF; // #353535
     --bg-select-category: #EBF3FF; // #2F3236
     --bg-audio: #E4F2FB; // #202020
@@ -103,6 +103,10 @@ body {
     --bg-audio-modal: #FFFAFA; // #101010
     --bg-carousel-indicator: #D8D8D8; //#404040
     --list-border-bottom: #EBEBEB;//#1C1C1C
+    --comment-input-border: #E9E9E9; //#242424
+    --personal-details: #3F6FFF; //#FFFFFF
+    --text-grey-1: #706E6E; //#FFFFFF
+    --text-input: #000000; //#7C8899
 }
 
 body.dark-theme {
@@ -136,6 +140,10 @@ body.dark-theme {
     --bg-audio-modal: #101010;
     --bg-carousel-indicator: #404040;
     --list-border-bottom: #1C1C1C;
+    --comment-input-border: #242424;
+    --personal-details: #FFFFFF;
+    --text-grey-1: #FFFFFF;
+    --text-input: #7C8899;
 }
 
 .main-carousel {

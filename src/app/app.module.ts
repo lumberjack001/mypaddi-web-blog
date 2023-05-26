@@ -59,7 +59,10 @@ import { BlogFeaturedComponent } from './components/blog/blog-featured/blog-feat
 import { BlogMainComponent } from './components/blog/blog-main/blog-main.component';
 import { SinglePostComponent } from './components/blog/single-post/single-post.component';
 import { ChatBannerComponent } from './partials/chat-banner/chat-banner.component';
-import { ChatBodyComponent } from './partials/chat-body/chat-body.component';
+import { PersonalDetailsComponent } from './partials/personal-details/personal-details.component';
+import { TrackOrderComponent } from './partials/track-order/track-order.component';
+import { PeriodCheckerComponent } from './partials/period-checker/period-checker.component';
+
 import { AlbumListComponent } from './components/audio/album-list/album-list.component';
 import { AudioComponent } from './components/dashboard/audio/audio.component';
 import { AlbumDetailsComponent } from './components/dashboard/album-details/album-details.component';
@@ -95,7 +98,9 @@ import { AudioListComponent } from './components/audio/audio-list/audio-list.com
     BlogMainComponent,
     SinglePostComponent,
     ChatBannerComponent,
-    ChatBodyComponent,
+    PersonalDetailsComponent,
+    TrackOrderComponent,
+    PeriodCheckerComponent,
     AlbumListComponent,
     AudioComponent,
     AlbumDetailsComponent,
