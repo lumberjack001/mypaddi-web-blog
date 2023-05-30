@@ -6,12 +6,46 @@ import { Component } from '@angular/core';
   styleUrls: ['./period-checker.component.scss']
 })
 export class PeriodCheckerComponent {
-  hideForm: boolean = false;
+  activeTab!: number;
 
-  previousPage() {
-    this.hideForm = false;
+  setActiveTab(tabNumber: number) {
+    this.activeTab = tabNumber;
   }
-  nextPage() {
-    this.hideForm = true;
+
+  getHeader(tabNumber: number): string {
+    switch (tabNumber) {
+      case 1:
+        return 'Step 1';
+      case 2:
+        return 'Step 2';
+      case 3:
+        return 'Step 3';
+      default:
+        return '';    
+    }
   }
+
+  nextTab(){
+    if (this.activeTab < 3) {
+      this.activeTab++;
+    }
+  }
+
+  prevTab() {
+    if (this.activeTab > 1) {
+      this.activeTab--;
+    }
+  }
+
+  ngOnInit() {
+    this.activeTab = 1;
+  }
+  // hideForm: boolean = false;
+
+  // previousPage() {
+  //   this.hideForm = false;
+  // }
+  // nextPage() {
+  //   this.hideForm = true;
+  // }
 }

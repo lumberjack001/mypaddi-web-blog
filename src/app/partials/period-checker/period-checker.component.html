@@ -6,7 +6,7 @@
                 <p>select an option to get started</p>
            </div>
 
-            <div class="check-list mt-3">
+            <div id="list" class="check-list mt-3">
                 <div class="period-checker d-flex justify-content-between align-items-center">
                     <p>Fertile Ovulation Days</p>
                     <app-radio-btn class="radio"></app-radio-btn>
@@ -29,39 +29,57 @@
 <div class="modal" id="secondModal2">
     <div class="modal-dialog modal-dialog-centered">
         <div class=" modal-content second-content">
-            <div class="control-bars mb-3">
-                <button (click)="previousPage()" class="active-bar" [attr.data-visible]="hideForm"></button>
-                <button (click)="nextPage()" class="second-bar" [attr.data-visible]="hideForm"></button>
-                <button (click)="nextPage()" class="third-bar" [attr.data-visible]="hideForm"></button>
+            <h6>{{ getHeader(activeTab) }}</h6>
+            <div class="control-bars mb-3 mt-4 d-flex">
+                <div class="tab" (click)="setActiveTab(1)" [class.active]="activeTab === 1"></div>
+                <div class="tab" (click)="setActiveTab(2)" [class.active]="activeTab === 2"></div>
+                <div class="tab" (click)="setActiveTab(3)" [class.active]="activeTab === 3"></div>
             </div>
-            <div class="create pages" *ngIf="hideForm === false">
-                <h4 class="checker-question">What's the first day of your last menstrual period</h4>
+            <div class="tab-content" *ngIf="activeTab === 1">
+                <h4 class="checker-question">What's the first day of <br> your last menstrual <br> period?</h4>
+                <p>Enter the accurate date of the first date of your last menstrual period </p>
+                <input type="text" class=" form-control date" id="period-date" placeholder="Enter date . . .">
 
-              
-
-                <button (click)="nextPage()"  class="submit-btn">Continue</button>
+                <button (click)="nextTab()"  class="continue-btn">Continue</button>
             </div>
 
-            <div class="personal pages" *ngIf="hideForm === true">
+            <div class="tab-content" id="tab2" *ngIf="activeTab === 2">
                 <h4 class="checker-question">How many days is your Cycle?</h4>
+                <p>Select the accurate number of days of your cycle</p>
+                <select style="background-image: url(assets/images/arrow_dropdown_light.svg);" class="form-select form-control" aria-label="Default select example" id="cycle-days" name="Select number of days" required>
+                    <option selected disabled hidden>Select number of days</option>
+                    <option value="1">25</option>
+                    <option value="2">26</option>
+                    <option value="3">27</option>
+                    <option value="4">28</option>
+                    <option value="5">29</option>
+                    <option value="6">30</option>
+                </select>
+                
 
-               
-            
-
-                <div class="control-btn  w-100">
-                    <button (click)="previousPage()" class="prev-btn" >Back</button>
-                    <button   class="submit-btn">Continue</button>
+                <div class="control-btn d-flex w-100">
+                    <button (click)="prevTab()" class="prev-btn" >Back</button>
+                    <button (click)="nextTab()"  class="cont-btn">Continue</button>
                 </div>
             </div>
 
-            <div class="create pages" *ngIf="hideForm === false">
+            <div id="tab3" class="tab-content" *ngIf="activeTab === 3">
                 <h4 class="checker-question">Is your menstruation cycle regular?</h4>
+                <p>Select an option to see result</p>
+                <div id="check_list" class="check-list mt-3">
+                    <div class="period-checkers d-flex justify-content-between align-items-center">
+                        <span class="text">Yes, it's regular</span>
+                        <app-radio-btn class="radio"></app-radio-btn>
+                    </div>
+                    <div class="period-checkers d-flex justify-content-between align-items-center mt-3">
+                        <span class="text">No, its not regular</span>
+                        <app-radio-btn class="radio"></app-radio-btn>
+                    </div>
+                </div>
 
-              
-
-                <div class="control-btn  w-100">
-                    <button (click)="previousPage()" class="prev-btn" >Back</button>
-                    <button   class="submit-btn">Calculate</button>
+                <div class="control-btn d-flex w-100">
+                    <button (click)="prevTab()" class="prev-btn" >Back</button>
+                    <button (click)="nextTab()" class="complete-btn">Complete</button>
                 </div>
             </div>
         </div>
