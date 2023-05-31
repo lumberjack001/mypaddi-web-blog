@@ -40,12 +40,4 @@ export class PeriodCheckerComponent {
   ngOnInit() {
     this.activeTab = 1;
   }
-  // hideForm: boolean = false;
-
-  // previousPage() {
-  //   this.hideForm = false;
-  // }
-  // nextPage() {
-  //   this.hideForm = true;
-  // }
 }
