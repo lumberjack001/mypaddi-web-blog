@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ChatBodyComponent } from './chat-body.component';
+import { PeriodCheckerComponent } from './period-checker.component';
 
-describe('ChatBodyComponent', () => {
-  let component: ChatBodyComponent;
-  let fixture: ComponentFixture<ChatBodyComponent>;
+describe('PeriodCheckerComponent', () => {
+  let component: PeriodCheckerComponent;
+  let fixture: ComponentFixture<PeriodCheckerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ChatBodyComponent ]
+      declarations: [ PeriodCheckerComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ChatBodyComponent);
+    fixture = TestBed.createComponent(PeriodCheckerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

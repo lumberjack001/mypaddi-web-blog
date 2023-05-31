@@ -1,5 +1,6 @@
 .banner {
     background: var(--bg-light-orange);
+    max-width: 95%;
     height: auto;
     border-radius: 1.5rem;
     padding: 2rem 1rem 1rem 1rem;
@@ -24,6 +25,7 @@
 
 @media (min-width: 1500px) and (max-width: 2000px) {
     .banner {
+        // max-width: 92%;
         .banner-text {
             margin-left: 3.5rem;
             h3 {
@@ -41,13 +43,13 @@
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .banner {
-        width: 70%;
+        max-width: 70%;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .banner {
-        width: 80%;
+        max-width: 80%;
         padding-right: 2rem;
         padding-left: 2rem;
         .banner-text {
@@ -62,6 +64,7 @@
 
 @media (min-width: 500px) and (max-width: 767.98px) {
     .banner {
+        max-width: 100%;
         padding-left: 2rem;
         .banner-text {
             margin-left: 0.5rem;
@@ -82,6 +85,7 @@
 
 @media (min-width: 280px) and (max-width: 499.98px) {
     .banner {
+        max-width: 100%;
         padding-right: 2rem;
         padding-top: 2rem;
         .banner-text {

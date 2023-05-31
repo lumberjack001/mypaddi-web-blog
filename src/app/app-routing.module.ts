@@ -8,9 +8,11 @@ import { RegisterComponent } from './components/auth/register/register.component
 import { RequestResetComponent } from './components/auth/request-reset/request-reset.component';
 import { ResetPasswordComponent } from './components/auth/reset-password/reset-password.component';
 import { BlogComponent } from './components/dashboard/blog/blog.component';
-import { SinglePostComponent } from './components/blog/single-post/single-post.component';
+import { SinglePostComponent } from './components/dashboard/single-post/single-post.component';
 import { ChatComponent } from './components/dashboard/chat/chat.component';
 import { SubscriptionComponent } from './partials/modals/subscription/subscription.component'; 
+import { AudioComponent } from './components/dashboard/audio/audio.component';
+import { AlbumDetailsComponent } from './components/dashboard/album-details/album-details.component';
 
 const routes: Routes = [
   {
@@ -46,6 +48,10 @@ const routes: Routes = [
   {
     path: 'audio',
     component: DashboardComponent,
+    children: [
+      { path: '', component: AudioComponent},
+      { path: 'album-details', component: AlbumDetailsComponent}
+    ]
   },
 ];
 
