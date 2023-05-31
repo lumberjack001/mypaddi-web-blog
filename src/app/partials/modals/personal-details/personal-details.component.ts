@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import countrycodes from '../../../assets/json/countrycodes.json';
+import countrycodes from '../../../../assets/json/countrycodes.json';
 @Component({
   selector: 'app-personal-details',
   templateUrl: './personal-details.component.html',

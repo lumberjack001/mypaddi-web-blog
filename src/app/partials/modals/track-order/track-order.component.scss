@@ -4,13 +4,13 @@
     height: 39rem;
     left: 12.5%;
     border-radius: 2rem;
-    padding: 0 1.5rem;
+    padding: 0 2.5rem;
 }    
 h4{
     color: var(--text-blue);
     font-weight: 900;
     align-self: flex-start;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 .fulfilled-orders{
     margin-top: 1.5rem;
@@ -80,6 +80,7 @@ h4{
     .modal-content{
         width: 100%;
         left: 0;
+        padding: 0 2rem;
     }
     .fulfilled-orders{
         .fulfilled{
@@ -101,6 +102,12 @@ h4{
             font-size: 0.6rem; 
         }
     }
+    .orders{
+        button{
+            font-size: 0.7rem;
+            padding: 0 0.7rem;
+        }
+    }
 }
 
 
@@ -112,13 +119,13 @@ h4{
     font-size: 1rem;
     letter-spacing: 0.1rem;
     align-self: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
     }
     p{
         align-self: flex-start;
         color: #7C8899;
         font-size: 1rem;
-        margin-top: 1.2rem;
+        margin-top: 1rem;
     }
    .product-img{
         width: 5.5rem;
