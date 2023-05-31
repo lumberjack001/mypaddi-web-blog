@@ -88,18 +88,18 @@
     .tab-content{
 
        h4{
-        font-size: 1.35rem;
+        font-size: 1.5rem;
         font-weight: 900;
         color: var(--text-blue);
         line-height: 1.8rem;
-        margin-top: 2rem;
+        margin-top: 3rem;
         white-space: nowrap;
        }
        p{
         font-size: 0.9rem;
         font-weight: 500;
         color: #7c8899;
-        margin-top: 1rem;
+        margin-top: 2rem;
         // white-space: nowrap;
        }
 
@@ -129,7 +129,7 @@
             border: none;
             border-radius: 2rem;
             padding: 0 1.2rem;
-            margin-top: 3rem;
+            margin-top: 3.5rem;
             height: 3.5rem;
             width: 100%;
             color: #ffffff;
@@ -173,8 +173,7 @@
             font-size: 0.8rem;
         }
         .control-btn{
-            margin-top: 3rem;
-            gap: 2;
+            margin-top: 1rem;
         }
        
     }
@@ -236,6 +235,14 @@
          font-size: 0.85rem;
         }
     }
+    #list{
+        .period-checker{
+           .radio{
+            position: absolute;
+            right: 2.8rem;
+           }
+        }
+    }
     .second-content{
         .tab-content{
             h4{
@@ -274,6 +281,14 @@
 @media (max-width: 298px) {
     .modal-content{
         padding: 0 1.5rem;
+    }
+    #list{
+        .period-checker{
+           .radio{
+            position: absolute;
+            right: 1.5rem;
+           }
+        }
     }
     .second-content{
         height: 34rem;
