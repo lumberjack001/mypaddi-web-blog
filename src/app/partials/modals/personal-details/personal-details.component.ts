@@ -6,6 +6,6 @@ import countrycodes from '../../../../assets/json/countrycodes.json';
   styleUrls: ['./personal-details.component.scss']
 })
 export class PersonalDetailsComponent {
-  countries: { countryCode: string; value: number; country: string }[] =
+  countries: { countryCode: string; value: string; country: string }[] =
     countrycodes;
 }
