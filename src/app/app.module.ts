@@ -67,6 +67,7 @@ import { AlbumListComponent } from './components/audio/album-list/album-list.com
 import { AudioComponent } from './components/dashboard/audio/audio.component';
 import { AlbumDetailsComponent } from './components/dashboard/album-details/album-details.component';
 import { AudioListComponent } from './components/audio/audio-list/audio-list.component';
+import { SelectCategoryComponent } from './partials/modals/select-category/select-category.component';
 
 @NgModule({
   declarations: [
@@ -105,6 +106,7 @@ import { AudioListComponent } from './components/audio/audio-list/audio-list.com
     AudioComponent,
     AlbumDetailsComponent,
     AudioListComponent,
+    SelectCategoryComponent,
   ],
   imports: [
     BrowserModule,
