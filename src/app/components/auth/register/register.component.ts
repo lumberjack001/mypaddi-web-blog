@@ -8,7 +8,7 @@ import countrycodes from '../../../../assets/json/countrycodes.json';
 })
 export class RegisterComponent {
   hideForm: boolean = false;
-  countries: { countryCode: string; value: number; country: string }[] =
+  countries: { countryCode: string; value: string; country: string }[] =
     countrycodes;
 
   previousPage() {
