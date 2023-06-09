@@ -68,6 +68,9 @@ import { AudioComponent } from './components/dashboard/audio/audio.component';
 import { AlbumDetailsComponent } from './components/dashboard/album-details/album-details.component';
 import { AudioListComponent } from './components/audio/audio-list/audio-list.component';
 import { SelectCategoryComponent } from './partials/modals/select-category/select-category.component';
+import { SmallSpinnerComponent } from './partials/loaders/small-spinner/small-spinner.component';
+import { SpinnerComponent } from './partials/loaders/spinner/spinner.component';
+import { StatusUpdateComponent } from './partials/loaders/status-update/status-update.component';
 
 @NgModule({
   declarations: [
@@ -107,6 +110,9 @@ import { SelectCategoryComponent } from './partials/modals/select-category/selec
     AlbumDetailsComponent,
     AudioListComponent,
     SelectCategoryComponent,
+    SmallSpinnerComponent,
+    SpinnerComponent,
+    StatusUpdateComponent,
   ],
   imports: [
     BrowserModule,
