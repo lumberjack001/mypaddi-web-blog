@@ -22,6 +22,7 @@ import { ChatEffects } from './store/effects/chat.effects'
 import { ProfileEffects } from './store/effects/profile.effects';
 import { SubscriptionEffects } from './store/effects/subscription.effects';
 import { NotificationEffects } from './store/effects/notifications.effects';
+import { ThemeEffects } from './store/effects/theme.effects';
 
 import { AuthService } from './services/auth/auth.service';
 
@@ -130,6 +131,7 @@ import { StatusUpdateComponent } from './partials/loaders/status-update/status-u
       UnauthBlogEffects,
       UserEffects,
       ChatEffects,
+      ThemeEffects
     ]),
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states

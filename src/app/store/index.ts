@@ -7,6 +7,7 @@ import { BlogReducer } from './reducers/blog.reducer';
 import { UnauthBlogReducer } from './reducers/unauth-blog.reducer';
 import { UserDetailsReducer } from './reducers/user-details.reducer';
 import { ChatReducer } from './reducers/chat.reducer';
+import { ThemeReducer } from './reducers/theme.reducer';
 
 
 
@@ -18,6 +19,7 @@ import { BLOG_STATE_NAME } from './selector/blog.selector';
 import { UNAUTH_BLOG_STATE_NAME } from './selector/unauth-blog.selector'
 import { USER_DETAILS_STATE_NAME } from './selector/user-details.selector'
 import { CHAT_STATE_NAME } from './selector/chat.selector'
+import { THEME_STATE_NAME } from './selector/theme.selector';
 
 
 
@@ -38,5 +40,6 @@ export const Appreducers = {
   [BLOG_STATE_NAME]: BlogReducer,
   [UNAUTH_BLOG_STATE_NAME]: UnauthBlogReducer,
   [USER_DETAILS_STATE_NAME]: UserDetailsReducer,
-  [CHAT_STATE_NAME]: ChatReducer
+  [CHAT_STATE_NAME]: ChatReducer,
+  [THEME_STATE_NAME]: ThemeReducer
 };
