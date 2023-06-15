@@ -11,7 +11,7 @@
         
         
         <a routerLink="/" class="logo">
-            <img src="assets/images/logo_light.svg" alt="myPaddi">
+            <img [src]="theme === 'Light' ? 'assets/images/logo_light.svg' : 'assets/images/logo_dark.svg'" alt="myPaddi">
         </a>
     </div>
     
