@@ -41,12 +41,13 @@ section{
 .form-control{
     color: #9A9A9A;
     padding: 0.6rem 0.8rem;
+    background-color: transparent;
 
 }
 .form-control:focus {
     border-color: #ced4da; /* Set border color to default */
     box-shadow: none; /* Remove box-shadow */
-    color: black;
+    color: #9A9A9A;
 }
 
 .form-label{

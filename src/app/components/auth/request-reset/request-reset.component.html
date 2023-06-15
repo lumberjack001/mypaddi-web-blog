@@ -3,21 +3,44 @@
     <div class="container d-flex justify-content-around">
         <div class="reset-form d-flex  ">
             <div class="form-wrapper d-flex flex-column ">
-                    <div class="description">
+    
+                    <div class="description"  *ngIf="!requestResetSuccess">
                         <h1 class="form-heading">Forgot Password</h1>
                         <p class="desc">It happens to the best of us. Kindly enter your email address to continue.</p>
                     </div>
-    
-                    <div class="mb-3 mt-3">
-                        <label for="User-email" class="form-label">Email Address</label>
-                        <input type="text" class="form-control " id="User-email">
+
+                    <div class="description text-center" *ngIf="requestResetSuccess">
+                        <h1 class="form-heading">Check Your Email</h1>
+                        <p class="desc">We have sent the password reset information to your email</p>
                     </div>
-    
-                    <button routerLink="../reset-password" class="submit-btn">Send</button>
-    
+
+
+                    <form (keyup.enter)="requestPasswordReset()" (ngSubmit)="requestPasswordReset()" [formGroup]="requestResetForm"  *ngIf="!requestResetSuccess">
+                        <div class="mb-3 mt-3">
+                            <label for="user-email" class="form-label">Email Address</label>
+                            <input type="text" class="form-control " id="user-email" formControlName="email" required>
+                        </div>
+                
+                        <button type="submit" class="submit-btn mt-5 btn" [disabled]="requestResetForm.invalid">Send
+                            <span *ngIf="isLoading$ | async" class="spinner-border spinner-border-sm ms-1" role="status"
+                            aria-hidden="true"></span>
+                        </button>
+                    </form>
+
+                    <div *ngIf="requestResetSuccess">
+                        <app-status-update status="success"></app-status-update>
+                    </div>
+
+                    <div *ngIf="requestResetSuccess">
+                        <p class="desc text-center">Didn't receive the email? Check Spam or promotion folder</p>
+                        <button type="button" class="submit-btn mt-5" (click)="resendEmail()">Resend Email</button>
+                    </div>
+
+                    <a *ngIf="requestResetSuccess" routerLink="/auth/reset-password" class="sign-in-btn d-block text-center">Reset Password</a>
                     <a routerLink="../login" class="sign-in-btn d-block text-center">Back to Login</a>
-                </div>
+            </div>
         </div>
+
         <div class="carousel ">
             <app-main-carousel></app-main-carousel>
         </div>
