@@ -14,6 +14,9 @@ import { SubscriptionComponent } from './partials/modals/subscription/subscripti
 import { AudioComponent } from './components/dashboard/audio/audio.component';
 import { AlbumDetailsComponent } from './components/dashboard/album-details/album-details.component';
 
+import { AuthGuard } from './guard/auth.guard';
+import { LoginAuthGuard } from './guard/login-auth.guard';
+
 const routes: Routes = [
   {
     path: '',
@@ -21,6 +24,7 @@ const routes: Routes = [
   },
   {
     path: 'auth',
+    canActivate: [LoginAuthGuard],
     component: AuthComponent,
     children: [
       { path: 'login', component: LoginComponent },
