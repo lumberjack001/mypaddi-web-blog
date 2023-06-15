@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 
 
@@ -8,11 +8,10 @@ import * as $ from 'jquery';
   styleUrls: ['./status-update.component.scss']
 })
 export class StatusUpdateComponent implements OnInit{
+  @Input() status!:string;
 
   ngOnInit(): void {
-    // setTimeout(() => {
-    //   this.statusChange('success')
-    // }, 5000);
+    this.statusChange(this.status)
   }
   statusChange = (status: string) => {
     const el = $('.circle-loader')
