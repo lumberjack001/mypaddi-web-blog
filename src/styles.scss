@@ -102,6 +102,7 @@ body {
     --bg-chat-modal: #F5F5F5; // #202020
     --bg-audio-modal: #FFFAFA; // #101010
     --bg-carousel-indicator: #D8D8D8; //#404040
+    --light-border: #E9E9E9; //#706E6E
     --list-border-bottom: #EBEBEB;//#1C1C1C
     --comment-input-border: #E9E9E9; //#242424
     --personal-details: #3F6FFF; //#FFFFFF
@@ -140,6 +141,7 @@ body.dark-theme {
     --bg-chat-modal: #202020;
     --bg-audio-modal: #101010;
     --bg-carousel-indicator: #404040;
+    --light-border: #7C8899;
     --list-border-bottom: #1C1C1C;
     --comment-input-border: #242424;
     --personal-details: #FFFFFF;
@@ -148,6 +150,9 @@ body.dark-theme {
     --text-period: #ffffff;
 }
 
+body {
+    background-color: var(--bg-white);
+}
 .main-carousel {
     .carousel-indicators [data-bs-target] {
         height: 0.4rem;
