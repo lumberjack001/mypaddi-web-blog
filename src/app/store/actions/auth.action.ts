@@ -36,7 +36,7 @@ export const requestResetStart = createAction(
 
 export const requestResetSuccess = createAction(
   REQUEST_RESET_SUCCESS,
-  props<{ user: any }>()
+  props<{ data: any }>()
 );
 
 export const resetPasswordStart = createAction(
@@ -46,5 +46,5 @@ export const resetPasswordStart = createAction(
 
 export const resetPasswordSuccess = createAction(
   RESET_PASSWORD_SUCCESS,
-  props<{ user: any }>()
+  props<{ data: any }>()
 );

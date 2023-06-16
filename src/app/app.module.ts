@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -22,6 +24,7 @@ import { ChatEffects } from './store/effects/chat.effects'
 import { ProfileEffects } from './store/effects/profile.effects';
 import { SubscriptionEffects } from './store/effects/subscription.effects';
 import { NotificationEffects } from './store/effects/notifications.effects';
+import { ThemeEffects } from './store/effects/theme.effects';
 
 import { AuthService } from './services/auth/auth.service';
 
@@ -68,6 +71,9 @@ import { AudioComponent } from './components/dashboard/audio/audio.component';
 import { AlbumDetailsComponent } from './components/dashboard/album-details/album-details.component';
 import { AudioListComponent } from './components/audio/audio-list/audio-list.component';
 import { SelectCategoryComponent } from './partials/modals/select-category/select-category.component';
+import { SmallSpinnerComponent } from './partials/loaders/small-spinner/small-spinner.component';
+import { SpinnerComponent } from './partials/loaders/spinner/spinner.component';
+import { StatusUpdateComponent } from './partials/loaders/status-update/status-update.component';
 
 @NgModule({
   declarations: [
@@ -107,9 +113,15 @@ import { SelectCategoryComponent } from './partials/modals/select-category/selec
     AlbumDetailsComponent,
     AudioListComponent,
     SelectCategoryComponent,
+    SmallSpinnerComponent,
+    SpinnerComponent,
+    StatusUpdateComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
     NgbModule,
     AppRoutingModule,
     HttpClientModule,
@@ -124,6 +136,7 @@ import { SelectCategoryComponent } from './partials/modals/select-category/selec
       UnauthBlogEffects,
       UserEffects,
       ChatEffects,
+      ThemeEffects
     ]),
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states

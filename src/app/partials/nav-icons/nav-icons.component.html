@@ -1,5 +1,25 @@
 <div class="nav-icons d-flex justify-content-between">
-    <a routerLink="/blog"><img src="assets/images/blog_icon_inactive.svg" alt="blog link"></a>
-    <a routerLink="/chat"><img src="assets/images/chat_icon_inactive.svg" alt="chat link"></a>
-    <a routerLink="/audio"><img src="assets/images/audio_icon_inactive.svg" alt="audio link"></a>
+    <div class="text-center" [ngClass]="activeRoute === 'blog' ? 'active': ''">
+        <a routerLink="/blog">
+            <img class="" 
+            [src]="activeRoute !== 'blog' ? 'assets/images/blog_icon_inactive.svg' 
+            : theme === 'Light' ? 'assets/images/blog_icon_light.svg'
+            : 'assets/images/blog_icon_dark.svg' " alt="blog link">
+
+        </a>
+    </div>
+    <div class="text-center" [ngClass]="activeRoute === 'chat' ? 'active': ''">
+        <a routerLink="/chat"><img class="" 
+            [src]="activeRoute !== 'chat' ? 'assets/images/chat_icon_inactive.svg' 
+            : theme === 'Light' ? 'assets/images/chat_icon_light.svg'
+            : 'assets/images/chat_icon_dark.svg' " alt="chat link">
+        </a>
+    </div>
+    <div class="text-center" [ngClass]="activeRoute === 'audio' ? 'active': ''">
+        <a routerLink="/audio"><img class="" 
+            [src]="activeRoute !== 'audio' ? 'assets/images/audio_icon_inactive.svg' 
+            : theme === 'Light' ? 'assets/images/audio_icon_light.svg'
+            : 'assets/images/audio_icon_dark.svg' " alt="audio link">
+        </a>
+    </div>
 </div>

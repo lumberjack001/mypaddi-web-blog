@@ -1,11 +1,13 @@
 .wrapper{
     padding-top: 2rem;
 }
-a img{
+a img, .settings-item img{
     margin-right: 1rem;
+    cursor: pointer;
 }
-a{
+a, .settings-item{
     text-decoration: none;
+  
     color: var(--text-blue);
 }
 h5{
