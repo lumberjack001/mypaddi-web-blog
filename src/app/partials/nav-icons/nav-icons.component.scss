@@ -1,3 +1,9 @@
 .nav-icons img{
-    width: 80%;
+    width: 85%;
+    padding: 0.8rem 0.7rem;
+}
+
+.active {
+    border-radius: 50%;
+    background-color: var(--bg-nav-active);
 }
