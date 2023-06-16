@@ -1,5 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
 import * as $ from 'jquery';
+import { Observable } from 'rxjs';
+import { getThemeStart } from 'src/app/store/actions/theme.action';
+import { getTheme } from 'src/app/store/selector/theme.selector';
 
 
 @Component({
@@ -9,8 +13,18 @@ import * as $ from 'jquery';
 })
 export class StatusUpdateComponent implements OnInit{
   @Input() status!:string;
+  theme$!:Observable<any>;
+  theme!:string;
+
+  constructor(private store$: Store){}
 
   ngOnInit(): void {
+    this.store$.dispatch(getThemeStart())
+    this.theme$ = this.store$.select(getTheme);
+
+    this.theme$.subscribe((theme) => {
+      this.theme = theme;
+    })
     this.statusChange(this.status)
   }
   statusChange = (status: string) => {
@@ -19,10 +33,13 @@ export class StatusUpdateComponent implements OnInit{
     el.removeClass()
     el.addClass('circle-loader');
     el.addClass(status);
+    const successBg = this.theme === 'Light' ? '#F5FBF7' : 'transparent';
+    const failedBg = this.theme === 'Light' ? '#FFEBEE' : 'transparent';
+
     if (status === 'failed') {
-      div.css("background-color", "#FFEBEE");
+      div.css("background-color", failedBg);
     } else {
-      div.css("background-color", "#F5FBF7");
+      div.css("background-color", successBg);
     }
   }
 
@@ -31,7 +48,8 @@ export class StatusUpdateComponent implements OnInit{
     const div = $('.circle-div')
     el.removeClass()
     el.addClass('circle-loader');
-    div.css("background-color", "#F5FBF7");
+    const bgColor = this.theme === 'Light' ? '#F5FBF7' : 'transparent';
+    div.css("background-color", bgColor);
   }
 
 }
