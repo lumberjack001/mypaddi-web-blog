@@ -4,24 +4,45 @@
             <div class="login-form d-flex  ">
             <div class="form-wrapper d-flex flex-column ">
                 <h1 class="form-heading">Sign In</h1>
+                <form (keyup.enter)="login()" (ngSubmit)="login()" [formGroup]="loginForm">
 
-                <div class="mb-3 mt-3">
-                    <label for="User-email" class="form-label">Email Address / Username</label>
-                    <input type="text" class="form-control " id="User-email">
-                </div>
-                <div class="mb-3">
-                    <label for="User-password" class="form-label">Password</label>
-                    <div class="d-flex form-input">
-                        <input type="password" class="form-control" id="User-password">
-                        <button>
-                            <img src="assets/images/view_password_icon.svg" alt="view password icon">
-                        </button>
+                    <div class="mb-3 mt-3">
+                        <label for="user-email" class="form-label">Email Address / Username</label>
+                        <input type="text" class="form-control " id="user-email" formControlName="username">
+                        <span class="text-danger"
+                                *ngIf="submitted && loginFormControl['username']?.errors && 
+                                loginFormControl['username']?.hasError('required')
+                                ">
+                                Email Address or Username is required
+                        </span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="user-password" class="form-label">Password</label>
+                        <div class="d-flex form-input">
+                            <input [type]="viewPassword ? 'text' : 'password'" class="form-control" formControlName="password" id="user-password">
+                            <button type="button" (click)="view_password()" *ngIf="!viewPassword" class="viewPassword">
+                                <img src="assets/images/view_password_icon.svg" alt="view password icon" >
+                            </button>
+                            <button type="button" (click)="hide_password()" *ngIf="viewPassword"  class="hidePassword">
+                                <img src="assets/images/hide_password_icon.svg" alt="hide password icon"> 
+                            </button>
+                        </div>
+                        <span class="text-danger"
+                        *ngIf="submitted && loginFormControl['password']?.errors && 
+                        loginFormControl['password']?.hasError('required')
+                        ">
+                        Password is required
+                </span>
                     </div> 
-                </div> 
 
-                <a routerLink="../request-reset" class="mb-3 mt-3 forgot-password">Forgot your Password?</a> 
+                    <a routerLink="../request-reset" class="mb-3 mt-3 forgot-password">Forgot your Password?</a> 
 
-                <button   class="submit-btn">Log In</button>
+                    <div class="mt-4">
+                        <button type="submit" class="submit-btn btn" [disabled]="loginForm.invalid">
+                        Log In <span *ngIf="isLoading$ | async" class="spinner-border spinner-border-sm mx-1" role="status"
+                        aria-hidden="true"></span></button>
+                    </div>
+                    </form>
 
                 <p class="mb-3 mt-4">Don't have an account? <a routerLink="../register">Create an Account</a></p>
             </div>
