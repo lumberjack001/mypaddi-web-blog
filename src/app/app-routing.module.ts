@@ -35,6 +35,7 @@ const routes: Routes = [
   },
   {
     path: 'blog',
+    canActivate: [AuthGuard],
     component: DashboardComponent,
     children: [
       { path: '', component: BlogComponent },
@@ -44,6 +45,7 @@ const routes: Routes = [
   
   {
     path: 'chat',
+    canActivate: [AuthGuard],
     component: DashboardComponent,
     children: [
       { path: '', component: ChatComponent},
@@ -51,6 +53,7 @@ const routes: Routes = [
   },
   {
     path: 'audio',
+    canActivate: [AuthGuard],
     component: DashboardComponent,
     children: [
       { path: '', component: AudioComponent},
