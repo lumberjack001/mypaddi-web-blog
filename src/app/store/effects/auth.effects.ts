@@ -34,7 +34,6 @@ export class AuthEffects {
             this.store$.dispatch(setLoadingSpinner({ status: false }));
             this.authService.setPayloader(res);
             this.router.navigateByUrl(this.route.snapshot.queryParams['returnUrl'] || '/blog');
-            // this.router.navigateByUrl('/blog');
             return loginSuccess(res.data.user);
           }),
           catchError((error) => {
@@ -53,8 +52,7 @@ export class AuthEffects {
         return this.authService.requestReset(action.params).pipe(
           map((res: any) => {
             this.store$.dispatch(setLoadingSpinner({ status: false }));
-            this.router.navigateByUrl('/auth/reset-password');
-            return requestResetSuccess(res.data.data);
+            return requestResetSuccess({data: res.data});
           }),
           catchError((error) => {
             this.store$.dispatch(setLoadingSpinner({ status: false }));
@@ -72,8 +70,7 @@ export class AuthEffects {
         return this.authService.resetPassword(action.params).pipe(
           map((res: any) => {
             this.store$.dispatch(setLoadingSpinner({ status: false }));
-            this.router.navigateByUrl('/blog');
-            return resetPasswordSuccess(res.data.data);
+            return resetPasswordSuccess({data: res});
           }),
           catchError((error) => {
             this.store$.dispatch(setLoadingSpinner({ status: false }));

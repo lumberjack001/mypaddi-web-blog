@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -22,6 +24,7 @@ import { ChatEffects } from './store/effects/chat.effects'
 import { ProfileEffects } from './store/effects/profile.effects';
 import { SubscriptionEffects } from './store/effects/subscription.effects';
 import { NotificationEffects } from './store/effects/notifications.effects';
+import { ThemeEffects } from './store/effects/theme.effects';
 
 import { AuthService } from './services/auth/auth.service';
 
@@ -29,6 +32,11 @@ import { AuthService } from './services/auth/auth.service';
 import { ToastrModule } from 'ngx-toastr';
 import { Angular4PaystackModule } from 'angular4-paystack';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ClipboardModule } from 'ngx-clipboard';
+import { ShareModule } from 'ngx-sharebuttons';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+
+
 import { AuthComponent } from './layout/auth/auth.component';
 import { LandingPageComponent } from './layout/landing-page/landing-page.component';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
@@ -68,6 +76,9 @@ import { AudioComponent } from './components/dashboard/audio/audio.component';
 import { AlbumDetailsComponent } from './components/dashboard/album-details/album-details.component';
 import { AudioListComponent } from './components/audio/audio-list/audio-list.component';
 import { SelectCategoryComponent } from './partials/modals/select-category/select-category.component';
+import { SmallSpinnerComponent } from './partials/loaders/small-spinner/small-spinner.component';
+import { SpinnerComponent } from './partials/loaders/spinner/spinner.component';
+import { StatusUpdateComponent } from './partials/loaders/status-update/status-update.component';
 
 @NgModule({
   declarations: [
@@ -107,13 +118,22 @@ import { SelectCategoryComponent } from './partials/modals/select-category/selec
     AlbumDetailsComponent,
     AudioListComponent,
     SelectCategoryComponent,
+    SmallSpinnerComponent,
+    SpinnerComponent,
+    StatusUpdateComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
     NgbModule,
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
+    ShareModule,
+    InfiniteScrollModule,
+    ClipboardModule,
     StoreModule.forRoot(Appreducers),
     EffectsModule.forRoot([
       AuthEffects,
@@ -124,6 +144,7 @@ import { SelectCategoryComponent } from './partials/modals/select-category/selec
       UnauthBlogEffects,
       UserEffects,
       ChatEffects,
+      ThemeEffects
     ]),
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states

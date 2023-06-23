@@ -29,6 +29,7 @@ import {
   setPaginationLoader,
   getFeaturedPostsStart,
   getFeaturedPostsSuccess,
+  setFeaturedPostsLoader,
   getPopularPostsStart,
   getPopularPostsSuccess,
   getPostsByCategoryStart,
@@ -147,14 +148,14 @@ export class BlogEffects {
       exhaustMap((action) => {
         return this.blogService.getFeaturedBlogs().pipe(
           map((res: any) => {
-            this.store$.dispatch(setBlogPostLoader({ status: false }));
+            this.store$.dispatch(setFeaturedPostsLoader({ status: false }));
             return getFeaturedPostsSuccess({
               featuredPosts: res.data,
               featuredCursor: res.data.cursor,
             });
           }),
           catchError((error) => {
-            this.store$.dispatch(setBlogPostLoader({ status: false }));
+            this.store$.dispatch(setFeaturedPostsLoader({ status: false }));
             return throwError(error);
           })
         );

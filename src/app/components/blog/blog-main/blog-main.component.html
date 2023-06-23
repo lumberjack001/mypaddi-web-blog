@@ -3,50 +3,66 @@
         <p class="recent">Recent Posts</p>
         <button class="category-btn" data-bs-target="#categoryModal" data-bs-toggle="modal"> Select Category <img src="assets/images/category_dropdown_light.svg" alt="dropdown"></button>
     </div>
+    <app-select-category [categories]="categories" (categoryEvent)="getCategorySort($event)"></app-select-category>
 
-    <div class="recent-post-container">
+    <div *ngIf="isBlogLoading" class="position-relative spinner-div">
+        <app-spinner size="small"></app-spinner>
+    </div>
 
-        <div class="post d-flex justify-content-between align-items-center">
+    <div class="recent-post-container scrollContent" *ngIf="!isBlogLoading">
+        <p *ngIf="noSavedPosts" class="no-saved-blogs text-center">There are no saved blogs</p>
+
+        <div class="post d-flex justify-content-between align-items-center" *ngFor="let post of posts">
             <div class="post-text d-flex flex-column gap-2">
 
                 <div class="post-heading-sm justify-content-between align-items-center ">
                     <div class="post-img-sm">
-                        <img src="assets/images/blog_placeholder.svg" class="img-fluid" alt="post image">
+                        <img [src]="post?.image" class="img-fluid" alt="post image">
                     </div>
                     <div class="post-header d-flex flex-column gap-2">
-                        <a routerLink="/blog/single-post" class="post-topic">Some Causes of Infertility</a>
+                        <a routerLink="/blog/single-post" class="post-topic" [innerHTML]="post?.title"></a>
                         <div class="post-details d-flex">
-                            <p class="post-category">SEXUAL HEALTH</p>
-                            <p class="days-posted d-flex align-items-center"><img src="assets/images/clock_icon.svg" alt="">5 DAYS AGO</p>
+                            <p class="post-category" [innerHTML]="post?.blog_category?.category_name"></p>
+                            <p class="days-posted d-flex align-items-center"><img src="assets/images/clock_icon.svg" alt="">{{moment(post?.created_at).fromNow()}}</p>
                         </div>
                     </div>
-                    <button><img src="assets/images/save_icon.svg" alt="save post button"></button>
+                    <button (click)="checkSaved(post) ? unsaveBlog(post) : saveBlog(post)">
+                        <img [src]="checkSaved(post) ? '/assets/images/saved_icon.svg' : '/assets/images/save_icon.svg'"
+                        alt="save post button"/></button>
                 </div>
                 
                 <div class="post-heading-lg d-flex flex-column gap-2">
-                    <a routerLink="/blog/single-post" class="post-topic">Some Causes of Infertility</a>
+                    <a routerLink="/blog/single-post" class="post-topic" [innerHTML]="post?.title"></a>
                     <div class="post-details d-flex">
-                        <p class="post-category">SEXUAL HEALTH</p>
-                        <p class="days-posted d-flex align-items-center"><img src="assets/images/clock_icon.svg" alt="clock image">5 DAYS AGO</p>
-                        <button class="save-post d-flex align-items-center"><img src="assets/images/save_icon.svg" alt="save post button"> SAVE POST</button>
+                        <p class="post-category" [innerHTML]="post?.blog_category?.category_name">SEXUAL HEALTH</p>
+                        <p class="days-posted d-flex align-items-center"><img src="assets/images/clock_icon.svg" alt="clock image">{{moment(post?.created_at).fromNow()}}</p>
+                        <button class="save-post d-flex align-items-center" (click)="checkSaved(post) ? unsaveBlog(post) : saveBlog(post)">
+                            <img [src]="checkSaved(post) ? '/assets/images/saved_icon.svg' : '/assets/images/save_icon.svg'"
+
+                            alt="save post button">{{checkSaved(post) ? 'SAVED': 'SAVE POST'}}</button>
                     </div>
                 </div>
 
-                <div class="post-body">
-                    <a>Infertility means the inability to get pregnant after
-                        one year of trying to conceive. Men with infertility
-                        problems may have low sperm counts... See more</a>
+                <div class="post-body" [innerHTML]="post?.blog?.length > 200 ? truncate(post?.blog, 200, 'text') : post?.blog">
+                    <a></a>
                 </div>
                 <div class="post-footer post-details d-flex">
-                    <p class="reads d-flex align-items-center"><img src="assets/images/reads_icon.svg" class="footer-icons" alt="reads">7,583 <span class="footer-text">Reads</span></p>
-                    <p class="comments d-flex align-items-center"><img src="assets/images/comments_icon.svg" class="footer-icons" alt="comments">28 <span class="footer-text">Comments</span> </p>
-                    <p class="time-commented d-flex align-items-center"><img src="assets/images/clock_icon.svg" class="footer-icons" alt="time commented">2 mins</p>
+                    <p class="reads d-flex align-items-center"><img src="assets/images/reads_icon.svg" class="footer-icons" alt="reads">{{post?.read_count}} <span class="footer-text">{{post?.read_count === 1 ? 'Read': 'Reads'}}</span></p>
+                    <p class="comments d-flex align-items-center"><img src="assets/images/comments_icon.svg" class="footer-icons" alt="comments">{{post?.comments_count}} <span class="footer-text">{{post?.comments_count === 1 ? 'Comment': 'Comments'}}</span> </p>
+                    <p class="time-commented d-flex align-items-center"><img src="assets/images/clock_icon.svg" class="footer-icons" alt="time commented">{{post?.read_time}} mins</p>
                 </div>
             </div>
 
             <div class="post-img-lg">
-                <img src="assets/images/blog_placeholder.svg" class="img-fluid" alt="post image">
+                <img [src]="post?.image" class="img-fluid" alt="post image">
             </div>
+        </div>
+        <div class="text-center" *ngIf="isScrollLoading$ | async">
+            <app-small-spinner></app-small-spinner>
+        </div>
+        <div class="search-results" infiniteScroll [infiniteScrollDisabled]="scrollDisabled" [infiniteScrollUpDistance]="scrollUpDistance" 
+        [infiniteScrollDistance]="distance" [infiniteScrollThrottle]="throttle" (scrolled)="onScroll()"
+        [infiniteScrollContainer]="'.scrollContent'" [fromRoot]="true">
         </div>
         
     </div>
