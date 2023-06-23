@@ -101,10 +101,12 @@ body {
     --bg-audio-featured: #F4F4F4; // #202020
     --bg-chat-modal: #F5F5F5; // #202020
     --bg-audio-modal: #FFFAFA; // #101010
+    --bg-spinner: rgba(255, 255, 255, 0.7); //rgba(32, 34, 39, 0.4);
     --bg-carousel-indicator: #D8D8D8; //#404040
     --light-border: #E9E9E9; //#706E6E
     --list-border-bottom: #EBEBEB;//#1C1C1C
     --comment-input-border: #E9E9E9; //#242424
+    --radio-btn-border: #E9E9E9; //#404040
     --personal-details: #3F6FFF; //#FFFFFF
     --text-grey-1: #706E6E; //#FFFFFF
     --text-input: #000000; //#7C8899
@@ -140,10 +142,12 @@ body.dark-theme {
     --bg-audio-featured: #202020;
     --bg-chat-modal: #202020;
     --bg-audio-modal: #101010;
+    --bg-spinner: rgba(32, 34, 39, 0.6);
     --bg-carousel-indicator: #404040;
     --light-border: #7C8899;
     --list-border-bottom: #1C1C1C;
     --comment-input-border: #242424;
+    --radio-btn-border: #404040;
     --personal-details: #FFFFFF;
     --text-grey-1: #FFFFFF;
     --text-input: #7C8899;
@@ -171,9 +175,10 @@ body {
     }
     .carousel-indicators {
         overflow: hidden;
-        margin-bottom: -3rem;
+        margin-bottom: -2rem;
         z-index: 20;
     }
+  
 }
 
 .modal {

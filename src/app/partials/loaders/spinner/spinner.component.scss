@@ -5,11 +5,12 @@
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: var(--bg-spinner);
   z-index: 9999;
 }
 .small {
   position: absolute;
+  border-radius: 1.2rem;
 }
 .big {
   position: fixed;

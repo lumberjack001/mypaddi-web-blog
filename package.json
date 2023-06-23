@@ -11,6 +11,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^15.1.0",
+    "@angular/cdk": "^15.2.9",
     "@angular/common": "^15.1.0",
     "@angular/compiler": "^15.1.0",
     "@angular/core": "^15.1.0",
@@ -27,6 +28,10 @@
     "@popperjs/core": "^2.11.6",
     "angular4-paystack": "^3.0.2",
     "jquery": "^3.6.3",
+    "moment": "^2.29.4",
+    "ngx-clipboard": "^16.0.0",
+    "ngx-infinite-scroll": "^15.0.0",
+    "ngx-sharebuttons": "^11.0.0",
     "ngx-toastr": "^16.0.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

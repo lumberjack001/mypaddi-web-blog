@@ -32,6 +32,11 @@ import { AuthService } from './services/auth/auth.service';
 import { ToastrModule } from 'ngx-toastr';
 import { Angular4PaystackModule } from 'angular4-paystack';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ClipboardModule } from 'ngx-clipboard';
+import { ShareModule } from 'ngx-sharebuttons';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+
+
 import { AuthComponent } from './layout/auth/auth.component';
 import { LandingPageComponent } from './layout/landing-page/landing-page.component';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
@@ -126,6 +131,9 @@ import { StatusUpdateComponent } from './partials/loaders/status-update/status-u
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
+    ShareModule,
+    InfiniteScrollModule,
+    ClipboardModule,
     StoreModule.forRoot(Appreducers),
     EffectsModule.forRoot([
       AuthEffects,

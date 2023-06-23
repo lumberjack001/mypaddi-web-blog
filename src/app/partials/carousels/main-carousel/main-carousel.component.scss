@@ -1,19 +1,31 @@
 .container {
     background: none repeat scroll 0 0 var(--bg-blue);
     padding: 0;
-    max-width: 32rem;
-    max-height: 32rem;
+    width: 25.7rem;
+    max-height: 25rem;
     border-radius: 3rem;
     position: relative;
 }
 
-.img-wrapper2 {
+.img-wrapper {
     width: 100%;
-    max-height: 31.22rem;
-    padding: 10% 10% 0 10%;
+    height: 25.5rem;
+    padding: 9.5% 5% 0 5%;
     position: relative;
 }
 
+.img-wrapper1 {
+    height: 25.5rem;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-wrapper2 {
+    height: 25.2rem;
+    padding: 10% 5% 0 5%;
+    overflow: hidden;
+}
 // .img-wrapper1 {
 //     height: 100%;
 // }
@@ -36,21 +48,52 @@
     z-index: 10;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-    .img-wrapper2 {
-        width: 100%;
-        max-height: 30.01rem;
-        padding: 10% 10% 0 10%;
-    }
-}
+// @media (min-width: 992px) and (max-width: 1199px) {
+//     .img-wrapper2 {
+//         width: 100%;
+//         max-height: 30.01rem;
+//         padding: 10% 10% 0 10%;
+//     }
+  
+// }
 
-@media (min-width: 768px) and (max-width: 991px) {
+// @media (min-width: 768px) and (max-width: 991px) {
+//     .container {
+//         width: inherit;
+//         height: inherit;
+//     }
+//     .img-wrapper2 {
+//         width: 100%;
+//         height: 42rem;
+//     }
+//     .img-wrapper {
+//         width: 100%;
+//         height: 42rem;
+//     }
+//     .img-wrapper1 {
+//         width: 100%;
+//         height: 42rem;
+//     }
+// }
+@media (min-width: 400px) and (max-width: 500px){
     .container {
-        max-width: inherit;
-        max-height: inherit;
+        width: inherit;
     }
     .img-wrapper2 {
         width: 100%;
-        max-height: 45.3rem;
+        height: 25rem;
+    }
+    .img-wrapper {
+        width: 100%;
+        height: 25rem;
+    }
+    .img-wrapper1 {
+        width: 100%;
+        height: 25rem;
     }
 }
+@media (min-width: 280px) and (max-width: 399px){
+    .container {
+        width: inherit;
+    }
+}    

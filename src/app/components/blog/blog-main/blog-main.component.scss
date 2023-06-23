@@ -1,3 +1,13 @@
+.recent-post-container {
+    height: 50vh;
+    overflow: scroll;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+.no-saved-blogs {
+    color: #7C8899;
+    margin: 1rem 0; 
+}
 .recent{
     color: #7C8899;
     font-weight: 600;
@@ -66,6 +76,7 @@
 }
 .post-body{
     color: #7C8899;
+    overflow: hidden;
 }
 .post-footer p{
     font-weight: 600;
@@ -85,6 +96,12 @@
         background-color: transparent;
     }
 }
+
+.spinner-div{
+    height: 15rem;
+    margin: 1.5rem 0;
+}
+
 @media (max-width:1201px) {
     .post-img-lg{
         width: 15%;

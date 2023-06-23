@@ -13,6 +13,7 @@ import {
   getRecentPostsSuccess,
   setPaginationLoader,
   getFeaturedPostsSuccess,
+  setFeaturedPostsLoader,
   getPopularPostsSuccess,
   getPostsByCategorySuccess,
   setScrollingLoader,
@@ -52,6 +53,13 @@ const _blogReducer = createReducer(
       ...state,
       featuredPosts: action.featuredPosts,
       featuredCursor: action.featuredCursor,
+    };
+  }),
+
+  on(setFeaturedPostsLoader, (state, action) => {
+    return {
+      ...state,
+      isFeaturedPostsLoading: action.status,
     };
   }),
 
