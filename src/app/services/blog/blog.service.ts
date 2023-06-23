@@ -77,13 +77,39 @@ export class BlogService {
     );
   }
 
-  setSavedBlog(data: any){
-    localStorage.setItem('savedBlogs',JSON.stringify(data))
+  setSavedBlogs(data: any){
+    localStorage.setItem('savedBlogs', JSON.stringify(data))
   }
 
   getSavedBlogs(){
     const result = localStorage.getItem('savedBlogs')
     return JSON.parse("" + result)
     
+  }
+
+  checkSaved(blog: any) {
+    const savedPosts = this.getSavedBlogs();
+
+    if (savedPosts) {
+      const isSaved = savedPosts?.some((x: any) => x.id === blog.id);
+      return isSaved;
+    } else {
+      return false;
+    }
+  }
+
+  truncate(text: any, limit: number, content: any) {
+    const fullText = text;
+    let replacement: string;
+    
+    (content === "title") ? replacement = " <span>...</span>" : 
+    replacement =  "<span class='continue'>...See more</span>"
+    
+    const truncatedText = fullText
+      .substring(0, limit)
+      .replace(
+        /.$/, replacement
+      );
+      return truncatedText;
   }
 }
