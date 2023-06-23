@@ -15,7 +15,7 @@
 }
 .category-btn{
     border: 0;
-    background-color: var(--bg-nav-active);
+    background-color: var(--bg-select-category);
     border-radius: 1.2rem;
     padding-inline: 1.3rem;
     padding-block: 0.25rem;
@@ -53,7 +53,7 @@
 .post-topic{
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--subtext-green);
+    color: var(--text-green);
     text-decoration: none;
 }
 .post-header{
@@ -66,6 +66,9 @@
     margin: 0;
     margin-right: 1.5rem;
 
+}
+.post-footer p{
+    color: var(--text-green);
 }
 .save-post{
     border: 0;
