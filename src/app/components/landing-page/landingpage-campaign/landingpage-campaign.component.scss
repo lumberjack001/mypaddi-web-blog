@@ -4,25 +4,27 @@
     border-radius: 2.8rem;
     padding: 2.2rem 2.2rem;
     h5 {
-        width: 100%;
+        width: 80%;
         font-weight: 700;
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         line-height: 3.2rem;
         color: var(--text-blue);
     }
     .carousel-indicators {
         display: none;
     }
+  
+  
     p {
-        width: 80%;
+        width: 70%;
         font-weight: 500;
-        font-size: 1.4rem;
+        font-size: 1.45rem;
         line-height: 2rem;
         color: var(--text-grey-2);
         margin-top: 1rem;
     }
     .text {
-        padding-left: 3.5rem;
+        // padding-left: 2rem;
         align-self: center;
     }
     .btn {
@@ -54,15 +56,12 @@
             margin-top: 5rem;
             padding: 0 1rem;
         }
-        // h5 {
-        //     width: 100%;
-        //     font-size: 2.3rem;
-        //     line-height: 2.8rem;
+       
+        // .carousel-item{
+        //     width: 31rem;
         // }
-        // p {
-        //     width: 100%;
-        //     font-size: 1.7rem;
-        //     margin-bottom: 2rem;
+        // .containers{
+        //     width: 31rem;
         // }
         .btn-blue {
             order: -1;
@@ -79,6 +78,7 @@
         .Advocacy-carousel {
             .carousel-indicators {
                 display: flex;
+                margin-bottom: -3rem;
             }
             .carousel-indicators [data-bs-target] {
                 height: 0.4rem;
@@ -105,12 +105,26 @@
     .container {
         max-width: 69rem;
         h5 {
-            width: 100%;
-            font-size: 1.9rem;
+            width: 80%;
+            font-size: 2.2rem;
             line-height: 3rem;
         }
         p {
-            width: 100%;
+            width: 80%;
+        }
+        .text{
+            padding-left: 2rem;
+        }
+        .btn{
+            margin-left: 1rem;
+        }
+        .containers{
+            width: 14rem;
+            border-radius: 2rem;
+            background-color:var(--bg-blue-2);
+        }
+        .carousel-item{
+            width: 14rem;
         }
     }
 }
@@ -143,29 +157,31 @@
             width: 90%;
             line-height: 3rem;
         }
+       
     }
     .row {
         margin-top: 3rem;
     }
+   
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .container {
         max-width: 58rem;
         h5 {
-            width: 100%;
-            font-size: 1.62rem;
+            width: 90%;
+            font-size: 1.8rem;
             line-height: 2.5rem;
         }
         p {
-            width: 100%;
-            font-size: 1.1rem;
+            width: 90%;
+            font-size: 1.2rem;
         }
         .text {
-            padding-left: 3rem;
+            padding-left: 4rem;
         }
         .btn {
-            margin-left: 1rem;
+            margin-left: 0;
         }
     }
 }

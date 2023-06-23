@@ -1,14 +1,16 @@
 .container {
-    padding: 3rem 0 0 7rem;
+    padding: 0 0 0 7rem;
+    margin-top: 2.5rem;
 }
 
-.header {
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-}
+// .header {
+    
+//     margin-bottom: 3rem;
+// }
 
 .carousel {
     padding: 0;
+    // width: 40%;
 }
 
 .flex-grow-1 {
@@ -19,10 +21,10 @@ h1 {
     width: 80%;
     font-weight: 700;
     color: var(--text-blue);
-    margin-bottom: 2.3rem;
+    margin-bottom: 1rem;
     letter-spacing: 0.2rem;
     font-size: 3.4rem;
-    line-height: 4.5rem;
+    line-height: 3.5rem;
 }
 
 p {
@@ -31,7 +33,7 @@ p {
     font-weight: 550;
     letter-spacing: 0.05rem;
     font-size: 1.4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .app-btn {
@@ -41,7 +43,7 @@ p {
 
 @media (min-width: 1200px) and (max-width: 1399px) {
     h1 {
-        width: 80%;
+        width: 90%;
         font-size: 3rem;
     }
     p {
@@ -49,10 +51,10 @@ p {
         font-size: 1.3rem;
     }
     .container {
-        padding: 3rem 0 0 3rem;
+        padding: 0 0 0 3rem;
     }
     .flex {
-        padding: 0 0 0 2rem;
+        padding: 1rem 0 0 2.5rem;
     }
     .app-btn {
         margin-right: 6rem;
@@ -73,7 +75,7 @@ p {
         padding: 0 2rem 0 3rem;
     }
     .container {
-        padding: 3rem 0 0 0;
+        padding: 0 ;
     }
     .app-btn {
         margin-right: 3rem;
