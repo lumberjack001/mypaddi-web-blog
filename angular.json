@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "allowedCommonJsDependencies": ["jquery"],
+            "allowedCommonJsDependencies": ["jquery", "moment"],
             "outputPath": "dist/mypaddi-web3.0",
             "index": "src/index.html",
             "main": "src/main.ts",
