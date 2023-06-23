@@ -14,6 +14,7 @@ export interface BlogState{
   isBlogLoading: boolean;
   isReplyLoading: boolean;
   isPaginationLoading: boolean;
+  isFeaturedPostsLoading: boolean;
 }
 
 export const initialState: BlogState = {
@@ -31,5 +32,6 @@ export const initialState: BlogState = {
   isScrollingLoading: false,
   isBlogLoading: false,
   isReplyLoading: false,
-  isPaginationLoading: false
+  isPaginationLoading: false,
+  isFeaturedPostsLoading: false,
 }

@@ -1,39 +1,16 @@
 <p class="featured d-xl-none">Featured Posts</p>
-<div class="wrapper">
-    <div class="featured-card d-flex">
+<div *ngIf="loading" class="position-relative spinner-div">
+    <app-spinner size="small"></app-spinner>
+</div>
+<div class="wrapper" *ngIf="!loading">
+    <div class="featured-card d-flex" *ngFor="let post of featuredPosts">
         <div class="featured-card-text">
-            <p class="post-category">SEXUAL PLEASURE</p>
-            <h5 class="post-topic">5 Boxes to Check
-                Before Having...</h5>
-
+            <p class="post-category">{{post?.blog_category?.category_name}}</p>
+            <h5 class="post-topic" [innerHTML]="post?.title?.length > 32?  truncate(post?.title, 32, 'title') : post?.title"></h5>
             <a href="" class="card-link d-flex">CONTINUE READING <img src="/assets/images/arrow_right_light.svg" alt=""></a>
         </div>
         <div class="featured-card-img">
-            <img src="/assets/images/blog_placeholder.svg" class="img-fluid" alt="">
-        </div>
-    </div>
-    <div class="featured-card d-flex">
-        <div class="featured-card-text">
-            <p class="post-category">SEXUAL PLEASURE</p>
-            <h5 class="post-topic">5 Boxes to Check
-                Before Having...</h5>
-
-            <a href="" class="card-link d-flex">CONTINUE READING <img src="/assets/images/arrow_right_light.svg" alt=""></a>
-        </div>
-        <div class="featured-card-img">
-            <img src="/assets/images/blog_placeholder.svg" class="img-fluid" alt="">
-        </div>
-    </div>
-    <div class="featured-card d-flex">
-        <div class="featured-card-text">
-            <p class="post-category">SEXUAL PLEASURE</p>
-            <h5 class="post-topic">5 Boxes to Check
-                Before Having...</h5>
-
-            <a href="" class="card-link d-flex">CONTINUE READING <img src="/assets/images/arrow_right_light.svg" alt=""></a>
-        </div>
-        <div class="featured-card-img">
-            <img src="/assets/images/blog_placeholder.svg" class="img-fluid" alt="">
+            <img src={{post?.image}} class="img-fluid" alt="">
         </div>
     </div>
 </div>

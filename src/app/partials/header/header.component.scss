@@ -15,6 +15,10 @@
 
 }
 
+.nav-icons{
+    width: 38%;
+}
+
 .search{
     background-color: var(--bg-search);
     padding: 0.5rem;
@@ -30,6 +34,7 @@
     outline: 0;
     background-color: transparent;
     width: 80%;
+    color: var(--text-green);
 }
 
 .search button{
@@ -50,8 +55,8 @@
         inset: 10% 73% 10% 4%;
         padding: min(20vh, 1rem) 1rem;
         z-index: 999;
-        background-color: white;
-        border:0.1px solid rgba(0,0,0,.15);
+        background-color: var(--bg-white);
+        border: 0.1px solid var(--light-border);
     }
     
 }

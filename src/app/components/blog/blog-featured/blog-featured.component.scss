@@ -35,7 +35,7 @@
 }
 .post-topic{
     font-weight: 600;
-    color: var(--subtext-green);
+    color: var(--text-green);
 }
 .card-link{
     text-decoration: none;
@@ -54,6 +54,11 @@
         width: 100%;
         border-radius: 1rem;
     }
+}
+.spinner-div{
+    height: 11rem;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 @media (max-width: 1201px) {
     .featured-card{

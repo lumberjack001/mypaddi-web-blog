@@ -1,7 +1,7 @@
 section{
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
     // align-items: center;
     // height: 100vh;
 
@@ -14,7 +14,7 @@ section{
     button{
         width: 25%;
         margin-right: 1rem;
-        background-color:  rgba(0, 0, 0, 0.06);;
+        background-color: var(--bg-grey);
         border: 0;
         padding: 0.25rem;
         border-radius: 1.5rem;
@@ -60,11 +60,24 @@ section{
     border: 0;
     background-color: transparent;
     position: absolute;
-    top: 30%;
+    // top: 30%;
     right: 1%;
 
-    img{
-        width: 70%;
+    // img{
+    //     width: 70%;
+    // }
+
+    &.viewPassword {
+        top: 30%;
+        img {
+            width: 1.5rem;
+        }
+    }
+    &.hidePassword {
+        top: 22%;
+        img {
+            width: 1.6rem;
+        }
     }
 }
 .form-heading{
@@ -72,15 +85,19 @@ section{
     font-weight: 700;
 }
 
-#User-details{
+#user-details{
     display: flex;
     justify-content: space-between;
 }
-.user-name{
+.user-name, .gender, .first_name, .last_name{
     width: 48%;
 }
-.gender{
-    width: 48%;
+
+// .gender{
+//     width: 48%;
+// }
+.sign-in {
+    color: var(--text-black);
 }
 .sign-in-btn{
     text-decoration: none;
@@ -88,13 +105,15 @@ section{
 }
 .form-control{
     color: #9A9A9A;
+    border-color: var(--list-border-bottom);
     padding: 0.6rem 0.8rem;
-
+    background-color: transparent;
 }
 .form-control:focus {
+    background-color: transparent;
     border-color: #ced4da; /* Set border color to default */
     box-shadow: none; /* Remove box-shadow */
-    color: black;
+    color: #9A9A9A;
 }
 
 .form-label{
@@ -102,7 +121,7 @@ section{
     color: #7C8899;
 }
 
-#contact-info{
+#contact-info, #full-name{
     display: flex;
     justify-content: space-between;
 }
@@ -128,6 +147,14 @@ section{
     border: 0;
     padding: 0.5rem;
     border-radius: 1.5rem;
+}
+.policy-check {
+    color: #706E6E;
+    a{
+        text-decoration: underline;
+        font-weight: bold;
+        color: #3289FF;
+    }
 }
 @media (max-width: 1200px){
     .contact-location{

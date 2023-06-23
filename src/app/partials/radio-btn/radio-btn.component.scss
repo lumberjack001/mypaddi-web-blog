@@ -18,6 +18,7 @@
     cursor: pointer;
     height: 0;
     width: 0;
+    transition: 0.25s ease;
 }
 
 .checkmark {
@@ -26,17 +27,15 @@
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: white;
-    border: 1px solid #e9e9e9;
+    background-color: transparent;
+    border: 1px solid var(--radio-btn-border);
     border-radius: 100%;
-}
-
-.containers:hover input~.checkmark {
-    background-color: white;
+    transition: 0.25s ease;
 }
 
 .containers input:checked~.checkmark {
     background-color: #3289ff;
+    border: none;
 }
 
 .checkmark:after {
@@ -47,11 +46,12 @@
 
 .containers input:checked~.checkmark:after {
     display: block;
+    transition: 0.25s ease;
 }
 
 .containers .checkmark:after {
-    top: 5px;
-    left: 5px;
+    top: 6px;
+    left: 6px;
     width: 13px;
     height: 13px;
     border-radius: 50%;

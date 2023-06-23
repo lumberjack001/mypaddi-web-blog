@@ -19,6 +19,10 @@ export const getFeaturedPosts = createSelector(getPostsState, (state) => {
   return state.featuredPosts;
 });
 
+export const isFeaturedPostsLoading = createSelector(getPostsState, (state) => {
+  return state.isFeaturedPostsLoading;
+});
+
 export const getPopularPosts = createSelector(getPostsState, (state) => {
   return state.popularPosts;
 });
