@@ -12,6 +12,8 @@ export const GET_RECENTPOSTS_SUCCESS = '[Blog] get recentposts Success';
 
 export const GET_FEATUREDPOSTS_START = '[Blog] get featuredposts Start';
 export const GET_FEATUREDPOSTS_SUCCESS = '[Blog] get featuredposts Success';
+export const GET_FEATUREDPOSTS_LOADER = '[Blog] get featuredposts loading';
+
 
 export const GET_POPULARPOSTS_START = '[Blog] get popularposts Start';
 export const GET_POPULARPOSTS_SUCCESS = '[Blog] get popularposts Success';
@@ -83,6 +85,11 @@ export const getFeaturedPostsStart = createAction(
 export const getFeaturedPostsSuccess = createAction(
   GET_FEATUREDPOSTS_SUCCESS,
   props<{ featuredPosts: any[]; featuredCursor: any}>()
+);
+
+export const setFeaturedPostsLoader = createAction(
+  GET_FEATUREDPOSTS_LOADER,
+  props<{ status: any }>()
 );
 
 export const getPopularPostsStart = createAction(
